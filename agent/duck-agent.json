@@ -1,0 +1,7 @@
+{
+  "name": "duck-delivery-planner",
+  "description": "Plans Sokoban deliveries, checks plans in a sandbox, and improves its planning skill from development feedback.",
+  "model": { "name": "tfy-managed/claude-haiku-4-5-20251001" },
+  "skill": "duck-planning",
+  "status": "configuration pending hosted pilot; not an official baseline"
+}
