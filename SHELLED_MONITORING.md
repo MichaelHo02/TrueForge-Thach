@@ -1,5 +1,13 @@
 # Duck Delivery monitoring checkpoint
 
+## Published uplift checkpoint
+
+The later Shelled Version #18 game is now deployed at https://duck-delivery.vercel.app. Current production deployment: `dpl_HNUYZyFc9ERD6TymfRJAojVZQHqV`. All six routes were won through actual standalone browser controls (4/9/5/15/9/13 moves), and the three-parcel Dock 04 was won again on the public deployment. Corner feedback/Undo recovery, replay reset to initial state, invalid-plan rejection, cancellation on Restart, and a 375px overflow check passed. Local verification passes 10 engine/reducer/solver tests plus 3 scorer tests, typecheck, freshness, and the static build. Version #18 receipts are in EDGE_CASES.md; `evidence/shelled/browser-journal-v18.txt` preserves the observed journal and responses.
+
+The uplift exposed four genuinely impossible routes (historical fixtures and search results are committed), replay trace/display divergence, blocked moves creating Undo entries, and repeat failure to persist exact generated artifacts. Shelled fixed gameplay/reducer behavior; Codex ran the exact generator and saved both exact outputs back through the editor as the working persistence fallback. Codex also removed the internal version label from the public header and integrated the production npm build commands. These interventions are distinct from Shelled's authored changes.
+
+The hosted TrueForge agent has a registered skill and has actually executed the final canonical engine via Python/QuickJS. Its pilot trace matches local scoring. Eight independently verified tasks and the evaluation protocol are frozen, but official baseline/improvement collection is not started. `TRAINING.md` describes the runnable browser-assisted harness. The older checkpoint below is historical.
+
 Recovered directly from the connected Shelled editor on 2026-11-08. Project: `MichaelHo02/TrueForge-Thach`, Shelled project ID `ff53adcb-94c5-4098-b5b4-fef7e4ab25bf`, visible Version #10. Implementation was produced through Shelled; this checkpoint preserves those files without adding its generated Next.js export scaffold.
 
 ## Verified behavior

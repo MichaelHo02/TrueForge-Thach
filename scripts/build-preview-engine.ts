@@ -1,52 +1,31 @@
-import { readFileSync, writeFileSync } from "node:fs";
 import { createHash } from "node:crypto";
-import ts from "typescript";
+import { readFileSync, writeFileSync } from "node:fs";
+import * as ts from "typescript";
 
 const sourcePath = "sokoban/engine.ts";
 const previewPath = "PreviewPage.jsx";
 const artifactPath = "sokoban/engine.browser.js";
-const checkOnly = process.argv.includes("--check");
 const source = readFileSync(sourcePath, "utf8");
-const sourceHash = createHash("sha256").update(source).digest("hex").slice(0, 16);
-const transpiled = ts.transpileModule(source, {
-  compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ESNext },
-}).outputText.replace(/^export\s+/gm, "");
-const names = "initialState, isWon, step, validateLevel, serialize, hash, plan, directionDelta";
-const body = `${transpiled}\nreturn { ${names} };`;
-const previewBlock = `/* GENERATED ENGINE START: source=${sourcePath} sha256=${sourceHash} */\nconst __DUCK_DELIVERY_ENGINE__ = (() => {\n${body}\n})();\nconst { initialState, isWon, step, validateLevel } = __DUCK_DELIVERY_ENGINE__;\n/* GENERATED ENGINE END */`;
-const artifact = `// GENERATED FILE. Source: ${sourcePath}; sha256=${sourceHash}.\nglobalThis.__DUCK_DELIVERY_ENGINE__ = (() => {\n${body}\n})();\n`;
-
-const start = "/* GENERATED ENGINE START";
-const end = "/* GENERATED ENGINE END */";
-function expectedPreview(preview: string): string {
-  const startIndex = preview.indexOf(start);
-  const endIndex = preview.indexOf(end, startIndex);
-  if (startIndex < 0 || endIndex < startIndex) throw new Error(`Missing generated engine markers in ${previewPath}`);
-  return `${preview.slice(0, startIndex)}${previewBlock}${preview.slice(endIndex + end.length)}`;
-}
-function persistedBlock(preview: string): string {
-  const startIndex = preview.indexOf(start);
-  const endIndex = preview.indexOf(end, startIndex);
-  if (startIndex < 0 || endIndex < startIndex) throw new Error(`Missing generated engine markers in ${previewPath}`);
-  return preview.slice(startIndex, endIndex + end.length);
-}
-function checkPersisted(): void {
-  const preview = readFileSync(previewPath, "utf8");
-  const actualPreview = persistedBlock(preview);
-  if (actualPreview !== previewBlock) throw new Error(`Stale generated engine block in ${previewPath}; run npm run build:preview-engine`);
-  let actualArtifact: string;
-  try { actualArtifact = readFileSync(artifactPath, "utf8"); }
-  catch { throw new Error(`Missing generated browser artifact ${artifactPath}; run npm run build:preview-engine`); }
-  if (actualArtifact !== artifact) throw new Error(`Stale generated browser artifact ${artifactPath}; run npm run build:preview-engine`);
-}
-
-if (checkOnly) {
-  checkPersisted();
-  console.log(`Generated outputs are fresh from ${sourcePath} (${sourceHash})`);
+const sha = createHash("sha256").update(source).digest("hex");
+const transpiled = ts.transpileModule(source, { compilerOptions: { target: ts.ScriptTarget.ESNext, module: ts.ModuleKind.ESNext } }).outputText;
+const exports = [...source.matchAll(/^export\s+(?:const|function|class|type|interface)\s+([A-Za-z_$][\w$]*)/gm)].map((match) => match[1]).filter((name) => !["Direction", "Position", "Terrain", "Level", "GameState", "ReplayResult"].includes(name));
+const body = transpiled
+  .replace(/^export\s+(?=(?:const|function|class)\b)/gm, "")
+  .replace(/^export\s+(?:type|interface)\b[^\n]*\n/gm, "");
+const generated = `const __DUCK_DELIVERY_ENGINE__ = (() => {\n${body.trim()}\n  return { ${exports.join(", ")} };\n})();`;
+const previewBlock = `/* GENERATED ENGINE START: source=${sourcePath} sha256=${sha} */\n${generated}\nconst { ${exports.join(", ")} } = __DUCK_DELIVERY_ENGINE__;\n/* GENERATED ENGINE END */`;
+const iife = generated.replace(/^const __DUCK_DELIVERY_ENGINE__ = /, "");
+const artifact = `/* Generated from ${sourcePath}; sha256=${sha}; do not edit. */\nglobalThis.__DUCK_DELIVERY_ENGINE__ = ${iife}\n`;
+const preview = readFileSync(previewPath, "utf8");
+const persistedPreview = preview.match(/\/\* GENERATED ENGINE START:[\s\S]*?\/\* GENERATED ENGINE END \*\//)?.[0];
+const check = process.argv.includes("--check");
+if (check) {
+  if (persistedPreview !== previewBlock) throw new Error("PreviewPage.jsx generated engine block is stale");
+  if (readFileSync(artifactPath, "utf8") !== artifact) throw new Error("sokoban/engine.browser.js is stale");
+  console.log(`Generated outputs are fresh from ${sourcePath} (${sha})`);
 } else {
-  const preview = readFileSync(previewPath, "utf8");
-  writeFileSync(previewPath, expectedPreview(preview));
+  if (!persistedPreview) throw new Error("PreviewPage.jsx is missing its generated engine block");
+  writeFileSync(previewPath, preview.replace(persistedPreview, previewBlock));
   writeFileSync(artifactPath, artifact);
-  checkPersisted();
-  console.log(`Generated ${previewPath} and ${artifactPath} from ${sourcePath} (${sourceHash})`);
+  console.log(`Generated ${previewPath} and ${artifactPath} from ${sourcePath} (${sha})`);
 }
