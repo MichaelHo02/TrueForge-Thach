@@ -1,0 +1,1193 @@
+{
+  "version": "seeded-generalization-v1",
+  "generator": "reverse-pull-v2",
+  "protocol": {
+    "version": 1,
+    "maxSubmissions": 2,
+    "maxMoves": 100
+  },
+  "configuration": {
+    "model": {
+      "providerGroup": "TFY-MANAGED",
+      "displayName": "claude-haiku-4-5-20251001"
+    },
+    "runtime": {
+      "iterationLimit": 12,
+      "sandbox": true,
+      "subagents": false,
+      "generativeUi": false,
+      "askUserQuestions": false,
+      "webSearch": false
+    }
+  },
+  "sources": {
+    "sokoban/engine.ts": "b1c7a7a9593b7ed1aa3c027f6daf99221571115f3d51632899e30ea1f3e4a8ae",
+    "sokoban/engine.browser.js": "968505fa6d97df35d0bae678fe45beecd4c80febcb5cc8a84ed11de30fc11ad3",
+    "sokoban/variants.ts": "8fc1688fa9e9b7f09847b3ca69730b55dc34ca48101fdb1b029b1beb6939424f",
+    "evals/duck-score.ts": "054983c5cea2d9a4c528005b16c2aa892a57245213d7792571872638d526c5ec",
+    "evals/generalization.ts": "7d72518c14f736abf23184a46fd132b6b2c1e404f983ed7890e68f6a72da799a",
+    "scripts/duck-generalization.ts": "66ce3763dd72398ae14846168550e164a1039d616fe3e4866dbc4e9202a7e1f0",
+    "scripts/duck-simulate.py": "14edc54cfaa031c385d1b05a3ebc255413dd8317a22972e1475ca062ec1a55ea",
+    "agent/duck-instructions.md": "ec44e848d4eb130eb4967b71181c96c518672ebaa40e48cd6d9b42f8c95ec86d"
+  },
+  "initialSkillHash": "4db2d3b487220b6c124c5b69d2ff5ada4639b2121815f1da0577ce0de00db8a4",
+  "dataHash": "5a1214f2f5c98fb215a83980f1c59e588200504c79d8f3186bcaa80cac57ed57",
+  "bases": [
+    {
+      "name": "Dock 01 · First Parcel",
+      "terrain": [
+        "########",
+        "#      #",
+        "########"
+      ],
+      "duck": [
+        1,
+        1
+      ],
+      "parcels": [
+        [
+          3,
+          1
+        ]
+      ],
+      "goals": [
+        [
+          6,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "Dock 02 · Pairing Order",
+      "terrain": [
+        "#########",
+        "#       #",
+        "#       #",
+        "#       #",
+        "#########"
+      ],
+      "duck": [
+        1,
+        1
+      ],
+      "parcels": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "goals": [
+        [
+          7,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "Dock 03 · Wall Pocket",
+      "terrain": [
+        "#########",
+        "#       #",
+        "# ###   #",
+        "#       #",
+        "#########"
+      ],
+      "duck": [
+        1,
+        3
+      ],
+      "parcels": [
+        [
+          3,
+          3
+        ]
+      ],
+      "goals": [
+        [
+          7,
+          3
+        ]
+      ]
+    },
+    {
+      "name": "Dock 04 · Three Wide",
+      "terrain": [
+        "###########",
+        "#         #",
+        "#         #",
+        "#         #",
+        "###########"
+      ],
+      "duck": [
+        1,
+        1
+      ],
+      "parcels": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "goals": [
+        [
+          9,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "Dock 05 · Turnaround",
+      "terrain": [
+        "#########",
+        "#   #   #",
+        "#       #",
+        "#   #   #",
+        "#########"
+      ],
+      "duck": [
+        1,
+        2
+      ],
+      "parcels": [
+        [
+          2,
+          2
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "goals": [
+        [
+          2,
+          3
+        ],
+        [
+          6,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "Dock 06 · Final Sort",
+      "terrain": [
+        "###########",
+        "#         #",
+        "#         #",
+        "#         #",
+        "###########"
+      ],
+      "duck": [
+        1,
+        3
+      ],
+      "parcels": [
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          8,
+          3
+        ]
+      ],
+      "goals": [
+        [
+          9,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          6,
+          3
+        ]
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "generalize-01",
+      "split": "development",
+      "baseIndex": 0,
+      "seed": "seeded-generalization-v1:development:0:0:0",
+      "level": {
+        "name": "generalize-01",
+        "terrain": [
+          "########",
+          "#      #",
+          "########"
+        ],
+        "duck": [
+          6,
+          1
+        ],
+        "parcels": [
+          [
+            5,
+            1
+          ]
+        ],
+        "goals": [
+          [
+            2,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "id": "generalize-02",
+      "split": "development",
+      "baseIndex": 0,
+      "seed": "seeded-generalization-v1:development:0:1:0",
+      "level": {
+        "name": "generalize-02",
+        "terrain": [
+          "########",
+          "#      #",
+          "########"
+        ],
+        "duck": [
+          6,
+          1
+        ],
+        "parcels": [
+          [
+            5,
+            1
+          ]
+        ],
+        "goals": [
+          [
+            3,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "id": "generalize-03",
+      "split": "development",
+      "baseIndex": 1,
+      "seed": "seeded-generalization-v1:development:1:0:0",
+      "level": {
+        "name": "generalize-03",
+        "terrain": [
+          "#########",
+          "#       #",
+          "#       #",
+          "#       #",
+          "#########"
+        ],
+        "duck": [
+          3,
+          3
+        ],
+        "parcels": [
+          [
+            4,
+            2
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "goals": [
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "id": "generalize-04",
+      "split": "development",
+      "baseIndex": 1,
+      "seed": "seeded-generalization-v1:development:1:1:0",
+      "level": {
+        "name": "generalize-04",
+        "terrain": [
+          "#########",
+          "#       #",
+          "#       #",
+          "#       #",
+          "#########"
+        ],
+        "duck": [
+          3,
+          2
+        ],
+        "parcels": [
+          [
+            6,
+            2
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "goals": [
+          [
+            5,
+            2
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "id": "generalize-05",
+      "split": "development",
+      "baseIndex": 2,
+      "seed": "seeded-generalization-v1:development:2:0:0",
+      "level": {
+        "name": "generalize-05",
+        "terrain": [
+          "#########",
+          "#       #",
+          "# ###   #",
+          "#       #",
+          "#########"
+        ],
+        "duck": [
+          3,
+          3
+        ],
+        "parcels": [
+          [
+            6,
+            2
+          ]
+        ],
+        "goals": [
+          [
+            4,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "id": "generalize-06",
+      "split": "development",
+      "baseIndex": 2,
+      "seed": "seeded-generalization-v1:development:2:1:1",
+      "level": {
+        "name": "generalize-06",
+        "terrain": [
+          "#########",
+          "#       #",
+          "# ###   #",
+          "#       #",
+          "#########"
+        ],
+        "duck": [
+          4,
+          1
+        ],
+        "parcels": [
+          [
+            2,
+            3
+          ]
+        ],
+        "goals": [
+          [
+            4,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "id": "generalize-07",
+      "split": "development",
+      "baseIndex": 3,
+      "seed": "seeded-generalization-v1:development:3:0:0",
+      "level": {
+        "name": "generalize-07",
+        "terrain": [
+          "###########",
+          "#         #",
+          "#         #",
+          "#         #",
+          "###########"
+        ],
+        "duck": [
+          8,
+          3
+        ],
+        "parcels": [
+          [
+            5,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ]
+        ],
+        "goals": [
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            9,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "id": "generalize-08",
+      "split": "development",
+      "baseIndex": 3,
+      "seed": "seeded-generalization-v1:development:3:1:0",
+      "level": {
+        "name": "generalize-08",
+        "terrain": [
+          "###########",
+          "#         #",
+          "#         #",
+          "#         #",
+          "###########"
+        ],
+        "duck": [
+          5,
+          2
+        ],
+        "parcels": [
+          [
+            4,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            8,
+            2
+          ]
+        ],
+        "goals": [
+          [
+            5,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "id": "generalize-09",
+      "split": "development",
+      "baseIndex": 4,
+      "seed": "seeded-generalization-v1:development:4:0:0",
+      "level": {
+        "name": "generalize-09",
+        "terrain": [
+          "#########",
+          "#   #   #",
+          "#       #",
+          "#   #   #",
+          "#########"
+        ],
+        "duck": [
+          6,
+          1
+        ],
+        "parcels": [
+          [
+            6,
+            2
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "goals": [
+          [
+            6,
+            3
+          ],
+          [
+            4,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "id": "generalize-10",
+      "split": "development",
+      "baseIndex": 4,
+      "seed": "seeded-generalization-v1:development:4:1:0",
+      "level": {
+        "name": "generalize-10",
+        "terrain": [
+          "#########",
+          "#   #   #",
+          "#       #",
+          "#   #   #",
+          "#########"
+        ],
+        "duck": [
+          2,
+          2
+        ],
+        "parcels": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "goals": [
+          [
+            1,
+            3
+          ],
+          [
+            4,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "id": "generalize-11",
+      "split": "development",
+      "baseIndex": 5,
+      "seed": "seeded-generalization-v1:development:5:0:0",
+      "level": {
+        "name": "generalize-11",
+        "terrain": [
+          "###########",
+          "#         #",
+          "#         #",
+          "#         #",
+          "###########"
+        ],
+        "duck": [
+          3,
+          2
+        ],
+        "parcels": [
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "goals": [
+          [
+            3,
+            2
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            5,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "id": "generalize-12",
+      "split": "development",
+      "baseIndex": 5,
+      "seed": "seeded-generalization-v1:development:5:1:0",
+      "level": {
+        "name": "generalize-12",
+        "terrain": [
+          "###########",
+          "#         #",
+          "#         #",
+          "#         #",
+          "###########"
+        ],
+        "duck": [
+          3,
+          3
+        ],
+        "parcels": [
+          [
+            2,
+            2
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "goals": [
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "id": "generalize-13",
+      "split": "holdout",
+      "baseIndex": 0,
+      "seed": "seeded-generalization-v1:holdout:0:0:0",
+      "level": {
+        "name": "generalize-13",
+        "terrain": [
+          "########",
+          "#      #",
+          "########"
+        ],
+        "duck": [
+          1,
+          1
+        ],
+        "parcels": [
+          [
+            2,
+            1
+          ]
+        ],
+        "goals": [
+          [
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "id": "generalize-14",
+      "split": "holdout",
+      "baseIndex": 0,
+      "seed": "seeded-generalization-v1:holdout:0:1:0",
+      "level": {
+        "name": "generalize-14",
+        "terrain": [
+          "########",
+          "#      #",
+          "########"
+        ],
+        "duck": [
+          1,
+          1
+        ],
+        "parcels": [
+          [
+            2,
+            1
+          ]
+        ],
+        "goals": [
+          [
+            6,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "id": "generalize-15",
+      "split": "holdout",
+      "baseIndex": 1,
+      "seed": "seeded-generalization-v1:holdout:1:0:0",
+      "level": {
+        "name": "generalize-15",
+        "terrain": [
+          "#########",
+          "#       #",
+          "#       #",
+          "#       #",
+          "#########"
+        ],
+        "duck": [
+          1,
+          3
+        ],
+        "parcels": [
+          [
+            2,
+            2
+          ],
+          [
+            6,
+            2
+          ]
+        ],
+        "goals": [
+          [
+            5,
+            3
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "id": "generalize-16",
+      "split": "holdout",
+      "baseIndex": 1,
+      "seed": "seeded-generalization-v1:holdout:1:1:0",
+      "level": {
+        "name": "generalize-16",
+        "terrain": [
+          "#########",
+          "#       #",
+          "#       #",
+          "#       #",
+          "#########"
+        ],
+        "duck": [
+          6,
+          3
+        ],
+        "parcels": [
+          [
+            6,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "goals": [
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "id": "generalize-17",
+      "split": "holdout",
+      "baseIndex": 2,
+      "seed": "seeded-generalization-v1:holdout:2:0:0",
+      "level": {
+        "name": "generalize-17",
+        "terrain": [
+          "#########",
+          "#       #",
+          "# ###   #",
+          "#       #",
+          "#########"
+        ],
+        "duck": [
+          1,
+          3
+        ],
+        "parcels": [
+          [
+            6,
+            2
+          ]
+        ],
+        "goals": [
+          [
+            3,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "id": "generalize-18",
+      "split": "holdout",
+      "baseIndex": 2,
+      "seed": "seeded-generalization-v1:holdout:2:1:1",
+      "level": {
+        "name": "generalize-18",
+        "terrain": [
+          "#########",
+          "#       #",
+          "# ###   #",
+          "#       #",
+          "#########"
+        ],
+        "duck": [
+          1,
+          3
+        ],
+        "parcels": [
+          [
+            6,
+            2
+          ]
+        ],
+        "goals": [
+          [
+            3,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "id": "generalize-19",
+      "split": "holdout",
+      "baseIndex": 3,
+      "seed": "seeded-generalization-v1:holdout:3:0:0",
+      "level": {
+        "name": "generalize-19",
+        "terrain": [
+          "###########",
+          "#         #",
+          "#         #",
+          "#         #",
+          "###########"
+        ],
+        "duck": [
+          9,
+          1
+        ],
+        "parcels": [
+          [
+            6,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "goals": [
+          [
+            3,
+            1
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            6,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "id": "generalize-20",
+      "split": "holdout",
+      "baseIndex": 3,
+      "seed": "seeded-generalization-v1:holdout:3:1:0",
+      "level": {
+        "name": "generalize-20",
+        "terrain": [
+          "###########",
+          "#         #",
+          "#         #",
+          "#         #",
+          "###########"
+        ],
+        "duck": [
+          8,
+          3
+        ],
+        "parcels": [
+          [
+            2,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "goals": [
+          [
+            8,
+            1
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "id": "generalize-21",
+      "split": "holdout",
+      "baseIndex": 4,
+      "seed": "seeded-generalization-v1:holdout:4:0:0",
+      "level": {
+        "name": "generalize-21",
+        "terrain": [
+          "#########",
+          "#   #   #",
+          "#       #",
+          "#   #   #",
+          "#########"
+        ],
+        "duck": [
+          7,
+          1
+        ],
+        "parcels": [
+          [
+            6,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "goals": [
+          [
+            4,
+            2
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "id": "generalize-22",
+      "split": "holdout",
+      "baseIndex": 4,
+      "seed": "seeded-generalization-v1:holdout:4:1:0",
+      "level": {
+        "name": "generalize-22",
+        "terrain": [
+          "#########",
+          "#   #   #",
+          "#       #",
+          "#   #   #",
+          "#########"
+        ],
+        "duck": [
+          2,
+          3
+        ],
+        "parcels": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "goals": [
+          [
+            1,
+            1
+          ],
+          [
+            7,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "id": "generalize-23",
+      "split": "holdout",
+      "baseIndex": 5,
+      "seed": "seeded-generalization-v1:holdout:5:0:0",
+      "level": {
+        "name": "generalize-23",
+        "terrain": [
+          "###########",
+          "#         #",
+          "#         #",
+          "#         #",
+          "###########"
+        ],
+        "duck": [
+          6,
+          1
+        ],
+        "parcels": [
+          [
+            8,
+            3
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "goals": [
+          [
+            6,
+            3
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "id": "generalize-24",
+      "split": "holdout",
+      "baseIndex": 5,
+      "seed": "seeded-generalization-v1:holdout:5:1:0",
+      "level": {
+        "name": "generalize-24",
+        "terrain": [
+          "###########",
+          "#         #",
+          "#         #",
+          "#         #",
+          "###########"
+        ],
+        "duck": [
+          7,
+          2
+        ],
+        "parcels": [
+          [
+            3,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "goals": [
+          [
+            8,
+            1
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -50,3 +50,19 @@ The verified setup is already frozen in `evals/duck/frozen.json`; do not overwri
 Implementation was produced in the connected Shelled workspace. Exact artifact persistence and the initial deployment wrapper required a disclosed Codex fallback. Shelled's own GitHub export failed; a manually preserved source checkpoint is not a claim that its automatic PR export worked. See [SHELLED_MONITORING.md](SHELLED_MONITORING.md) and [DEPLOYMENT.md](DEPLOYMENT.md).
 
 The original starter documentation is retained in [docs/STARTER_README.md](docs/STARTER_README.md). MIT licensed.
+
+## Seeded challenges and generalization
+
+Choose **Shuffle challenge**, or enter a seed and choose **Load seed**. The same original route, seed and generator version reproduce the same duck, parcels and delivery pads. Terrain and parcel count stay fixed. Restart preserves the current challenge; Original route returns to the curated puzzle. Variations use bounded reverse pulls from a solved state and canonical forward replay verification; internal solution witnesses are discarded. This guarantees solvability for accepted output, not unlimited unique layouts or equal difficulty. The narrow first route has fewer distinct configurations.
+
+A separate frozen pack contains 24 distinct, solver-verified variations: 12 development and 12 holdout. It does not replace or change the original eight-task benchmark. Both agent versions must use the same pack, model, runtime and budgets; only development failures may inform the skill rewrite. Generated prompts exclude seeds, generator code and witnesses. Keep the public repository and pack unavailable to solver/improvement sessions; these are procedural holdouts, not secret public data.
+
+```sh
+npm run duck:generalization -- prepare development /tmp/duck-dev
+npm run duck:generalization -- prepare holdout /tmp/duck-holdout
+npm run duck:generalization -- score actual-replies.json runs/generalization/run-01
+npm run duck:generalization -- improve-prompt runs/generalization/run-01/results.json /tmp/duck-improve.txt
+npm run duck:quality -- 20 /tmp/duck-quality.json
+```
+
+The pack records original base boards, generator identity, source hashes and configuration so it remains reproducible. `create` refuses overwrite. No model generalization score is claimed yet. Rebuild browser adapters after generator changes with `npm run build:variants`; verify/build reject stale artifacts.

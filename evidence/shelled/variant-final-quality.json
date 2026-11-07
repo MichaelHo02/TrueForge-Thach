@@ -1,0 +1,60 @@
+{
+  "version": "reverse-pull-v2",
+  "sourceHash": "8fc1688fa9e9b7f09847b3ca69730b55dc34ca48101fdb1b029b1beb6939424f",
+  "routes": [
+    {
+      "name": "Dock 01 · First Parcel",
+      "sampled": 20,
+      "unavailable": 0,
+      "uniqueParcelGoalLayouts": 6,
+      "minWinningMoves": 2,
+      "maxWinningMoves": 4,
+      "oneMovePuzzles": 0
+    },
+    {
+      "name": "Dock 02 · Pairing Order",
+      "sampled": 20,
+      "unavailable": 0,
+      "uniqueParcelGoalLayouts": 20,
+      "minWinningMoves": 7,
+      "maxWinningMoves": 20,
+      "oneMovePuzzles": 0
+    },
+    {
+      "name": "Dock 03 · Wall Pocket",
+      "sampled": 20,
+      "unavailable": 0,
+      "uniqueParcelGoalLayouts": 14,
+      "minWinningMoves": 4,
+      "maxWinningMoves": 12,
+      "oneMovePuzzles": 0
+    },
+    {
+      "name": "Dock 04 · Three Wide",
+      "sampled": 20,
+      "unavailable": 0,
+      "uniqueParcelGoalLayouts": 20,
+      "minWinningMoves": 4,
+      "maxWinningMoves": 27,
+      "oneMovePuzzles": 0
+    },
+    {
+      "name": "Dock 05 · Turnaround",
+      "sampled": 20,
+      "unavailable": 0,
+      "uniqueParcelGoalLayouts": 19,
+      "minWinningMoves": 3,
+      "maxWinningMoves": 20,
+      "oneMovePuzzles": 0
+    },
+    {
+      "name": "Dock 06 · Final Sort",
+      "sampled": 20,
+      "unavailable": 0,
+      "uniqueParcelGoalLayouts": 20,
+      "minWinningMoves": 7,
+      "maxWinningMoves": 25,
+      "oneMovePuzzles": 0
+    }
+  ]
+}
