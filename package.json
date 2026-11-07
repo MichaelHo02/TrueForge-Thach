@@ -19,13 +19,17 @@
     "build": "tsx scripts/build-preview-engine.ts",
     "score": "tsx evals/score.ts",
     "typecheck": "tsc --noEmit",
-    "test": "tsx --test sokoban/engine.test.ts"
+    "test": "tsx --test sokoban/engine.test.ts",
+    "build:web:fallback": "node scripts/build-web-fallback.mjs"
   },
   "dependencies": {
-    "@truefoundry/trueforge-sdk": "^0.180.0"
+    "@truefoundry/trueforge-sdk": "^0.180.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",
+    "esbuild": "^0.25.12",
     "tsx": "^4.19.0",
     "typescript": "^5.7.0"
   }
