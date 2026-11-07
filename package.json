@@ -13,8 +13,13 @@
     "run-evals": "tsx scripts/run-evals.ts",
     "improve": "tsx scripts/improve.ts",
     "export-session": "tsx scripts/export-session.ts",
+    "build:preview-engine": "tsx scripts/build-preview-engine.ts",
+    "check:preview-engine": "tsx scripts/build-preview-engine.ts --check",
+    "verify": "npm run check:preview-engine && npm test",
+    "build": "tsx scripts/build-preview-engine.ts",
     "score": "tsx evals/score.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test sokoban/engine.test.ts"
   },
   "dependencies": {
     "@truefoundry/trueforge-sdk": "^0.180.0"
