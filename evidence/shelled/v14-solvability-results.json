@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Dock 01 · First Parcel",
+    "status": "solved",
+    "visited": 9,
+    "winningMoves": 4
+  },
+  {
+    "name": "Dock 02 · Pairing Order",
+    "status": "unsolvable",
+    "visited": 5,
+    "winningMoves": null
+  },
+  {
+    "name": "Dock 03 · Wall Pocket",
+    "status": "solved",
+    "visited": 24,
+    "winningMoves": 5
+  },
+  {
+    "name": "Dock 04 · Three Wide",
+    "status": "unsolvable",
+    "visited": 5,
+    "winningMoves": null
+  },
+  {
+    "name": "Dock 05 · Turnaround",
+    "status": "unsolvable",
+    "visited": 153,
+    "winningMoves": null
+  },
+  {
+    "name": "Dock 06 · Final Sort",
+    "status": "unsolvable",
+    "visited": 48,
+    "winningMoves": null
+  }
+]

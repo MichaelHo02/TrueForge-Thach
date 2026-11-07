@@ -20,7 +20,9 @@
     "score": "tsx evals/score.ts",
     "typecheck": "tsc --noEmit",
     "test": "tsx --test sokoban/engine.test.ts",
-    "build:web:fallback": "node scripts/build-web-fallback.mjs"
+    "build:web:fallback": "node scripts/build-web-fallback.mjs",
+    "duck:score": "node --import tsx scripts/duck-score.ts",
+    "duck:test": "node --import tsx --test evals/duck-score.test.ts"
   },
   "dependencies": {
     "@truefoundry/trueforge-sdk": "^0.180.0",

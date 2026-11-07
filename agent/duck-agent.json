@@ -1,7 +1,21 @@
 {
   "name": "duck-delivery-planner",
   "description": "Plans Sokoban deliveries, checks plans in a sandbox, and improves its planning skill from development feedback.",
-  "model": { "name": "tfy-managed/claude-haiku-4-5-20251001" },
+  "model": {
+    "providerGroup": "TFY-MANAGED",
+    "displayName": "claude-haiku-4-5-20251001"
+  },
   "skill": "duck-planning",
-  "status": "configuration pending hosted pilot; not an official baseline"
+  "status": "hosted agent saved; actual skill and canonical-engine sandbox pilot passed; no official baseline",
+  "registeredSkill": "agent-skill:stranger-builds/default/duck-planning:1",
+  "runtime": {
+    "iterationLimit": 12,
+    "sandbox": true,
+    "subagents": false,
+    "generativeUi": false,
+    "askUserQuestions": false,
+    "webSearch": false
+  },
+  "hostedBaseUrl": "https://stranger-builds.truefoundry.cloud/trueforge",
+  "pilotSession": "01m6vebghah7rrgsp3vfvmyggz"
 }

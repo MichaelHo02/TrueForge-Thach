@@ -1,0 +1,3 @@
+```json
+{"moves":["right","up","down","right","right","up"]}
+```
