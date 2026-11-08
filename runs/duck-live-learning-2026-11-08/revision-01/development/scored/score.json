@@ -1,0 +1,98 @@
+{
+  "metric": "Actual website wins through model-originated native WebMCP calls, canonical replay verified",
+  "historicalBenchmarkComparable": false,
+  "phases": [
+    {
+      "phase": "baseline",
+      "tasks": 8,
+      "completeEight": true,
+      "score": 62.5,
+      "development": 75,
+      "holdout": 50,
+      "perTask": [
+        {
+          "taskId": "duck-01",
+          "holdout": false,
+          "solved": true,
+          "attempts": 2
+        },
+        {
+          "taskId": "duck-02",
+          "holdout": false,
+          "solved": false,
+          "attempts": 2
+        },
+        {
+          "taskId": "duck-03",
+          "holdout": false,
+          "solved": true,
+          "attempts": 1
+        },
+        {
+          "taskId": "duck-04",
+          "holdout": false,
+          "solved": true,
+          "attempts": 2
+        },
+        {
+          "taskId": "duck-05",
+          "holdout": true,
+          "solved": false,
+          "attempts": 2
+        },
+        {
+          "taskId": "duck-06",
+          "holdout": true,
+          "solved": false,
+          "attempts": 2
+        },
+        {
+          "taskId": "duck-07",
+          "holdout": true,
+          "solved": true,
+          "attempts": 2
+        },
+        {
+          "taskId": "duck-08",
+          "holdout": true,
+          "solved": true,
+          "attempts": 2
+        }
+      ]
+    },
+    {
+      "phase": "dev-v4",
+      "tasks": 4,
+      "completeEight": false,
+      "score": 75,
+      "development": 75,
+      "holdout": null,
+      "perTask": [
+        {
+          "taskId": "duck-01",
+          "holdout": false,
+          "solved": false,
+          "attempts": 2
+        },
+        {
+          "taskId": "duck-02",
+          "holdout": false,
+          "solved": true,
+          "attempts": 1
+        },
+        {
+          "taskId": "duck-03",
+          "holdout": false,
+          "solved": true,
+          "attempts": 1
+        },
+        {
+          "taskId": "duck-04",
+          "holdout": false,
+          "solved": true,
+          "attempts": 2
+        }
+      ]
+    }
+  ]
+}

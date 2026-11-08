@@ -20,6 +20,7 @@ const results=records.map((record:any)=>{
  let state=initialState(task.level),previous:any,attemptedMoves=0,blockedMoves=0;
  const moveJobs=new Set<string>();const violations:string[]=[];
  for(const event of selected){
+  assert.equal(event.phase,record.phase);assert.equal(event.task,record.task);assert.equal(event.attempt,record.attempt);
   const board=JSON.parse(event.result.content[0].text);
   assert.equal(board.benchmarkTask,task.id);assert.deepEqual(board.terrain,task.level.terrain);assert.deepEqual(board.goals,task.level.goals);
   if(event.tool==='duck_move'){
@@ -30,6 +31,12 @@ const results=records.map((record:any)=>{
    state=initialState(task.level);violations.push('Model restarted within an operator-bounded attempt');
   }else assert.equal(event.tool,'duck_get_board');
   assert.equal(serialize(board),serialize(state));assert.equal(board.won,isWon(task.level,state));previous=board;
+ }
+ for(const jobId of moveJobs){
+  const executed=selected.filter((e:any)=>e.tool==='duck_move'&&e.jobId===jobId);
+  const file=executed[0].mcpRequestFile;
+  if(file){const request=read(file);assert.equal(request.tool,'duck_play_plan');assert.deepEqual(request.arguments.moves,executed.map((e:any)=>e.input.direction));assert.equal(request.arguments.expectedRevision,executed[0].input.expectedRevision);}
+  else if(record.phase.startsWith('final'))throw new Error('Final live plan lacks its captured model MCP request');
  }
  if(attemptedMoves>100)violations.push('Exceeded 100 attempted moves');
  if(moveJobs.size>1)violations.push('Submitted more than one live plan within the bounded attempt');

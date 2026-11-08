@@ -1,0 +1,4 @@
+Browser tab: 15, Title: "TrueFoundry – One Gateway for All Your AI", URL: "https://stranger-builds.truefoundry.cloud/signin/external?redirectPath=%2Ftrueforge%2Fsessions%2F01m6x597mp7dhdgk59h0221rxq".
+1 AXWebArea TrueFoundry – One Gateway for All Your AI, URL: stranger-builds.truefoundry.cloud/signin/external?redirectPath=%2Ftrueforge%2Fsessions%2F01m6x597mp7dhdgk59h0221rxq
+
+The focused UI element is 1 AXWebArea TrueFoundry – One Gateway for All Your AI, URL: stranger-builds.truefoundry.cloud/signin/external?redirectPath=%2Ftrueforge%2Fsessions%2F01m6x597mp7dhdgk59h0221rxq

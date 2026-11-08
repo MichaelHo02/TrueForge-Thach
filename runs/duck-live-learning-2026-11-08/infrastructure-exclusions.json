@@ -19,5 +19,12 @@
       "infra-v4-duck-02-mcp-error.json",
       "infra-v4-duck-02-records.json"
     ]
+  },
+  {
+    "session": "https://stranger-builds.truefoundry.cloud/trueforge/sessions/01m6x597mp7dhdgk59h0221rxq",
+    "task": "duck-03",
+    "phase": "dev-v4",
+    "reason": "401 Invalid token after native live win, followed by expired UI login; excluded consistently as provider infrastructure failure despite win. Fresh run after access recovery.",
+    "evidence": "infrastructure-v4-duck-03/records.json"
   }
 ]

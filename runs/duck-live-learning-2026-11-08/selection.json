@@ -1,0 +1,21 @@
+{
+  "status": "frozen-before-final",
+  "selectedSkill": "agent-skill:stranger-builds/default/duck-planning:5",
+  "selectedSkillSHA256": "cf38989d191e857fdc507e46b1c5620ced46895e5d623d530d93f5a86e614e32",
+  "selectedSource": "revision-02/SKILL.md",
+  "candidateCommit": "75d7a1c",
+  "developmentScores": {
+    "v4": 75,
+    "v5": 100
+  },
+  "developmentSessions": [
+    "https://stranger-builds.truefoundry.cloud/trueforge/sessions/01m6x67c18bb723be5g7ep2vvv",
+    "https://stranger-builds.truefoundry.cloud/trueforge/sessions/01m6x6c8vyc59k5m4kd5re9x0c",
+    "https://stranger-builds.truefoundry.cloud/trueforge/sessions/01m6x6htd4fbbcmjhzn4qznxzy",
+    "https://stranger-builds.truefoundry.cloud/trueforge/sessions/01m6x6pn15dsh5nmfz5dhgxx0y"
+  ],
+  "reason": "V5 solved all four development puzzles on first attempts, clearing the precommitted development gate; no held-out selection",
+  "finalCandidateResultsKnown": false,
+  "finalEvaluation": "Eight fresh sessions; same prompts/instructions, model, tools and budgets as fresh baseline; no further revisions from final results",
+  "frozenAtUTC": "2026-11-08T09:12:01.876591+00:00"
+}

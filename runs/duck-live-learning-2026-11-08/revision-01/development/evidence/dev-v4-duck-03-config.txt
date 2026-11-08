@@ -1,0 +1,92 @@
+Browser tab: 15, Title: "TrueForge", URL: "https://stranger-builds.truefoundry.cloud/trueforge/build-agent".
+1 AXWebArea TrueForge, URL: stranger-builds.truefoundry.cloud/trueforge/build-agent
+	2 container
+		3 container root
+			4 container
+				5 container Sidebar
+					6 button Description: Start new chat, Help: New chat
+					7 button Description: Start new agent, Help: New Agent
+					8 button Agents
+					9 button Sessions
+					10 button Schedules
+					11 button Environments
+				12 container
+					13 link Description: Documentation, Value: trueforge.dev/
+					14 button Description: Switch to dark theme, Help: Dark theme
+					15 container Thạch Hồ Lê Minh
+						16 text T
+						17 text Thạch Hồ Lê Minh
+				18 container Agent Config
+					19 heading Agent Config, Value: 2
+						20 text Agent Config
+					21 container
+						22 pop up button (collapsed) Description: Edit Model, Secondary Actions: Expand
+							23 text claude-haiku-4-5-20251001
+							24 text 200K
+						25 pop up button (collapsed) Description: Model settings, Secondary Actions: Expand
+						26 button Edit model settings
+							27 definition list
+								28 text model settings: defaults
+					29 container
+						30 heading Instructions, Value: 3
+							31 text Instructions
+						32 text Define the agent's role, goals, and behavior.
+						33 button Edit Instructions
+							34 text You are Duck Delivery planner. Load and follow the complete registered duck-planning skill. Solve only the current board returned by duck_get_board. Never inspect saved runs, reference solutions, other puzzles or the repository. Use the supplied canonical engine and adapter for sandbox checks; do not replace movement rules. Respect a maximum of 100 attempted moves per submitted plan and at most two submissions per puzzle, each starting from the initial board. Do not edit the skill during solving. Live submission protocol: after planning and any sandbox validation, submit your completed moves to duck_play_plan using the current board revision, even if the candidate plan is only your best effort. The helper executes exactly your plan on the real website; inspect its receipts. End with only JSON {"moves":[...]}. Do not claim a live win without a won:true native receipt. Do not restart or submit a second plan unless the operator sends second-attempt feedback. Model weights remain unchanged.
+					35 button Runtime Config Control execution and context behavior. Edit Runtime Config iteration limit: 12 sandbox: on compaction: on large tool response: on dynamic sub-agents: off generative UI: off ask user questions: off web search: off
+						36 heading Runtime Config, Value: 3
+							37 text Runtime Config
+						38 text Control execution and context behavior.
+						39 button Edit Runtime Config
+						40 definition list
+							41 container iteration limit:
+								42 text iteration limit :
+							43 text 12
+							44 container sandbox:
+								45 text sandbox :
+							46 text on
+							47 container compaction:
+								48 text compaction :
+							49 text on
+							50 container large tool response:
+								51 text large tool response :
+							52 text on
+							53 container dynamic sub-agents:
+								54 text dynamic sub-agents :
+							55 text off
+							56 container generative UI:
+								57 text generative UI :
+							58 text off
+							59 container ask user questions:
+								60 text ask user questions :
+							61 text off
+							62 container web search:
+								63 text web search :
+							64 text off
+					65 button MCP Servers Add MCP server Preload tools for duck-live-webmcp duck-live-webmcp All tools Remove duck-live-webmcp
+						66 heading MCP Servers, Value: 3
+							67 text MCP Servers
+						68 button Add MCP server
+						69 checkbox Description: Preload tools for duck-live-webmcp, Value: 1
+						70 text duck-live-webmcp
+						71 text All tools
+						72 button Remove duck-live-webmcp
+					73 button Skills Add skill Preload skill agent-skill:stranger-builds/default/duck-planning:4 agent-skill:stranger-builds/default/duck-planning:4 Remove agent-skill:stranger-builds/default/duck-planning:4
+						74 heading Skills, Value: 3
+							75 text Skills
+						76 button Add skill
+						77 checkbox Description: Preload skill agent-skill:stranger-builds/default/duck-planning:4, Value: 0
+						78 text agent-skill:stranger-builds/default/duck-planning:4
+						79 button Remove agent-skill:stranger-builds/default/duck-planning:4
+				80 heading New Agent, Value: 1
+					81 text New Agent
+				82 button Reset, Help: Reset playground
+				83 button Save Agent
+				84 container
+					85 heading Start building a new Agent, Value: 1
+						86 text Start building a new Agent
+					87 text entry area (settable) Message input
+					88 button Attach a file
+					89 button (disabled) Send message
+
+The focused UI element is 1 AXWebArea TrueForge, URL: stranger-builds.truefoundry.cloud/trueforge/build-agent
