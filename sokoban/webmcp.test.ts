@@ -107,3 +107,29 @@ test('partial registration failure rolls back its tools and shows an error', asy
   assert.equal(active.size, 0);
   assert.equal(statuses.at(-1).status, 'error');
 });
+
+test('all eight live benchmark boards are exact frozen inputs, permit native moves and restart without saved replays', () => {
+  const tasks = JSON.parse(readFileSync('evals/duck/tasks.json', 'utf8'));
+  const benchmarkReducer = vm.runInNewContext(source.match(/const createGame[\s\S]*?(?=\n function PreviewPage)/)![0] + '\n({createGame,gameReducer})', {DUCK_LEVELS: levels, RECORDED_AGENT_DEMOS: demos, __DUCK_BENCHMARK_TASKS__: tasks, initialState, step, replay});
+  for (const task of tasks) {
+    let game = benchmarkReducer.gameReducer(benchmarkReducer.createGame(), {type: 'benchmark', taskId: task.id});
+    assert.equal(game.benchmarkTask, task.id);
+    assert.deepEqual(game.activeLevel, task.level);
+    assert.equal(game.replay, null);
+    assert.equal(game.recordedDemo, null);
+    const tools = createDuckTools({getGame: () => game, commit: (action: any) => {game = benchmarkReducer.gameReducer(game, action);}, engine: {isWon, cornerDeadlocks}});
+    const read = () => unwrap(tools.find((t: any) => t.name === 'duck_get_board').execute({}));
+    const board = read();
+    assert.equal(board.mode, 'interactive');
+    assert.equal(board.benchmarkTask, task.id);
+    assert.deepEqual(board.parcels, task.level.parcels);
+    tools.find((t: any) => t.name === 'duck_move').execute({direction: 'down', expectedRevision: board.revision});
+    const moved = read();
+    assert.equal(serialize(moved), serialize(step(task.level, initialState(task.level), 'down')));
+    tools.find((t: any) => t.name === 'duck_restart').execute({expectedRevision: moved.revision});
+    assert.equal(game.benchmarkTask, task.id);
+    assert.equal(serialize(read()), serialize(initialState(task.level)));
+    game = benchmarkReducer.gameReducer(game, {type: 'original'});
+    assert.equal(game.benchmarkTask, null);
+  }
+});

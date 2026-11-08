@@ -1,0 +1,41 @@
+{
+  "status": "frozen-before-baseline",
+  "purpose": "New live-WebMCP baseline -> development-only skill learning -> complete final evaluation and narrated showcase",
+  "model": "TFY-MANAGED/claude-haiku-4-5-20251001",
+  "parameters": "defaults",
+  "iterationLimit": 12,
+  "sandbox": true,
+  "subagents": false,
+  "webSearch": false,
+  "askUserQuestions": false,
+  "generativeUI": false,
+  "compaction": true,
+  "largeResponseOffload": true,
+  "MCPPreloaded": true,
+  "skillPreloaded": false,
+  "tools": [
+    "duck_get_board",
+    "duck_move",
+    "duck_restart",
+    "duck_play_plan"
+  ],
+  "baselineSkill": "agent-skill:stranger-builds/default/duck-planning:1",
+  "taskSHA256": "718beb0f92029817b7af0940556e5ccd2840c7c69ba16998f767c19b7b226f08",
+  "engineSHA256": "b1c7a7a9593b7ed1aa3c027f6daf99221571115f3d51632899e30ea1f3e4a8ae",
+  "instructionsSHA256": "ca1a50625eb0c239ff5fe236a8eb2be1a2c3b0709000d5ab879407ba4740b0f8",
+  "perTaskBudget": {
+    "maxSubmissions": 2,
+    "maxMovesPerSubmission": 100,
+    "initialBoardEachSubmission": true,
+    "freshSessionPerPuzzle": true,
+    "secondAttempt": "Only after failed first attempt; same session receives fresh-turn feedback and board reset. Budget exhaustion counts as a failed attempt. Infrastructure failures are reported separately."
+  },
+  "improvement": {
+    "maxRevisions": 2,
+    "feedback": "Only duck-01 through duck-04 development failures from this new live protocol; no held-out boards, results, saved solutions or repository",
+    "selection": "Evaluate each revision on all four development puzzles. Stop if all four solve; otherwise select best development score, earliest candidate on a tie. No selection using held-out performance.",
+    "final": "Freeze selected candidate before one complete eight-task evaluation. No further revision using final results."
+  },
+  "scoring": "Task solved only when a model-submitted plan produces won:true on the actual website and matches canonical replay; report final-answer score separately if missing/different. All attempts retained.",
+  "comparability": "Same eight inputs as historical benchmark, but new transport and instructions; compare fresh baseline to fresh candidate only. Four held-out arrangements share familiar terrain; no unseen-map claim."
+}

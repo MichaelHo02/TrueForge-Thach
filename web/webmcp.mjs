@@ -8,6 +8,7 @@ export function createDuckTools({getGame, commit, engine, onCall = () => {}, isA
     const at = (items, x, y) => items.some(p => p[0] === x && p[1] === y);
     return {
       mode: game.recordedDemo ? 'recorded-demo' : 'interactive',
+      benchmarkTask: game.benchmarkTask || null,
       route: level.name, seed: game.activeSeed, revision: game.generation,
       coordinates: 'Zero-based [x,y]; x increases right, y increases down.',
       terrain: [...level.terrain], goals: level.goals.map(p => [...p]),

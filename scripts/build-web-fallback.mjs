@@ -7,7 +7,7 @@ const source = await readFile('PreviewPage.jsx', 'utf8');
 await mkdir('dist', { recursive: true });
 await build({
   stdin: {
-    contents: `import React from 'react';\nimport {createRoot} from 'react-dom/client';\nimport {flushSync} from 'react-dom';\nimport {registerDuckWebMCP} from './web/webmcp.mjs';\nimport './PreviewPage.css';\nglobalThis.__DUCK_REGISTER_WEBMCP__ = options => registerDuckWebMCP({...options, commit: action => flushSync(() => options.commit(action))});\n${source}\ncreateRoot(document.getElementById('root')).render(React.createElement(PreviewPage));`,
+    contents: `import React from 'react';\nimport benchmarkTasks from './evals/duck/tasks.json';\nglobalThis.__DUCK_BENCHMARK_TASKS__ = benchmarkTasks;\nimport {createRoot} from 'react-dom/client';\nimport {flushSync} from 'react-dom';\nimport {registerDuckWebMCP} from './web/webmcp.mjs';\nimport './PreviewPage.css';\nglobalThis.__DUCK_REGISTER_WEBMCP__ = options => registerDuckWebMCP({...options, commit: action => flushSync(() => options.commit(action))});\n${source}\ncreateRoot(document.getElementById('root')).render(React.createElement(PreviewPage));`,
     resolveDir: process.cwd(),
     loader: 'jsx',
   },
