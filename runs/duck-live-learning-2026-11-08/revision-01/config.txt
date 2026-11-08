@@ -1,0 +1,86 @@
+Browser tab: 37, Title: "TrueForge", URL: "https://stranger-builds.truefoundry.cloud/trueforge/build-agent".
+0 AXWebArea TrueForge, URL: stranger-builds.truefoundry.cloud/trueforge/build-agent
+	1 container
+		2 container root
+			3 container
+				4 container Sidebar
+					5 button Description: Start new chat, Help: New chat
+					6 button Description: Start new agent, Help: New Agent
+					7 button Agents
+					8 button Sessions
+					9 button Schedules
+					10 button Environments
+				11 container
+					12 link Description: Documentation, Value: trueforge.dev/
+					13 button Description: Switch to dark theme, Help: Dark theme
+					14 container Thạch Hồ Lê Minh
+						15 text T
+						16 text Thạch Hồ Lê Minh
+				17 container Agent Config
+					18 heading Agent Config, Value: 2
+						19 text Agent Config
+					20 container
+						21 pop up button (collapsed) Description: Edit Model, Secondary Actions: Expand
+							22 text claude-haiku-4-5-20251001
+							23 text 200K
+						24 pop up button (collapsed) Description: Model settings, Secondary Actions: Expand
+						25 button Edit model settings
+							26 definition list
+								27 text model settings: defaults
+					28 container
+						29 heading Instructions, Value: 3
+							30 text Instructions
+						31 text Define the agent's role, goals, and behavior.
+						32 button Edit Instructions
+							33 text You improve the Duck Delivery planning skill from development failures. Write general methods that work across Sokoban puzzles and fit the fixed execution budget. Do not solve or encode example puzzles. Do not change the model, system instructions, tools, budgets, canonical engine or scorer. Return only the complete revised SKILL.md with its original YAML frontmatter, no code fences or commentary.
+					34 button Runtime Config Control execution and context behavior. Edit Runtime Config iteration limit: 12 sandbox: off compaction: on large tool response: on dynamic sub-agents: off generative UI: off ask user questions: off web search: off
+						35 heading Runtime Config, Value: 3
+							36 text Runtime Config
+						37 text Control execution and context behavior.
+						38 button Edit Runtime Config
+						39 definition list
+							40 container iteration limit:
+								41 text iteration limit :
+							42 text 12
+							43 container sandbox:
+								44 text sandbox :
+							45 text off
+							46 container compaction:
+								47 text compaction :
+							48 text on
+							49 container large tool response:
+								50 text large tool response :
+							51 text on
+							52 container dynamic sub-agents:
+								53 text dynamic sub-agents :
+							54 text off
+							55 container generative UI:
+								56 text generative UI :
+							57 text off
+							58 container ask user questions:
+								59 text ask user questions :
+							60 text off
+							61 container web search:
+								62 text web search :
+							63 text off
+					64 button MCP Servers Add MCP server
+						65 heading MCP Servers, Value: 3
+							66 text MCP Servers
+						67 button Add MCP server
+					68 button Skills Add skill No skills selected.
+						69 heading Skills, Value: 3
+							70 text Skills
+						71 button Add skill
+						72 text No skills selected.
+				73 heading New Agent, Value: 1
+					74 text New Agent
+				75 button Reset, Help: Reset playground
+				76 button Save Agent
+				77 container
+					78 heading Start building a new Agent, Value: 1
+						79 text Start building a new Agent
+					80 text entry area (settable) Message input
+					81 button Attach a file
+					82 button (disabled) Send message
+
+The focused UI element is 0 AXWebArea TrueForge, URL: stranger-builds.truefoundry.cloud/trueforge/build-agent

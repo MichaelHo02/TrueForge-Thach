@@ -28,7 +28,7 @@ test('retained live browser receipts match every canonical transition and preser
   const summary = read('summary.json');
   assert.equal(summary.trials.filter((trial: any) => trial.result === 'failed').length, 2);
   assert.equal(summary.benchmark, false);
-  assert.equal(summary.skillSHA256, createHash('sha256').update(readFileSync('agent/skills/duck-planning/SKILL.md')).digest('hex'));
+  assert.equal(summary.skillSHA256, createHash('sha256').update(readFileSync('runs/duck-improvement-02/candidate-SKILL.md')).digest('hex'));
 });
 
 test('TrueForge model-originated plan equals the actual native moves and returned live result', () => {

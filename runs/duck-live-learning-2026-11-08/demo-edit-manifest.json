@@ -1,0 +1,106 @@
+{
+  "duration": 54,
+  "fps": 15,
+  "source": "Actual published-website captures after each native WebMCP call; no reconstructed board imagery",
+  "scenes": [
+    {
+      "seconds": [
+        0,
+        8.72
+      ],
+      "source": "final-v5 duck-02 attempt1, complete 15-move solve"
+    },
+    {
+      "seconds": [
+        8.72,
+        12.8
+      ],
+      "source": "baseline duck-02 initial board and actual iteration-limit error"
+    },
+    {
+      "seconds": [
+        12.8,
+        17.38
+      ],
+      "source": "actual v5 TrueForge learning output"
+    },
+    {
+      "seconds": [
+        17.38,
+        27.88
+      ],
+      "source": "final-v5 duck-04 attempt1, complete 13-move solve"
+    },
+    {
+      "seconds": [
+        27.88,
+        39.46
+      ],
+      "source": "final-v5 duck-06 attempt1, complete 15-move three-parcel held-out solve"
+    },
+    {
+      "seconds": [
+        39.46,
+        54
+      ],
+      "source": "All eight audited results; failed duck-05 included"
+    }
+  ],
+  "score": {
+    "baseline": 62.5,
+    "finalV5": 87.5,
+    "heldoutBaseline": 50,
+    "heldoutFinal": 75
+  },
+  "narration": "OpenAI gpt-4o-mini-tts coral, speed1.0, unchanged timing",
+  "captions": "Whisper word timestamps; two numeric token pairs merged with original start/end times; TrueForge capitalization normalized",
+  "review": "Source frames, text/transcript comparison, encoded frame inspection and full ffmpeg decode; technical audio check, not a full listening review",
+  "sourceHashes": {
+    "final-v5-duck-02-a1-1794129378226-8b5d9.png": "d5d1b0132e08fec7f8d8d40df99149d5fcaf0a21ab45d32861f10dc7859d2c3f",
+    "final-v5-duck-02-a1-1794129446794-3d82d.png": "117961839cea84720a67c9381ed046293c4ad19caa35f9aa2fad2274b0fc9947",
+    "final-v5-duck-02-a1-1794129449660-3d82d.png": "f7371be93ba0b95a54b97b1d9e18d57b50e4d9ca899c5e4353dd3e58f3af0d53",
+    "final-v5-duck-02-a1-1794129452512-3d82d.png": "bb399c2738967f9e541fd6d83f1489ac294947ea27f4eeb59154403f830a6aef",
+    "final-v5-duck-02-a1-1794129456714-3d82d.png": "4a5cd661928a20bf0e4164ef0520e534ab88ba5effe711de1b5a8e552d4a8d9d",
+    "final-v5-duck-02-a1-1794129459467-3d82d.png": "1c73b1101c9561e2c2effed1962169aba86134db3037c2178417d31c04d301e3",
+    "final-v5-duck-02-a1-1794129462123-3d82d.png": "55c715018ea9b1eae702381fea2ef9ecaa5b9104e0c6ab0ce719206b9e18aa92",
+    "final-v5-duck-02-a1-1794129464832-3d82d.png": "287cbc9b8e69911a4824675017375f5f554efbcd613ba8c356a14f839b283c58",
+    "final-v5-duck-02-a1-1794129467635-3d82d.png": "16c2cf9fda9c64549eac4a46911fe627970e99d13158db46e65aad615888d306",
+    "final-v5-duck-02-a1-1794129474065-3d82d.png": "ae1035d059c83182ac4d3e95d7146ee3ceaa10156ba8039becb3c40b16e40d5d",
+    "final-v5-duck-02-a1-1794129476232-3d82d.png": "3583e17589619aacd13fc6cc6590b6382f80c73d0785ca5b5c8aaccc4c66d564",
+    "final-v5-duck-02-a1-1794129484337-3d82d.png": "ff14202e5f37c6deee3459f6668adeab661d73c72982b9f6aa7e3e1ee0ba8771",
+    "final-v5-duck-02-a1-1794129486720-3d82d.png": "32839fe53611130ce924685e13133dd2e9bc8311fe80152fb462c1783ed92933",
+    "final-v5-duck-02-a1-1794129488764-3d82d.png": "d4120d9ca0fd4c71e62eda3dfed16066eca5e3c99b16daf62ab278837cbf46cd",
+    "final-v5-duck-02-a1-1794129491168-3d82d.png": "f5eba9b8382160ef55c59f1332ba8baf66997342bf643c9a2b2b5f2d155ec377",
+    "final-v5-duck-02-a1-1794129493591-3d82d.png": "7e862bc982c777c0ab5c0bdedacf55512d9ce50516dcd4b882b2c66363ee9a6b",
+    "final-v5-duck-04-a1-1794129709702-487ae.png": "b539e95a3217ee3777717cf7421683cb886b897437781157f96362b55ffd85d3",
+    "final-v5-duck-04-a1-1794129801158-25a32.png": "c461f025973e0424d7afe3f07f4579d583c1aa302e00b0d5c493fe24d0b29c8d",
+    "final-v5-duck-04-a1-1794129803447-25a32.png": "b904ef70c82ebd42c8c60b462967e9ff1708e4561039eb410494a0fd6f3e817d",
+    "final-v5-duck-04-a1-1794129805610-25a32.png": "ae80479602b2f7c449b71c5de7685808f7402e4fb692c4b971fb4ab7879be538",
+    "final-v5-duck-04-a1-1794129808519-25a32.png": "174430f948b29c40ac8a5b4a72ab48bc23d8428c50bc0e6cac59142ba943a496",
+    "final-v5-duck-04-a1-1794129811197-25a32.png": "d0819e12a9a987c956b317d92601ab65d1d81466eb863e131976711679cc5229",
+    "final-v5-duck-04-a1-1794129813435-25a32.png": "d117ae5d1a9a2ee41a602d12b35fcdb13950f106ae3370954bb5ee3a6cfe85c3",
+    "final-v5-duck-04-a1-1794129815837-25a32.png": "51bbb242048f05cc53e82d4241e9c82452c8c4d23bf905b257971aea6f072da3",
+    "final-v5-duck-04-a1-1794129818000-25a32.png": "490472198be1aa3cbddc175261bce05937d2578d2a63070209aa31f54c309b29",
+    "final-v5-duck-04-a1-1794129820251-25a32.png": "25b3dd960d1a305cf1aa018d856250f6a4f0623ffce5e0fc0b94d44621a1394a",
+    "final-v5-duck-04-a1-1794129830017-25a32.png": "e5b0a2b75250669d5beba9f7df6d5169e5cfa31e13fe9193fa3292e0bdd3aee7",
+    "final-v5-duck-04-a1-1794129833743-25a32.png": "d6d6559695d2c1447592d6437195fba55050753219448cf1e6db6b40e7676b29",
+    "final-v5-duck-04-a1-1794129835926-25a32.png": "7b09bd5beb4fac868661ef391146f80eb1033d68977fc4764295fdbe47b0e5a1",
+    "final-v5-duck-04-a1-1794129838958-25a32.png": "ae62d685ae84a378aaff7766b447e58c60b40de2d2529a2d7ebb864d1e088b37",
+    "final-v5-duck-06-a1-1794130210752-d189c.png": "488d467b3545d8938b18d0ed32ba9548d3a1f7c1875f2adac7cbacb6bd54c53b",
+    "final-v5-duck-06-a1-1794130280820-4b190.png": "203c06b3748a2753c19f09b7b54657f0b25d5cee8d5ac66317c504c3d38621f5",
+    "final-v5-duck-06-a1-1794130283629-4b190.png": "b1026359f9aaa65a1e781e78b276ca64da67341799c04d1ce72494aeb4d7bd65",
+    "final-v5-duck-06-a1-1794130286027-4b190.png": "d6044e115c69025e9c6e469a649b08f995e87409a85e93feeca101932aed784e",
+    "final-v5-duck-06-a1-1794130289754-4b190.png": "444ad28342b6fdbb4773ad3b85810f2e0f4f271571386b204c869c1d816f0a7e",
+    "final-v5-duck-06-a1-1794130292637-4b190.png": "556d3a3a71d7717353953f4de0cab3bebc72c1194a3aedb6931ebf672210b081",
+    "final-v5-duck-06-a1-1794130295243-4b190.png": "fe26cd76eb1b67da92d3b0e414f34757c488f14dc5f2848f80eee91945e5e120",
+    "final-v5-duck-06-a1-1794130297512-4b190.png": "ff1369b76b512633dc2f3836e7f4713ba77ba59023e30b99609330db2d0a5e2e",
+    "final-v5-duck-06-a1-1794130300159-4b190.png": "5ec58a1bd246ac5b87a808642a46f53bc1e93d619bebbcba714ba42a89e27713",
+    "final-v5-duck-06-a1-1794130304282-4b190.png": "db06d64fda915da8dfb4b359ffa6c4fa236710676936286f03688fd0527baa8e",
+    "final-v5-duck-06-a1-1794130307052-4b190.png": "5c51b7bf20573434ce18b7db6e264c1fcb56badce1a2b78d900635048a646123",
+    "final-v5-duck-06-a1-1794130309517-4b190.png": "df9ed5a6f41f8b204ce3399ada26f3a5bc6987080c29595a68f1342cd3df04e3",
+    "final-v5-duck-06-a1-1794130312247-4b190.png": "e77e056ebf4fb86dd877af38f9e81675fa6412ac20f650bb50c97f4d5739b9e9",
+    "final-v5-duck-06-a1-1794130322761-4b190.png": "0ac4ccf3932b5a504fe26bcee944adbd5e3d9ff188cd748315cdbccb66188a77",
+    "final-v5-duck-06-a1-1794130325037-4b190.png": "a22b930fbbd67959f0b2ebaaa93aa6f6ca8d4f70676c3b75ea0bf98988b0db20",
+    "final-v5-duck-06-a1-1794130327361-4b190.png": "2e4ddeed7db6a0072334e8f51afd0a22854779894dde5f174bfc38121b80708e"
+  }
+}

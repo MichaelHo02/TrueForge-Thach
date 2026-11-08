@@ -6,8 +6,8 @@
     "displayName": "claude-haiku-4-5-20251001"
   },
   "skill": "duck-planning",
-  "status": "v3 promoted after three baseline rounds and two repeated comparison rounds; see VERDICT.md",
-  "registeredSkill": "agent-skill:stranger-builds/default/duck-planning:3",
+  "status": "v5 selected from development-only revisions and verified at 7/8 live WebMCP wins; see runs/duck-live-learning-2026-11-08/REPORT.md",
+  "registeredSkill": "agent-skill:stranger-builds/default/duck-planning:5",
   "runtime": {
     "iterationLimit": 12,
     "sandbox": true,

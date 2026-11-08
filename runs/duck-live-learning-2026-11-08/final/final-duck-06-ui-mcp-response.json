@@ -1,0 +1,1158 @@
+{
+  "transport": "native-browser-webmcp",
+  "attempts": 15,
+  "board": {
+    "mode": "interactive",
+    "benchmarkTask": "duck-06",
+    "route": "Benchmark 06",
+    "seed": null,
+    "revision": 318,
+    "coordinates": "Zero-based [x,y]; x increases right, y increases down.",
+    "terrain": [
+      "#########",
+      "#       #",
+      "#  #    #",
+      "#       #",
+      "#    #  #",
+      "#       #",
+      "#########"
+    ],
+    "goals": [
+      [
+        2,
+        1
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        6,
+        5
+      ]
+    ],
+    "duck": [
+      5,
+      5
+    ],
+    "parcels": [
+      [
+        2,
+        1
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        6,
+        5
+      ]
+    ],
+    "moves": 15,
+    "pushes": 8,
+    "won": true,
+    "cornerDeadlocks": [],
+    "rows": [
+      "#########",
+      "# *   * #",
+      "#  #    #",
+      "#       #",
+      "#    #  #",
+      "#    @* #",
+      "#########"
+    ],
+    "legend": {
+      "#": "wall",
+      " ": "floor",
+      ".": "goal",
+      "$": "parcel",
+      "*": "parcel on goal",
+      "@": "duck",
+      "+": "duck on goal"
+    },
+    "outcome": "moved"
+  },
+  "steps": [
+    {
+      "mode": "interactive",
+      "benchmarkTask": "duck-06",
+      "route": "Benchmark 06",
+      "seed": null,
+      "revision": 304,
+      "coordinates": "Zero-based [x,y]; x increases right, y increases down.",
+      "terrain": [
+        "#########",
+        "#       #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "#       #",
+        "#########"
+      ],
+      "goals": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "duck": [
+        6,
+        4
+      ],
+      "parcels": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "moves": 1,
+      "pushes": 1,
+      "won": false,
+      "cornerDeadlocks": [],
+      "rows": [
+        "#########",
+        "# *   . #",
+        "#  #    #",
+        "#     $ #",
+        "# $  #@ #",
+        "#     . #",
+        "#########"
+      ],
+      "legend": {
+        "#": "wall",
+        " ": "floor",
+        ".": "goal",
+        "$": "parcel",
+        "*": "parcel on goal",
+        "@": "duck",
+        "+": "duck on goal"
+      },
+      "outcome": "moved"
+    },
+    {
+      "mode": "interactive",
+      "benchmarkTask": "duck-06",
+      "route": "Benchmark 06",
+      "seed": null,
+      "revision": 305,
+      "coordinates": "Zero-based [x,y]; x increases right, y increases down.",
+      "terrain": [
+        "#########",
+        "#       #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "#       #",
+        "#########"
+      ],
+      "goals": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "duck": [
+        6,
+        3
+      ],
+      "parcels": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "moves": 2,
+      "pushes": 2,
+      "won": false,
+      "cornerDeadlocks": [],
+      "rows": [
+        "#########",
+        "# *   . #",
+        "#  #  $ #",
+        "#     @ #",
+        "# $  #  #",
+        "#     . #",
+        "#########"
+      ],
+      "legend": {
+        "#": "wall",
+        " ": "floor",
+        ".": "goal",
+        "$": "parcel",
+        "*": "parcel on goal",
+        "@": "duck",
+        "+": "duck on goal"
+      },
+      "outcome": "moved"
+    },
+    {
+      "mode": "interactive",
+      "benchmarkTask": "duck-06",
+      "route": "Benchmark 06",
+      "seed": null,
+      "revision": 306,
+      "coordinates": "Zero-based [x,y]; x increases right, y increases down.",
+      "terrain": [
+        "#########",
+        "#       #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "#       #",
+        "#########"
+      ],
+      "goals": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "duck": [
+        6,
+        2
+      ],
+      "parcels": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "moves": 3,
+      "pushes": 3,
+      "won": false,
+      "cornerDeadlocks": [],
+      "rows": [
+        "#########",
+        "# *   * #",
+        "#  #  @ #",
+        "#       #",
+        "# $  #  #",
+        "#     . #",
+        "#########"
+      ],
+      "legend": {
+        "#": "wall",
+        " ": "floor",
+        ".": "goal",
+        "$": "parcel",
+        "*": "parcel on goal",
+        "@": "duck",
+        "+": "duck on goal"
+      },
+      "outcome": "moved"
+    },
+    {
+      "mode": "interactive",
+      "benchmarkTask": "duck-06",
+      "route": "Benchmark 06",
+      "seed": null,
+      "revision": 307,
+      "coordinates": "Zero-based [x,y]; x increases right, y increases down.",
+      "terrain": [
+        "#########",
+        "#       #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "#       #",
+        "#########"
+      ],
+      "goals": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "duck": [
+        6,
+        3
+      ],
+      "parcels": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "moves": 4,
+      "pushes": 3,
+      "won": false,
+      "cornerDeadlocks": [],
+      "rows": [
+        "#########",
+        "# *   * #",
+        "#  #    #",
+        "#     @ #",
+        "# $  #  #",
+        "#     . #",
+        "#########"
+      ],
+      "legend": {
+        "#": "wall",
+        " ": "floor",
+        ".": "goal",
+        "$": "parcel",
+        "*": "parcel on goal",
+        "@": "duck",
+        "+": "duck on goal"
+      },
+      "outcome": "moved"
+    },
+    {
+      "mode": "interactive",
+      "benchmarkTask": "duck-06",
+      "route": "Benchmark 06",
+      "seed": null,
+      "revision": 308,
+      "coordinates": "Zero-based [x,y]; x increases right, y increases down.",
+      "terrain": [
+        "#########",
+        "#       #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "#       #",
+        "#########"
+      ],
+      "goals": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "duck": [
+        5,
+        3
+      ],
+      "parcels": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "moves": 5,
+      "pushes": 3,
+      "won": false,
+      "cornerDeadlocks": [],
+      "rows": [
+        "#########",
+        "# *   * #",
+        "#  #    #",
+        "#    @  #",
+        "# $  #  #",
+        "#     . #",
+        "#########"
+      ],
+      "legend": {
+        "#": "wall",
+        " ": "floor",
+        ".": "goal",
+        "$": "parcel",
+        "*": "parcel on goal",
+        "@": "duck",
+        "+": "duck on goal"
+      },
+      "outcome": "moved"
+    },
+    {
+      "mode": "interactive",
+      "benchmarkTask": "duck-06",
+      "route": "Benchmark 06",
+      "seed": null,
+      "revision": 309,
+      "coordinates": "Zero-based [x,y]; x increases right, y increases down.",
+      "terrain": [
+        "#########",
+        "#       #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "#       #",
+        "#########"
+      ],
+      "goals": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "duck": [
+        4,
+        3
+      ],
+      "parcels": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "moves": 6,
+      "pushes": 3,
+      "won": false,
+      "cornerDeadlocks": [],
+      "rows": [
+        "#########",
+        "# *   * #",
+        "#  #    #",
+        "#   @   #",
+        "# $  #  #",
+        "#     . #",
+        "#########"
+      ],
+      "legend": {
+        "#": "wall",
+        " ": "floor",
+        ".": "goal",
+        "$": "parcel",
+        "*": "parcel on goal",
+        "@": "duck",
+        "+": "duck on goal"
+      },
+      "outcome": "moved"
+    },
+    {
+      "mode": "interactive",
+      "benchmarkTask": "duck-06",
+      "route": "Benchmark 06",
+      "seed": null,
+      "revision": 310,
+      "coordinates": "Zero-based [x,y]; x increases right, y increases down.",
+      "terrain": [
+        "#########",
+        "#       #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "#       #",
+        "#########"
+      ],
+      "goals": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "duck": [
+        3,
+        3
+      ],
+      "parcels": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "moves": 7,
+      "pushes": 3,
+      "won": false,
+      "cornerDeadlocks": [],
+      "rows": [
+        "#########",
+        "# *   * #",
+        "#  #    #",
+        "#  @    #",
+        "# $  #  #",
+        "#     . #",
+        "#########"
+      ],
+      "legend": {
+        "#": "wall",
+        " ": "floor",
+        ".": "goal",
+        "$": "parcel",
+        "*": "parcel on goal",
+        "@": "duck",
+        "+": "duck on goal"
+      },
+      "outcome": "moved"
+    },
+    {
+      "mode": "interactive",
+      "benchmarkTask": "duck-06",
+      "route": "Benchmark 06",
+      "seed": null,
+      "revision": 311,
+      "coordinates": "Zero-based [x,y]; x increases right, y increases down.",
+      "terrain": [
+        "#########",
+        "#       #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "#       #",
+        "#########"
+      ],
+      "goals": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "duck": [
+        2,
+        3
+      ],
+      "parcels": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "moves": 8,
+      "pushes": 3,
+      "won": false,
+      "cornerDeadlocks": [],
+      "rows": [
+        "#########",
+        "# *   * #",
+        "#  #    #",
+        "# @     #",
+        "# $  #  #",
+        "#     . #",
+        "#########"
+      ],
+      "legend": {
+        "#": "wall",
+        " ": "floor",
+        ".": "goal",
+        "$": "parcel",
+        "*": "parcel on goal",
+        "@": "duck",
+        "+": "duck on goal"
+      },
+      "outcome": "moved"
+    },
+    {
+      "mode": "interactive",
+      "benchmarkTask": "duck-06",
+      "route": "Benchmark 06",
+      "seed": null,
+      "revision": 312,
+      "coordinates": "Zero-based [x,y]; x increases right, y increases down.",
+      "terrain": [
+        "#########",
+        "#       #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "#       #",
+        "#########"
+      ],
+      "goals": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "duck": [
+        2,
+        4
+      ],
+      "parcels": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "moves": 9,
+      "pushes": 4,
+      "won": false,
+      "cornerDeadlocks": [],
+      "rows": [
+        "#########",
+        "# *   * #",
+        "#  #    #",
+        "#       #",
+        "# @  #  #",
+        "# $   . #",
+        "#########"
+      ],
+      "legend": {
+        "#": "wall",
+        " ": "floor",
+        ".": "goal",
+        "$": "parcel",
+        "*": "parcel on goal",
+        "@": "duck",
+        "+": "duck on goal"
+      },
+      "outcome": "moved"
+    },
+    {
+      "mode": "interactive",
+      "benchmarkTask": "duck-06",
+      "route": "Benchmark 06",
+      "seed": null,
+      "revision": 313,
+      "coordinates": "Zero-based [x,y]; x increases right, y increases down.",
+      "terrain": [
+        "#########",
+        "#       #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "#       #",
+        "#########"
+      ],
+      "goals": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "duck": [
+        1,
+        4
+      ],
+      "parcels": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "moves": 10,
+      "pushes": 4,
+      "won": false,
+      "cornerDeadlocks": [],
+      "rows": [
+        "#########",
+        "# *   * #",
+        "#  #    #",
+        "#       #",
+        "#@   #  #",
+        "# $   . #",
+        "#########"
+      ],
+      "legend": {
+        "#": "wall",
+        " ": "floor",
+        ".": "goal",
+        "$": "parcel",
+        "*": "parcel on goal",
+        "@": "duck",
+        "+": "duck on goal"
+      },
+      "outcome": "moved"
+    },
+    {
+      "mode": "interactive",
+      "benchmarkTask": "duck-06",
+      "route": "Benchmark 06",
+      "seed": null,
+      "revision": 314,
+      "coordinates": "Zero-based [x,y]; x increases right, y increases down.",
+      "terrain": [
+        "#########",
+        "#       #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "#       #",
+        "#########"
+      ],
+      "goals": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "duck": [
+        1,
+        5
+      ],
+      "parcels": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "moves": 11,
+      "pushes": 4,
+      "won": false,
+      "cornerDeadlocks": [],
+      "rows": [
+        "#########",
+        "# *   * #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "#@$   . #",
+        "#########"
+      ],
+      "legend": {
+        "#": "wall",
+        " ": "floor",
+        ".": "goal",
+        "$": "parcel",
+        "*": "parcel on goal",
+        "@": "duck",
+        "+": "duck on goal"
+      },
+      "outcome": "moved"
+    },
+    {
+      "mode": "interactive",
+      "benchmarkTask": "duck-06",
+      "route": "Benchmark 06",
+      "seed": null,
+      "revision": 315,
+      "coordinates": "Zero-based [x,y]; x increases right, y increases down.",
+      "terrain": [
+        "#########",
+        "#       #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "#       #",
+        "#########"
+      ],
+      "goals": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "duck": [
+        2,
+        5
+      ],
+      "parcels": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "moves": 12,
+      "pushes": 5,
+      "won": false,
+      "cornerDeadlocks": [],
+      "rows": [
+        "#########",
+        "# *   * #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "# @$  . #",
+        "#########"
+      ],
+      "legend": {
+        "#": "wall",
+        " ": "floor",
+        ".": "goal",
+        "$": "parcel",
+        "*": "parcel on goal",
+        "@": "duck",
+        "+": "duck on goal"
+      },
+      "outcome": "moved"
+    },
+    {
+      "mode": "interactive",
+      "benchmarkTask": "duck-06",
+      "route": "Benchmark 06",
+      "seed": null,
+      "revision": 316,
+      "coordinates": "Zero-based [x,y]; x increases right, y increases down.",
+      "terrain": [
+        "#########",
+        "#       #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "#       #",
+        "#########"
+      ],
+      "goals": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "duck": [
+        3,
+        5
+      ],
+      "parcels": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "moves": 13,
+      "pushes": 6,
+      "won": false,
+      "cornerDeadlocks": [],
+      "rows": [
+        "#########",
+        "# *   * #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "#  @$ . #",
+        "#########"
+      ],
+      "legend": {
+        "#": "wall",
+        " ": "floor",
+        ".": "goal",
+        "$": "parcel",
+        "*": "parcel on goal",
+        "@": "duck",
+        "+": "duck on goal"
+      },
+      "outcome": "moved"
+    },
+    {
+      "mode": "interactive",
+      "benchmarkTask": "duck-06",
+      "route": "Benchmark 06",
+      "seed": null,
+      "revision": 317,
+      "coordinates": "Zero-based [x,y]; x increases right, y increases down.",
+      "terrain": [
+        "#########",
+        "#       #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "#       #",
+        "#########"
+      ],
+      "goals": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "duck": [
+        4,
+        5
+      ],
+      "parcels": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "moves": 14,
+      "pushes": 7,
+      "won": false,
+      "cornerDeadlocks": [],
+      "rows": [
+        "#########",
+        "# *   * #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "#   @$. #",
+        "#########"
+      ],
+      "legend": {
+        "#": "wall",
+        " ": "floor",
+        ".": "goal",
+        "$": "parcel",
+        "*": "parcel on goal",
+        "@": "duck",
+        "+": "duck on goal"
+      },
+      "outcome": "moved"
+    },
+    {
+      "mode": "interactive",
+      "benchmarkTask": "duck-06",
+      "route": "Benchmark 06",
+      "seed": null,
+      "revision": 318,
+      "coordinates": "Zero-based [x,y]; x increases right, y increases down.",
+      "terrain": [
+        "#########",
+        "#       #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "#       #",
+        "#########"
+      ],
+      "goals": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "duck": [
+        5,
+        5
+      ],
+      "parcels": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "moves": 15,
+      "pushes": 8,
+      "won": true,
+      "cornerDeadlocks": [],
+      "rows": [
+        "#########",
+        "# *   * #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "#    @* #",
+        "#########"
+      ],
+      "legend": {
+        "#": "wall",
+        " ": "floor",
+        ".": "goal",
+        "$": "parcel",
+        "*": "parcel on goal",
+        "@": "duck",
+        "+": "duck on goal"
+      },
+      "outcome": "moved"
+    }
+  ]
+}

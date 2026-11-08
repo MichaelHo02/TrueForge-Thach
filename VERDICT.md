@@ -1,3 +1,5 @@
+> Historical sandbox-only v3 experiment. The newer complete live WebMCP comparison promoted v5 at 7/8; see [the live report](runs/duck-live-learning-2026-11-08/REPORT.md). The results below remain unchanged.
+
 # Duck Delivery skill improvement verdict
 
 **PASS on the precommitted gate: promote the exact agent-authored v3 skill.** These are real hosted TrueForge sessions, scored locally with the frozen canonical CLI; they are not platform-certified scores.

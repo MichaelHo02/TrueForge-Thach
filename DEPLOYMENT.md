@@ -2,7 +2,11 @@
 
 Public demo: https://duck-delivery.vercel.app
 
-## Current uplift deployment
+## Live benchmark loader, 8 November 2026
+
+Production deployment `dpl_3GTVLperpn6kkht1GirCm9fVzkRH` is READY at the public URL and includes the eight-input live benchmark loader from `8f120e1`. The loader uses exact frozen puzzles with no saved plans. Real model sessions changed these displayed boards through native WebMCP; the complete live comparison and all failures are retained in `runs/duck-live-learning-2026-11-08/REPORT.md`. The engine/scorer/task freeze is unchanged. Only built static files were deployed.
+
+## Earlier uplift deployment
 
 Production deployment `dpl_HNUYZyFc9ERD6TymfRJAojVZQHqV` is READY and serves the six-route uplift. It uses Shelled's standalone `web/entry.jsx`, `web/react-shim.jsx`, `scripts/build-web.ts`, and linked `app.css`; the initial fallback below is retained as history. Only `dist/index.html`, `dist/app.js`, and `dist/app.css` were uploaded. The production browser loaded the sorting-floor version, solved Dock 04 with three parcels at 15 moves/4 pushes, undid the win to 14/3, and verified replay import/reset. No browser errors were observed.
 

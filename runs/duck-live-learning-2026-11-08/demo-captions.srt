@@ -1,0 +1,91 @@
+1
+00:00:00,000 --> 00:00:04,060
+Watch TrueForge play Duck Delivery through WebMCP
+
+2
+00:00:04,060 --> 00:00:05,480
+on our real website
+
+3
+00:00:06,400 --> 00:00:07,960
+Shelled AI helped build the game
+
+4
+00:00:08,720 --> 00:00:10,920
+We re ran all eight baseline puzzles
+
+5
+00:00:11,600 --> 00:00:12,020
+Five wins
+
+6
+00:00:12,800 --> 00:00:15,180
+TrueForge then rewrote the agent's skill using
+
+7
+00:00:15,180 --> 00:00:16,740
+development failures only
+
+8
+00:00:17,380 --> 00:00:19,660
+Now it searches legal board states with
+
+9
+00:00:19,660 --> 00:00:20,860
+the game's own engine
+
+10
+00:00:21,720 --> 00:00:24,260
+validates a complete plan and executes those
+
+11
+00:00:24,260 --> 00:00:25,820
+moves through the browser bridge
+
+12
+00:00:26,240 --> 00:00:28,960
+These are three fresh runs Two parcels
+
+13
+00:00:29,360 --> 00:00:32,140
+another arrangement and three parcels on a
+
+14
+00:00:32,140 --> 00:00:33,400
+puzzle held out of skill feedback
+
+15
+00:00:34,140 --> 00:00:36,640
+Every move shown is a native WebMCP
+
+16
+00:00:36,640 --> 00:00:39,000
+call captured from the published game
+
+17
+00:00:39,460 --> 00:00:40,780
+Across all eight puzzles
+
+18
+00:00:41,360 --> 00:00:45,440
+live wins rose from 62.5 to 87.5
+
+19
+00:00:45,440 --> 00:00:45,720
+percent
+
+20
+00:00:46,340 --> 00:00:48,080
+One held out puzzle still failed
+
+21
+00:00:48,940 --> 00:00:50,140
+Same model and budgets
+
+22
+00:00:50,880 --> 00:00:51,300
+Improved skill
+
+23
+00:00:51,940 --> 00:00:52,580
+Unchanged weights

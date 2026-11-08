@@ -1,0 +1,46 @@
+{
+  "filename": "duck-delivery-full-live-benchmark.mp4",
+  "sha256": "f14ccdfb26e571b116581087fc0bd706797940fa4c21b560473692db77921447",
+  "durationSeconds": 54,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 15,
+  "completeRuns": [
+    {
+      "task": "duck-02",
+      "phase": "final-v5",
+      "attempt": 1
+    },
+    {
+      "task": "duck-04",
+      "phase": "final-v5",
+      "attempt": 1
+    },
+    {
+      "task": "duck-06",
+      "phase": "final-v5",
+      "attempt": 1
+    }
+  ],
+  "source": "Actual published website captures and native WebMCP receipts; waiting and pacing edited",
+  "voiceover": {
+    "provider": "OpenAI",
+    "model": "gpt-4o-mini-tts",
+    "voice": "coral",
+    "speed": 1.0
+  },
+  "captions": "Whisper word timestamps with documented numeric-token merging",
+  "scores": {
+    "baselineWins": 5,
+    "finalWins": 7,
+    "total": 8,
+    "baselineHeldoutWins": 2,
+    "finalHeldoutWins": 3,
+    "heldoutTotal": 4
+  },
+  "failureIncluded": "duck-05",
+  "editManifestSha256": "209157a14bb23c80657214b735bf6743d1ac5ba68bb28c6bdf3c7369cf6fc918",
+  "status": "Local review artifact; not posted or submitted"
+}

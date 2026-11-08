@@ -4,7 +4,7 @@ A duck pushes parcels onto delivery pads in a small Sokoban warehouse. Built thr
 
 **Play:** https://duck-delivery.vercel.app
 
-Six routes progress from one parcel to three. The game includes keyboard/touch controls, undo/restart, conservative corner-trap warnings, a verified replay lab, three recorded agent examples, and live browser-agent control through WebMCP.
+Six routes progress from one parcel to three. The game includes keyboard/touch controls, undo/restart, conservative corner-trap warnings, a verified replay lab, three recorded agent examples, live browser-agent control through WebMCP, and a live benchmark loader for all eight frozen puzzles.
 
 ## Run locally
 
@@ -21,6 +21,8 @@ Open http://127.0.0.1:4173. Static game play needs no model credentials. Never e
 The canonical rules live in `sokoban/engine.ts`. `npm run build:preview-engine` generates the browser artifact and Shelled-compatible preview block after engine changes; commit those outputs together. `verify` and the production `build` check freshness without first regenerating away a stale-input failure.
 
 ## TrueForge setup
+
+**Latest live benchmark:** a fresh v1 baseline won **5/8 (62.5%)**; the development-selected v5 skill won **7/8 (87.5%)** through native WebMCP on the published website. Held out: **50% → 75%**. All eight puzzles, failed revisions/attempts, model requests and canonical receipts are retained in [the complete live report](runs/duck-live-learning-2026-11-08/REPORT.md). This new live-tool metric is separate from the historical sandbox-only results below.
 
 Three real baseline rounds scored 25%, 0%, and 37.5%. The agent-authored v3 skill reached **75% overall / 50% held out in both comparison rounds**, passing the precommitted gate. V2 failed and is retained in the report. See [VERDICT.md](VERDICT.md) for raw evidence, the exact skill change and small-sample limitations.
 
@@ -39,7 +41,7 @@ The verified setup is already frozen in `evals/duck/frozen.json`; do not overwri
 
 - **Task and score:** eight fixed Sokoban puzzles; score = 100 × puzzles solved / 8, with development/holdout breakdowns.
 - **Run 1 → run N:** 25% in baseline round 1; v3 reached 75% in both comparisons. The other baselines scored 0% and 37.5%.
-- **The change that did it:** the agent rewrote its skill using failed development traces; plan completely, validate once, then submit. V2 failed before v3 passed the gate.
+- **The historical change that did it:** the agent rewrote its skill using failed development traces; plan completely, validate once, then submit. V2 failed before v3 passed the gate.
 - **What the agent learned:** a reusable planning/submission procedure; model weights stayed unchanged.
 - **What still fails:** see [EDGE_CASES.md](EDGE_CASES.md) and [VERDICT.md](VERDICT.md). Eight puzzles share warehouse walls; no unseen-map generalization claim.
 
@@ -79,4 +81,4 @@ A browser agent can discover `duck_get_board`, `duck_move` and `duck_restart` an
 
 Ask a WebMCP-capable browser agent: **“Read the current Duck Delivery board and solve it using its WebMCP tools. Read each move receipt and pass its revision into your next move.”** See [docs/WEBMCP.md](docs/WEBMCP.md) for schemas, support and verification.
 
-This interface is separate from the historical TrueForge experiment: its 75% scores and existing narrated video came from sandbox planning and saved replays, not WebMCP. A supervised [TrueForge browser bridge](docs/TRUEFORGE_WEBMCP.md) now connects the unchanged v3 skill to native WebMCP. Four selected live integration trials produced two one-parcel wins and two multi-parcel budget failures, all retained in [the live run summary](runs/webmcp-live-2026-11-08/summary.json). This is a new transport demonstration, not a new benchmark or proof that multi-parcel planning is solved.
+The supervised [TrueForge browser bridge](docs/TRUEFORGE_WEBMCP.md) now supports the frozen v5 skill and the complete eight-puzzle live comparison. Every native transition and incoming model plan was independently audited. The temporary relay is stopped after recording; running another live session requires an active browser worker and relay. Historical replay controls remain clearly labelled.

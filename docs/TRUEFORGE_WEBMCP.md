@@ -1,5 +1,7 @@
 # TrueForge to the live browser
 
+The current selected agent is `duck-live-selected-v5-20261108`, pinned to registered skill v5. A complete fresh live benchmark improved from 5/8 to 7/8 wins; see [all results and limitations](../runs/duck-live-learning-2026-11-08/REPORT.md). Load a puzzle with **Live benchmark → Benchmark puzzle → Load live benchmark**. These boards contain frozen inputs and no saved plans. The v3 integration details below are retained as history.
+
 The live integration uses this path:
 
 `TrueForge + registered duck-planning:3 → temporary remote MCP relay → local browser worker → native webpage WebMCP → existing React reducer/canonical engine`
@@ -22,8 +24,14 @@ The browser worker uses the authorized Codex browser REPL's existing tab handle.
 const {connectBrowserWorker} = await import('/absolute/checkout/scripts/webmcp-browser-worker.mjs');
 const worker = await connectBrowserWorker(gameTab, '/private/tmp/duck-live-runtime');
 // Repeat while a TrueForge tool call is waiting. Each pump is bounded.
-await worker.pump(40000);
+const until = Date.now() + 40000;
+while (Date.now() < until) {
+  await worker.pump(5000);
+  await new Promise(resolve => setTimeout(resolve, 250));
+}
 ```
+
+Keep this loop awaited inside an active browser REPL call. Do not leave an unawaited background promise between tool calls: that execution context is not persistent. Service the worker during other UI work or wait for the model to finish before doing longer unrelated work. Servicing gaps can cause MCP timeouts.
 
 Discovery writes `tools.json` using the active page's real schemas. Generate a random private path such as `/mcp/<48 random hex characters>` in a mode-0600 file, then start the Python standard-library server:
 
