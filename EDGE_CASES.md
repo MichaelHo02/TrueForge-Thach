@@ -145,3 +145,10 @@ These are reported external Shelled Home `/` observations, not browser execution
 ## Three recorded benchmark puzzles
 
 The demo selector now loads duck-01 (two parcels, 15 moves), duck-02 (two parcels, 21 moves) and duck-06 (three parcels, 15 moves; held out). Each source response used one final submission. Baseline receipts are round 1 for duck-01/06 and round 2 for duck-02; these are labelled example failures, while the linked report preserves all baseline successes and failures. Tests verify every selected source task, round, exact response and trace, plus switching between recordings, restart and stale callback rejection. Normal/Slow playback changes only viewing pace (260/650ms), not recorded moves, scoring or model settings. All eight tasks share wall terrain; the video examples do not establish unseen-map generalization.
+
+
+## Benchmark fixture availability fix
+
+- Changed `PreviewPage.jsx` so missing or empty `globalThis.__DUCK_BENCHMARK_TASKS__` disables both the benchmark selector and “Load live benchmark” button, and shows an explicit unavailable message. The live benchmark reducer remains a no-op when fixtures are absent.
+- Added a targeted regression in `sokoban/webmcp.test.ts` covering both an absent fixture global and an empty fixture array. The existing eight-frozen-board test remains in place to verify loaded fixtures still initialize, move, restart, and exit correctly.
+- Verification: `npm run test` passed with 27 tests, including the targeted missing/empty-fixture regression and all eight frozen fixture cases; `npm run typecheck` and ESLint parsing also passed.
