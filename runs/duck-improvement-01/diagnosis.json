@@ -1,0 +1,21 @@
+{
+  "rootCause": "Agents consistently fail to return valid JSON move sequences before iteration limit, producing 'Unexpected end of JSON input' errors in all submission attempts. The skill instructions are read and planning occurs in sandbox, but no moves array ever reaches the submission validator. This indicates the agent exhausts its 12-iteration budget on exploratory planning and testing without completing a well-formed final JSON submission.",
+  "evidence": [
+    {
+      "sessionId": "01m6wf2sq10xaahj4ck2kjjw4x",
+      "observation": "Session reads skill, sets up simulator engine, visualizes puzzle, traces multiple failed move sequences in sandbox (up to 13 moves planned), but hits iteration_limit with empty moves array in canonicalFeedback. No JSON submission produced."
+    },
+    {
+      "sessionId": "01m6wfvy4mdnwnc88x6kxdgzet",
+      "observation": "Agent plans 15-move solution with canonical engine validation showing partial success (1 parcel pushed), explores alternative paths over multiple tool calls, reaches 12-iteration limit before submitting a complete plan. Error again shows 'Unexpected end of JSON input' with zero attempted moves."
+    },
+    {
+      "sessionId": "01m6wf40kqvpdqmh8gamtbdfbb",
+      "observation": "Baseline round 2: Agent successfully validates a 15-move solution in sandbox (solved: true), but does not convert this working plan into a JSON submission before iteration exhaustion. All 12 tools used on analysis and testing; none on final JSON output."
+    },
+    {
+      "sessionId": "01m6wfjh79x3aecn6mwwx4n06g",
+      "observation": "Multiple attempts to plan and simulate (18, 28-move sequences tested), but each time blocked moves are encountered and the agent re-plans. Iteration limit reached; final submission payload empty."
+    }
+  ]
+}

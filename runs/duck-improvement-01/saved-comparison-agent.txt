@@ -1,0 +1,78 @@
+Browser tab: 15, Title: "TrueForge", URL: "https://stranger-builds.truefoundry.cloud/trueforge/library/01m6wh4z8dempvs2c8n82whkmh?agentId=01m6wh4z8dempvs2c8n82whkmh&tab=overview".
+1 AXWebArea TrueForge, URL: stranger-builds.truefoundry.cloud/trueforge/library/01m6wh4z8dempvs2c8n82whkmh?agentId=01m6wh4z8dempvs2c8n82whkmh&tab=overview
+	2 container root
+		3 container
+			4 container Sidebar
+				5 button Description: Start new chat, Help: New chat
+				6 button Description: Start new agent, Help: New Agent
+				7 button Agents
+				8 button Sessions
+				9 button Schedules
+				10 button Environments
+			11 container
+				12 link Description: Documentation, Value: trueforge.dev/
+				13 button Description: Switch to dark theme, Help: Dark theme
+				14 container Thạch Hồ Lê Minh
+					15 text T
+					16 text Thạch Hồ Lê Minh
+			17 button Back to Agents
+			18 button Agents
+			19 text duck-delivery-planner-v2
+			20 button Try agent
+			21 pop up button (collapsed) Description: Actions for duck-delivery-planner-v2, Secondary Actions: Expand
+			22 tab group Agent details
+				23 tab (selected, settable, boolean) Overview, Value: 1
+				24 tab (selectable, settable, boolean) Sessions, Value: 0
+				25 tab (selectable, settable, boolean) Schedules, Value: 0
+				26 tab (selectable, settable, boolean) Use In Code, Value: 0
+				27 tab (selectable, settable, boolean) Metrics, Value: 0
+			28 container
+				29 heading Instructions, Value: 2
+					30 text Instructions
+				31 container Instructions actions
+					32 button Show Raw
+					33 button Copy
+				34 text You are Duck Delivery planner. Solve Sokoban delivery puzzles using the registered duck-planning skill and the sandbox. Load and follow that skill. Terrain/goals are immutable; the duck can push one parcel, never pull. All coordinates are zero-based [x,y]. Use the supplied canonical simulator when a task provides it; do not replace the scorer or inspect other puzzles, run results, solution files, or the repository. Respect each task budget: at most 2 final plan submissions per puzzle, at most 100 attempted moves per plan, both starting from the original board. A feedback message may request the second submission. End with exactly one JSON object {"moves":["up","right"]}, with no extra fields or commentary. Never claim a benchmark score; the external canonical evaluator decides. Do not edit your skill during solving. Skill improvement occurs only in a separate development-feedback session.
+			35 container
+				36 heading Description, Value: 2
+					37 text Description
+				38 text Candidate comparison agent: cloned frozen solver configuration, with agent-authored duck-planning v2. Not yet proven better.
+				39 heading Model Configuration, Value: 2
+					40 text Model Configuration
+				41 definition list
+					42 container Model
+						43 text Model
+					44 text claude-haiku-4-5-20251001
+				45 heading MCP Servers & Tools (0), Value: 2
+					46 text MCP Servers & Tools ( 0 )
+				47 text No connectors attached.
+				48 heading Attached Skills (1), Value: 2
+					49 text Attached Skills ( 1 )
+				50 content list
+					51 text agent-skill:stranger-builds/default/duck-planning:2
+				52 heading Execution, Value: 2
+					53 text Execution
+				54 definition list
+					55 container Sandbox
+						56 text Sandbox
+					57 text Enabled
+					58 container Iteration limit
+						59 text Iteration limit
+					60 text 12
+				61 heading Capabilities, Value: 2
+					62 text Capabilities
+				63 definition list
+					64 container Generative UI
+						65 text Generative UI
+					66 text Disabled
+					67 container Dynamic sub-agents
+						68 text Dynamic sub-agents
+					69 text Disabled
+					70 container Ask user questions
+						71 text Ask user questions
+					72 text Disabled
+					73 container Web search
+						74 text Web search
+					75 text Disabled
+
+The focused UI element is 1 AXWebArea TrueForge, URL: stranger-builds.truefoundry.cloud/trueforge/library/01m6wh4z8dempvs2c8n82whkmh?agentId=01m6wh4z8dempvs2c8n82whkmh&tab=overview

@@ -1,0 +1,85 @@
+Browser tab: 16, Title: "TrueForge", URL: "https://stranger-builds.truefoundry.cloud/trueforge/build-agent".
+0 AXWebArea TrueForge, URL: stranger-builds.truefoundry.cloud/trueforge/build-agent
+	1 container root
+		2 container
+			3 container Sidebar
+				4 button Description: Start new chat, Help: New chat
+				5 button Description: Start new agent, Help: New Agent
+				6 button Agents
+				7 button Sessions
+				8 button Schedules
+				9 button Environments
+			10 container
+				11 link Description: Documentation, Value: trueforge.dev/
+				12 button Description: Switch to dark theme, Help: Dark theme
+				13 container Thạch Hồ Lê Minh
+					14 text T
+					15 text Thạch Hồ Lê Minh
+			16 container Agent Config
+				17 heading Agent Config, Value: 2
+					18 text Agent Config
+				19 container
+					20 pop up button (collapsed) Description: Edit Model, Secondary Actions: Expand
+						21 text claude-haiku-4-5-20251001
+						22 text 200K
+					23 pop up button (collapsed) Description: Model settings, Secondary Actions: Expand
+					24 button Edit model settings
+						25 definition list
+							26 text model settings: defaults
+				27 container
+					28 heading Instructions, Value: 3
+						29 text Instructions
+					30 text Define the agent's role, goals, and behavior.
+					31 button Edit Instructions
+						32 text Enter detailed instructions for your agent. E.g. You are a helpful assistant that helps users plan trips. Always ask clarifying questions before making suggestions...
+				33 button Runtime Config Control execution and context behavior. Edit Runtime Config iteration limit: 12 sandbox: off compaction: off large tool response: off dynamic sub-agents: off generative UI: off ask user questions: off web search: off
+					34 heading Runtime Config, Value: 3
+						35 text Runtime Config
+					36 text Control execution and context behavior.
+					37 button Edit Runtime Config
+					38 definition list
+						39 container iteration limit:
+							40 text iteration limit :
+						41 text 12
+						42 container sandbox:
+							43 text sandbox :
+						44 text off
+						45 container compaction:
+							46 text compaction :
+						47 text off
+						48 container large tool response:
+							49 text large tool response :
+						50 text off
+						51 container dynamic sub-agents:
+							52 text dynamic sub-agents :
+						53 text off
+						54 container generative UI:
+							55 text generative UI :
+						56 text off
+						57 container ask user questions:
+							58 text ask user questions :
+						59 text off
+						60 container web search:
+							61 text web search :
+						62 text off
+				63 button MCP Servers Add MCP server
+					64 heading MCP Servers, Value: 3
+						65 text MCP Servers
+					66 button Add MCP server
+				67 button Skills Add skill No skills selected.
+					68 heading Skills, Value: 3
+						69 text Skills
+					70 button Add skill
+					71 text No skills selected.
+			72 heading New Agent, Value: 1
+				73 text New Agent
+			74 button Reset, Help: Reset playground
+			75 button Save Agent
+			76 container
+				77 heading Start building a new Agent, Value: 1
+					78 text Start building a new Agent
+				79 text entry area (settable) Message input
+				80 button Attach a file
+				81 button (disabled) Send message
+
+The focused UI element is 0 AXWebArea TrueForge, URL: stranger-builds.truefoundry.cloud/trueforge/build-agent
