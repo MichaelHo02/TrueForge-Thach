@@ -2,33 +2,22 @@
   "name": "trueforge-starter",
   "version": "0.1.0",
   "private": true,
-  "description": "Starter repo for the Stranger Builds TrueForge challenge: an agent that gets better every time it runs.",
+  "description": "Small game integration branch for focused Shelled fixes; benchmark history remains on main.",
   "license": "MIT",
   "type": "module",
   "engines": {
     "node": ">=22.14"
   },
   "scripts": {
-    "setup": "tsx scripts/setup.ts",
-    "run-evals": "tsx scripts/run-evals.ts",
-    "improve": "tsx scripts/improve.ts",
-    "export-session": "tsx scripts/export-session.ts",
     "build:preview-engine": "node --import tsx scripts/build-preview-engine.ts",
     "check:preview-engine": "node --import tsx scripts/build-preview-engine.ts --check",
     "verify": "npm run check:preview-engine && npm run check:variants && npm test",
     "build": "npm run check:preview-engine && npm run check:variants && npm run build:web",
-    "score": "tsx evals/score.ts",
     "typecheck": "tsc --noEmit",
-    "test": "node --import tsx --test sokoban/*.test.ts evals/*.test.ts",
-    "build:web:fallback": "node scripts/build-web-fallback.mjs",
-    "duck:score": "node --import tsx scripts/duck-score.ts",
-    "duck:test": "node --import tsx --test evals/duck-score.test.ts",
+    "test": "node --import tsx --test sokoban/*.test.ts",
     "build:web": "node --import tsx scripts/build-web.ts",
-    "duck:benchmark": "node --import tsx scripts/duck-benchmark.ts",
     "build:variants": "node --import tsx scripts/build-variants.ts",
-    "check:variants": "node --import tsx scripts/build-variants.ts --check",
-    "duck:generalization": "node --import tsx scripts/duck-generalization.ts",
-    "duck:quality": "node --import tsx scripts/check-variant-quality.ts"
+    "check:variants": "node --import tsx scripts/build-variants.ts --check"
   },
   "dependencies": {
     "@truefoundry/trueforge-sdk": "^0.180.0",

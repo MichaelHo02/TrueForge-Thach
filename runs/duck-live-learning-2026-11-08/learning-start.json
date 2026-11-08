@@ -1,6 +1,0 @@
-{
-  "startingSkill": "agent-skill:stranger-builds/default/duck-planning:3",
-  "sha256": "692cad0fcdd50b0694599d0e339776311efacf698ea076c04d941b0ae8ee9c8c",
-  "purpose": "Further improve the existing learned v3 skill using only new live development failures; compare to fresh v1 baseline",
-  "heldoutFeedbackAllowed": false
-}
