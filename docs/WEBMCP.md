@@ -20,7 +20,7 @@ Registration follows the [current WebMCP draft](https://webmachinelearning.githu
 
 Open the game in a WebMCP-capable browser/agent. The page's **Live agent control · WebMCP** panel must report three tools available. Have the agent discover the registered tools through its browser connection and read the board, then plan and execute single moves with the returned revision. On unsupported browsers, ordinary play and recorded demos remain available; their availability is not evidence that WebMCP is working.
 
-The hosted TrueForge sandbox does not automatically gain access to a browser's tools. Connecting that agent requires a browser-backed tool bridge. This change does not claim that connection, a new TrueForge training round, a new score, or a WebMCP version of the existing video.
+The hosted TrueForge sandbox does not automatically gain access to a browser's tools. A separate supervised browser-backed MCP bridge has now been verified with the unchanged v3 skill: two live wins and two failed trials, retained in `runs/webmcp-live-2026-11-08`. See [TRUEFORGE_WEBMCP.md](TRUEFORGE_WEBMCP.md). The bridge must be running for live calls; the earlier benchmark scores and its existing video remain separate historical evidence.
 
 ## Verification, 8 November 2026
 
