@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 2,
+  "generator": "ui-copilot",
+  "exportedPaths": [
+    ".gitignore",
+    "agent/duck-agent.json",
+    "agent/duck-instructions.md",
+    "DuckDeliverypreviewimport.css",
+    "DuckDeliverypreviewimport.jsx",
+    "EDGE_CASES.md",
+    "evals/duck-score.ts",
+    "evals/duck/frozen.json",
+    "evals/duck/tasks.json",
+    "LICENSE",
+    "package-lock.json",
+    "package.json",
+    "PreviewPage.css",
+    "PreviewPage.jsx",
+    "README.md",
+    "scripts/build-preview-engine.ts",
+    "scripts/build-variants.ts",
+    "scripts/build-web.ts",
+    "scripts/duck-benchmark.ts",
+    "scripts/duck-simulate.py",
+    "sokoban/engine.browser.js",
+    "sokoban/engine.test.ts",
+    "sokoban/engine.ts",
+    "sokoban/solver.ts",
+    "sokoban/variant-integration.test.ts",
+    "sokoban/variants.browser.js",
+    "sokoban/variants.test.ts",
+    "sokoban/variants.ts",
+    "sokoban/webmcp.test.ts",
+    "tsconfig.json",
+    "web/entry.jsx",
+    "web/index.html",
+    "web/react-shim.jsx",
+    "web/webmcp.mjs"
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "lastSyncedSha": "e5d9765ec576b8df33542b6ba4d4e45a92b23610"
+    },
+    {
+      "path": "agent/duck-agent.json",
+      "lastSyncedSha": "2d1cae3bbbf31e11a30a74e470ce8a4c343275e1"
+    },
+    {
+      "path": "agent/duck-instructions.md",
+      "lastSyncedSha": "e718fe63fe52c038bcb054b3fcde42d84147fa68"
+    },
+    {
+      "path": "DuckDeliverypreviewimport.css",
+      "lastSyncedSha": "6316c4d4754ee41de825da19798ec593100945bd"
+    },
+    {
+      "path": "DuckDeliverypreviewimport.jsx",
+      "lastSyncedSha": "0ea8daab95576e947658ba99b211f36944972f2a"
+    },
+    {
+      "path": "EDGE_CASES.md",
+      "lastSyncedSha": "dd3c0888e98c27f831dbdc8993188ff856805025"
+    },
+    {
+      "path": "evals/duck-score.ts",
+      "lastSyncedSha": "f3aba28e3ac221f915247993e1fb4985b60b5bb6"
+    },
+    {
+      "path": "evals/duck/frozen.json",
+      "lastSyncedSha": "784e867027f404ca33c4106361678f7314adb84d"
+    },
+    {
+      "path": "evals/duck/tasks.json",
+      "lastSyncedSha": "305c77890aa8e9589180a53141e2127ca351a852"
+    },
+    {
+      "path": "LICENSE",
+      "lastSyncedSha": "68b536cc4ebe15de8832ff54a6d735fb8706ae86"
+    },
+    {
+      "path": "package-lock.json",
+      "lastSyncedSha": "7eeddea105a80beecbf86cb1ae9ce52720b4fdc5"
+    },
+    {
+      "path": "package.json",
+      "lastSyncedSha": "8fa11e8f5088d59f207cc8080fa52d32cd96f4b1"
+    },
+    {
+      "path": "PreviewPage.css",
+      "lastSyncedSha": "2fd0f0692602e8d78b8ecf4305cf41b3c19bee2f"
+    },
+    {
+      "path": "PreviewPage.jsx",
+      "lastSyncedSha": "651119301af27e939d0cad5a2cfe8b3a74c359b9"
+    },
+    {
+      "path": "README.md",
+      "lastSyncedSha": "8e7fe49ce13750f40af31251fd24a8a27dc7dcd4"
+    },
+    {
+      "path": "scripts/build-preview-engine.ts",
+      "lastSyncedSha": "c9717267a8b52a9587fa728a2393de2784c83e9b"
+    },
+    {
+      "path": "scripts/build-variants.ts",
+      "lastSyncedSha": "da70b0b48bfd050f6dc97f073789799d6362590a"
+    },
+    {
+      "path": "scripts/build-web.ts",
+      "lastSyncedSha": "e47d1beea2781c5bb95a0c10a957fc77816ba2a0"
+    },
+    {
+      "path": "scripts/duck-benchmark.ts",
+      "lastSyncedSha": "4183cf6a9f95a6f11253896703d3b9e651704b70"
+    },
+    {
+      "path": "scripts/duck-simulate.py",
+      "lastSyncedSha": "48f2b65c91320e5f5d1f3b23c8ee8345603b7629"
+    },
+    {
+      "path": "sokoban/engine.browser.js",
+      "lastSyncedSha": "088e02796e5cc34fa9bab0c6a068c693baf07092"
+    },
+    {
+      "path": "sokoban/engine.test.ts",
+      "lastSyncedSha": "3c4127159de539d180a8c5971abc87e1a56549d5"
+    },
+    {
+      "path": "sokoban/engine.ts",
+      "lastSyncedSha": "ee58f070b1a11a41097e6ddb72c8c9b3b5b1290f"
+    },
+    {
+      "path": "sokoban/solver.ts",
+      "lastSyncedSha": "543ddfa6d25227b165e7b630995b107dfc5e4b10"
+    },
+    {
+      "path": "sokoban/variant-integration.test.ts",
+      "lastSyncedSha": "3af4a2f7d5a60edefeb147424e95aec7499e2430"
+    },
+    {
+      "path": "sokoban/variants.browser.js",
+      "lastSyncedSha": "dbeaf64363287a3acdd45b76bbb79c4257bae155"
+    },
+    {
+      "path": "sokoban/variants.test.ts",
+      "lastSyncedSha": "62c429bcbda38d7ac9ec02ab8c2f08f6de99863a"
+    },
+    {
+      "path": "sokoban/variants.ts",
+      "lastSyncedSha": "a788a7c35e707120e53817574516fb73ac2e7495"
+    },
+    {
+      "path": "sokoban/webmcp.test.ts",
+      "lastSyncedSha": "d985038229709b22136875a40ebe5d050c685c47"
+    },
+    {
+      "path": "tsconfig.json",
+      "lastSyncedSha": "170efa0c508848e7e19b0d28eb17296626ba6093"
+    },
+    {
+      "path": "web/entry.jsx",
+      "lastSyncedSha": "b63bbf1495bf6f3c40403d0ebe723147a2f1c2a4"
+    },
+    {
+      "path": "web/index.html",
+      "lastSyncedSha": "1b1cae35baa421a1b69cc936c2276e115f753cfe"
+    },
+    {
+      "path": "web/react-shim.jsx",
+      "lastSyncedSha": "0094abec2da19eca3c9561db8a6cf2deae6cbf2e"
+    },
+    {
+      "path": "web/webmcp.mjs",
+      "lastSyncedSha": "c16e8e78291654f0fb569f4694d8d5b0958fa560"
+    }
+  ]
+}
