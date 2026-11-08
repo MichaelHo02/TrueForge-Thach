@@ -1,0 +1,13 @@
+{
+  "startingSkillSHA256": "692cad0fcdd50b0694599d0e339776311efacf698ea076c04d941b0ae8ee9c8c",
+  "taskIds": [
+    "duck-01",
+    "duck-02",
+    "duck-04"
+  ],
+  "attempts": 5,
+  "holdoutInputs": 0,
+  "heldoutUsedForSelection": false,
+  "source": "Fresh live baseline development attempts only",
+  "bytes": 183894
+}

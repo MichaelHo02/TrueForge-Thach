@@ -1,0 +1,91 @@
+Browser tab: 38, Title: "TrueFoundry – One Gateway for All Your AI", URL: "https://stranger-builds.truefoundry.cloud/skills".
+0 AXWebArea TrueFoundry – One Gateway for All Your AI, URL: stranger-builds.truefoundry.cloud/skills
+	1 container
+		2 container app
+			3 container
+				4 container
+					5 link stranger-builds.truefoundry.cloud/
+					6 text v 0.184.6
+					7 button
+					8 link Description: Model Gateway, Value: stranger-builds.truefoundry.cloud/llm-gateway/playground
+					9 link Description: Playground, Value: stranger-builds.truefoundry.cloud/llm-gateway/playground
+					10 link Description: Models, Value: stranger-builds.truefoundry.cloud/llm-gateway/models
+					11 link Description: Virtual Models, Value: stranger-builds.truefoundry.cloud/llm-gateway/virtual-models
+					12 link Description: MCP Gateway, Value: stranger-builds.truefoundry.cloud/llm-gateway/mcp-servers
+					13 link Description: Skills, Value: stranger-builds.truefoundry.cloud/skills
+					14 link Description: Prompts, Value: stranger-builds.truefoundry.cloud/prompts
+					15 link Description: Agents Registry, Value: stranger-builds.truefoundry.cloud/agents
+					16 link Description: Metrics, Value: stranger-builds.truefoundry.cloud/monitoring/metrics
+					17 link Description: Request Traces, Value: stranger-builds.truefoundry.cloud/monitoring/request-traces
+					18 link Description: Guardrails, Value: stranger-builds.truefoundry.cloud/guardrails/registry
+					19 link Description: Policies, Value: stranger-builds.truefoundry.cloud/llm-gateway/policies
+					20 text TRUEFORGE
+					21 link Description: Build Agents New, Value: stranger-builds.truefoundry.cloud/trueforge
+					22 text SHARED
+					23 link Description: Ask TFY New, Value: stranger-builds.truefoundry.cloud/ask-ai
+					24 link Description: Repositories, Value: stranger-builds.truefoundry.cloud/repositories
+					25 link Description: Secrets, Value: stranger-builds.truefoundry.cloud/secrets
+					26 link Description: Integrations, Value: stranger-builds.truefoundry.cloud/integrations
+					27 link Description: Access, Value: stranger-builds.truefoundry.cloud/access-management
+					28 button Support
+					29 container Thạch
+						30 text Thạch
+					31 button
+				32 text Skills Registry
+				33 text field (settable)
+				34 button Create New Skill
+				35 table
+					36 row SKILL NAME REPOSITORY LATEST VERSION DESCRIPTION CREATED BY
+						37 cell
+							38 text SKILL NAME
+						39 cell
+							40 text REPOSITORY
+						41 cell
+							42 text LATEST VERSION
+						43 cell
+							44 text DESCRIPTION
+						45 cell
+							46 text CREATED BY
+						47 cell
+					48 row (selectable) duck-planning default truefoundry-default-storage v4 Plan legal Sokoban deliveries for Duck Delivery and check parcel pushes before committing a move sequence. Thạch Hồ Lê Minh More actions
+						49 cell
+							50 text duck-planning
+						51 cell
+							52 link Description: default truefoundry-default-storage, Value: stranger-builds.truefoundry.cloud/repositories/5185
+						53 cell
+							54 text v4
+						55 cell
+							56 container Plan legal Sokoban deliveries for Duck Delivery and check parcel pushes before committing a move sequence.
+								57 text Plan legal Sokoban deliveries for Duck Delivery and check parcel pushes before committing a move sequence.
+						58 cell
+							59 text Thạch Hồ Lê Minh
+						60 cell
+							61 pop up button (collapsed) Description: More actions, ID: base-ui-_r_1a_, Secondary Actions: Expand
+				62 text Showing 1 to 1 of 1 results
+				63 text Rows per page
+				64 combo box (collapsed) Value: 25, Secondary Actions: Expand
+					65 text 25
+				66 container pagination navigation
+					67 content list
+						68 button (disabled) Go to previous page
+						69 button page 1
+						70 button (disabled) Go to next page
+		71 container Description: Pylon Chat Widget, ID: pylon-frame
+			72 AXWebArea stranger-builds.truefoundry.cloud/skills
+		73 container
+			74 container Description: Customer support window, ID: pylon-chat-window
+				75 AXWebArea about:srcdoc
+					76 container PylonChat-content-sizer
+						77 container
+							78 image TrueFoundry
+							79 button Close
+							80 text Need help or feedback? Drop it here.
+						81 container
+							82 text How can we help? We're offline. We'll be back soon.
+							83 button Start new chat
+						84 heading Bookmarks, Value: 3
+							85 text Bookmarks
+						86 link Description: Documentation, Value: docs.truefoundry.com/
+						87 link Description: Powered by Pylon, Value: usepylon.com/
+
+The focused UI element is 34 button Create New Skill

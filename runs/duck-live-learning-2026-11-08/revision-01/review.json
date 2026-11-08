@@ -1,0 +1,11 @@
+{
+  "sha256": "989c81aeabd2cd1e151c88354a9931ffeef33267fe43dac5e49f80eaa2f5b693",
+  "content": "Exact agent-authored skill portion extracted from raw reply; body not edited",
+  "structuralChecks": "Frontmatter present; no task IDs or frozen map strings",
+  "concerns": [
+    "Still relies primarily on manual planning",
+    "Ambiguous wording about feedback after second attempt",
+    "Incorrect wording that delivered parcels do not become obstacles; canonical engine remains authoritative"
+  ],
+  "decision": "Retain and evaluate on development tasks; do not promote based on prose"
+}
