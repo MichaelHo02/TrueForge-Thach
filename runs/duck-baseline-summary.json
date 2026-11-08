@@ -1,0 +1,47 @@
+{
+  "rounds": [
+    {
+      "round": 1,
+      "score": 25,
+      "development": 50,
+      "holdout": 0
+    },
+    {
+      "round": 2,
+      "score": 0,
+      "development": 0,
+      "holdout": 0
+    },
+    {
+      "round": 3,
+      "score": 37.5,
+      "development": 50,
+      "holdout": 25
+    }
+  ],
+  "statistics": {
+    "score": {
+      "min": 0,
+      "max": 37.5,
+      "mean": 20.833333333333332,
+      "median": 25
+    },
+    "development": {
+      "min": 0,
+      "max": 50,
+      "mean": 33.333333333333336,
+      "median": 50
+    },
+    "holdout": {
+      "min": 0,
+      "max": 25,
+      "mean": 8.333333333333334,
+      "median": 0
+    }
+  },
+  "frozenSkill": "agent-skill:stranger-builds/default/duck-planning:1",
+  "initialSkillHash": "4db2d3b487220b6c124c5b69d2ff5ada4639b2121815f1da0577ce0de00db8a4",
+  "taskExecutions": 24,
+  "infrastructureFailuresCounted": false,
+  "budgetExhaustionPolicy": "Counted as task failure; no fresh session or raised iteration limit after exhaustion. Observed hosted continuation limitation is preserved."
+}
