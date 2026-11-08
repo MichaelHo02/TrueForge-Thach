@@ -40,6 +40,6 @@ Only rendered final-answer bodies were scored, including any prose they containe
 
 Raw replies, real session URLs, expanded UI/tool receipts and immutable CLI outputs are in `runs/duck-baseline-01..03`, `runs/duck-comparison-01..02`, and `runs/duck-v3-comparison-01..02`. `runs/duck-final-comparison.json` indexes all seven rounds (56 task executions). This evidence supports a repeated improvement on this fixed benchmark, not a broad statistical claim.
 
-The public game's six UI routes differ from these benchmark tasks. Original/improved in-game replay integration and a comparison video remain pending. The draft recovery PR was opened manually by Codex, not Shelled; qualifying Shelled PR evidence remains missing. No formal challenge submission or merge is implied.
+The public game's six UI routes differ from these benchmark tasks. At benchmark completion, in-game replay integration and a comparison video were pending. The subsequent website update `9677f8c` adds labelled playback of the exact duck-01 baseline and v3 round-2 result, with canonical trace matching and source links; a direct published-website recording with voiceover was then captured. The draft recovery PR was opened manually by Codex, not Shelled; qualifying Shelled PR evidence remains missing. No formal challenge submission or merge is implied.
 
 Human-readable AX and copied-stream files normalize trailing whitespace for Git. Where a copied stream required normalization, its `.raw.json` companion preserves the exact original. Scored reply strings and skill bytes remain unchanged.
