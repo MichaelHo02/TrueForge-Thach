@@ -42,7 +42,15 @@
   },
   "failureIncluded": "duck-05",
   "editManifestSha256": "71ec40cc53ecbc98500e2a816a500734e901895b44db0992dc869b06dc59ab63",
-  "status": "Local review artifact; not posted or submitted",
+  "status": "Published on X; Stranger Builds submission version 2 confirmed",
   "experimentModel": "claude-haiku-4-5-20251001",
-  "visualRevision": "Persistent Model: Claude Haiku 4.5 label; requested footer removed; timing and audio unchanged"
+  "visualRevision": "Persistent Model: Claude Haiku 4.5 label; requested footer removed; timing and audio unchanged",
+  "publishedPostUrl": "https://x.com/Thach24079000/status/2119373410178646476",
+  "submission": {
+    "url": "https://app.strangerbuilds.com/project?project=thach-project&tab=submit",
+    "version": 2,
+    "submittedAt": "2026-11-08T21:17:00+11:00",
+    "precision": "minute shown by submission UI",
+    "shelledPrEvidence": "Unchanged; qualifying two Shelled-opened PRs and one merge remain outstanding"
+  }
 }
