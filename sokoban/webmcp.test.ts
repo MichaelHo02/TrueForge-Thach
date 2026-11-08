@@ -116,6 +116,20 @@ test('missing or empty benchmark fixtures leave the live benchmark unchanged', (
   }
 });
 
+test('warehouse gridcell labels describe coordinates, terrain, occupants, and survive movement', () => {
+  const labelSource = source.match(/function warehouseCellLabel\([\s\S]*?\n  }/)![0];
+  const warehouseCellLabel = vm.runInNewContext(`(${labelSource})`);
+  assert.equal(warehouseCellLabel({x: 2, y: 1, tile: ' ', goal: true, parcel: true, duck: true}), 'Row 2, column 3: floor, goal, parcel, duck');
+  assert.equal(warehouseCellLabel({x: 0, y: 0, tile: '#', goal: false, parcel: false, duck: false}), 'Row 1, column 1: wall');
+  const level = levels[0];
+  const initial = initialState(level);
+  const moved = step(level, initial, 'right');
+  assert.equal(warehouseCellLabel({x: 1, y: 0, tile: level.terrain[0][1], goal: false, parcel: false, duck: false}), 'Row 1, column 2: wall');
+  assert.equal(warehouseCellLabel({x: 1, y: 1, tile: level.terrain[1][1], goal: false, parcel: false, duck: initial.duck[0] === 1 && initial.duck[1] === 1}), 'Row 2, column 2: floor, duck');
+  assert.equal(warehouseCellLabel({x: 2, y: 1, tile: level.terrain[1][2], goal: false, parcel: false, duck: moved.duck[0] === 2 && moved.duck[1] === 1}), 'Row 2, column 3: floor, duck');
+  assert.equal(warehouseCellLabel({x: 3, y: 1, tile: level.terrain[1][3], goal: false, parcel: moved.parcels.some(([x, y]) => x === 3 && y === 1), duck: false}), 'Row 2, column 4: floor, parcel');
+});
+
 test('all eight live benchmark boards are exact frozen inputs, permit native moves and restart without saved replays', () => {
   const tasks = JSON.parse(readFileSync('evals/duck/tasks.json', 'utf8'));
   const benchmarkReducer = vm.runInNewContext(source.match(/const createGame[\s\S]*?(?=\n function PreviewPage)/)![0] + '\n({createGame,gameReducer})', {DUCK_LEVELS: levels, RECORDED_AGENT_DEMOS: demos, __DUCK_BENCHMARK_TASKS__: tasks, initialState, step, replay});

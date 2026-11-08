@@ -5,8 +5,6 @@
     ".gitignore",
     "agent/duck-agent.json",
     "agent/duck-instructions.md",
-    "DuckDeliverypreviewimport.css",
-    "DuckDeliverypreviewimport.jsx",
     "EDGE_CASES.md",
     "evals/duck-score.ts",
     "evals/duck/frozen.json",
@@ -51,16 +49,8 @@
       "lastSyncedSha": "e718fe63fe52c038bcb054b3fcde42d84147fa68"
     },
     {
-      "path": "DuckDeliverypreviewimport.css",
-      "lastSyncedSha": "6316c4d4754ee41de825da19798ec593100945bd"
-    },
-    {
-      "path": "DuckDeliverypreviewimport.jsx",
-      "lastSyncedSha": "0ea8daab95576e947658ba99b211f36944972f2a"
-    },
-    {
       "path": "EDGE_CASES.md",
-      "lastSyncedSha": "dd3c0888e98c27f831dbdc8993188ff856805025"
+      "lastSyncedSha": "243e5a16af8edeb17648275bbd0c8d77283ce00a"
     },
     {
       "path": "evals/duck-score.ts",
@@ -92,7 +82,7 @@
     },
     {
       "path": "PreviewPage.jsx",
-      "lastSyncedSha": "651119301af27e939d0cad5a2cfe8b3a74c359b9"
+      "lastSyncedSha": "e838bffd286c70e73b056252bac9f777bca69c63"
     },
     {
       "path": "README.md",
@@ -152,7 +142,7 @@
     },
     {
       "path": "sokoban/webmcp.test.ts",
-      "lastSyncedSha": "d985038229709b22136875a40ebe5d050c685c47"
+      "lastSyncedSha": "6dbf6b08e0a735503c0e0e59ccfd74039b10e0cf"
     },
     {
       "path": "tsconfig.json",
