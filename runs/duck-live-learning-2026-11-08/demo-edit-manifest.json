@@ -1,6 +1,8 @@
 {
   "duration": 54,
   "fps": 15,
+  "experimentModel": "claude-haiku-4-5-20251001",
+  "visualRevision": "Add persistent Claude Haiku 4.5 model label; remove requested footer",
   "source": "Actual published-website captures after each native WebMCP call; no reconstructed board imagery",
   "scenes": [
     {

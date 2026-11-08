@@ -1,6 +1,6 @@
 {
-  "filename": "duck-delivery-full-live-benchmark.mp4",
-  "sha256": "f14ccdfb26e571b116581087fc0bd706797940fa4c21b560473692db77921447",
+  "filename": "duck-delivery-full-live-benchmark-v2.mp4",
+  "sha256": "e78643ad2741ced2ef4b508862d14c88b70c12c7f0db94b478f0c326708c80cf",
   "durationSeconds": 54,
   "resolution": [
     1920,
@@ -41,6 +41,8 @@
     "heldoutTotal": 4
   },
   "failureIncluded": "duck-05",
-  "editManifestSha256": "209157a14bb23c80657214b735bf6743d1ac5ba68bb28c6bdf3c7369cf6fc918",
-  "status": "Local review artifact; not posted or submitted"
+  "editManifestSha256": "71ec40cc53ecbc98500e2a816a500734e901895b44db0992dc869b06dc59ab63",
+  "status": "Local review artifact; not posted or submitted",
+  "experimentModel": "claude-haiku-4-5-20251001",
+  "visualRevision": "Persistent Model: Claude Haiku 4.5 label; requested footer removed; timing and audio unchanged"
 }
