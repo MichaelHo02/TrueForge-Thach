@@ -132,3 +132,10 @@ These are reported external Shelled Home `/` observations, not browser execution
 - Whole-message Copy combines tool narration with final output. Scoring must use the entire rendered final-answer body, never extract a winning JSON fragment from narration or discard final-answer prose.
 - V3 round 1 duck-03 read only the first 500 skill characters. Saved configuration pins v3 but full skill consumption is not verified for that task.
 - Direct Skills navigation once redirected to the playground; the normal build-agent Add skill → Register Skills workflow worked. No underlying cause is established and no security setting was changed.
+
+## Recorded-agent website playback
+
+- Previous limitation: the benchmark arrangements differed from the six practice routes, so importing an agent plan into an arbitrary route would be invalid. The labelled recorded-agent mode loads the exact development task duck-01 with its saved model reply and checks every canonical trace state against the retained result. No solver-generated substitute is used.
+- Baseline round 1 hit iteration limit 12 without a valid final plan; its demo remains at the initial state with that reason. V3 round 2 submitted one valid 15-move plan and delivered both parcels (4 pushes). Source session links and learning/skill evidence are visible. No live inference or model-weight update is claimed.
+- Automated checks cover fixture/source parity, complete replay success, manual interference rejection, restart, exiting to the original route, stale callbacks after exit, and refusing a tampered trace. Frozen engine, scorer, tasks and variant adapters are unchanged.
+- Local browser verification observed replay 15/15, 15 moves / 4 pushes, both goals filled and the route-complete status. Pause and Exit restored usable controls. At 375px document and viewport widths both measured 375px; no browser errors/warnings were reported.

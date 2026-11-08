@@ -804,3 +804,22 @@ button.secondary:hover:not(:disabled) {
   .controls > .secondary { min-width: 72px; }
   .stats { gap: 8px 14px; }
 }
+
+/* Recorded TrueForge evidence uses the existing board and canonical replay. */
+.recorded-demo {padding:12px 0 16px;border-bottom:2px solid #8be9ed;margin-bottom:12px;}
+.demo-heading,.demo-actions,.demo-sources {display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+.demo-heading b {color:#ffe62b;text-transform:uppercase;font-size:1.1rem;}
+.demo-heading span,.demo-evidence p {font-size:.8rem;line-height:1.5;}
+.demo-actions {margin-top:10px;}
+.demo-actions button {min-height:44px;}
+.demo-evidence p {margin:9px 0;}
+.demo-outcome {color:#8be9ed;font-weight:bold;}
+.demo-sources a,.demo-learning a {color:#8be9ed;text-underline-offset:3px;}
+.demo-sources {font:12px/1.5 monospace;}
+.demo-learning {margin-top:10px;font-size:.85rem;line-height:1.6;}
+.demo-learning summary {cursor:pointer;color:#ffe62b;}
+.demo-learning blockquote {margin:12px 0;padding:12px;border-left:3px solid #ffe62b;background:#111c20;white-space:normal;overflow-wrap:anywhere;}
+.recorded-demo a:focus-visible,.demo-learning summary:focus-visible {outline:3px solid #ffe62b;outline-offset:4px;}
+@media(max-width:600px){.demo-heading{align-items:flex-start}.demo-actions button{flex:1 1 140px}.demo-sources{gap:8px 16px}.demo-evidence p{overflow-wrap:anywhere}}
+
+.agent-demo-active .duck-header{margin-bottom:12px;padding-bottom:12px}.agent-demo-active .duck-header h1{font-size:clamp(2rem,5vw,3.8rem)}.agent-demo-active .intro{font-size:.78rem;margin:8px 0 0}.agent-demo-active .duck-mark{width:70px;height:70px;font-size:2rem}.agent-demo-active .board-wrap{padding:12px}.demo-receipt{margin-top:8px;font-size:.85rem;line-height:1.6}.demo-receipt summary{cursor:pointer;color:#8be9ed}.demo-receipt pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:12px;background:#080b0d;color:#eee5d3}.demo-receipt p{overflow-wrap:anywhere}

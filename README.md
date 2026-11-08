@@ -41,7 +41,7 @@ The verified setup is already frozen in `evals/duck/frozen.json`; do not overwri
 - **Run 1 → run N:** not run yet. No improvement is claimed.
 - **The change that did it:** no agent-authored improvement exists yet.
 - **What the agent learned:** unmeasured; the initial skill is registered as version 1.
-- **What still fails:** see [EDGE_CASES.md](EDGE_CASES.md); benchmark results are in VERDICT.md; in-game before/after replays and a comparison video remain pending.
+- **What still fails:** see [EDGE_CASES.md](EDGE_CASES.md); benchmark results are in VERDICT.md; the website now has a recorded-agent demo for benchmark duck-01, with source links and canonical playback.
 
 ## Shelled evidence
 
@@ -66,3 +66,7 @@ npm run duck:quality -- 20 /tmp/duck-quality.json
 ```
 
 The pack records original base boards, generator identity, source hashes and configuration so it remains reproducible. `create` refuses overwrite. No model generalization score is claimed yet. Rebuild browser adapters after generator changes with `npm run build:variants`; verify/build reject stale artifacts.
+
+## Recorded agent demo
+
+On the website, choose **Watch baseline failure** or **Watch improved agent**. The mode loads the exact `duck-01` benchmark arrangement, not one of the six practice routes. The baseline has no final plan and stays at its initial state. **Play agent plan** replays the exact v3 round-2 response (15 moves) through the canonical engine; the complete serialized trace must match the saved scored receipt before playback is enabled. Manual moves are disabled while reviewing a recording. Restart reloads it; Exit agent demo restores the selected practice route. Links expose the baseline, learning session, improved session, exact skill and all results. This is historical playback, not fresh model inference.

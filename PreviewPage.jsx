@@ -237,10 +237,101 @@ const DUCK_LEVELS=[
  {name:'Dock 05 · Turnaround',terrain:['#########','#   #   #','#       #','#   #   #','#########'],duck:[1,2],parcels:[[2,2],[6,2]],goals:[[2,3],[6,1]]},
  {name:'Dock 06 · Final Sort',terrain:['###########','#         #','#         #','#         #','###########'],duck:[1,3],parcels:[[3,3],[5,3],[8,3]],goals:[[9,3],[2,3],[6,3]]}
 ];
+const RECORDED_AGENT_DEMO = {
+  "taskId": "duck-01",
+  "level": {
+    "name": "Benchmark 01",
+    "terrain": [
+      "#########",
+      "#       #",
+      "#  #    #",
+      "#       #",
+      "#    #  #",
+      "#       #",
+      "#########"
+    ],
+    "duck": [
+      7,
+      4
+    ],
+    "parcels": [
+      [
+        2,
+        4
+      ],
+      [
+        6,
+        4
+      ]
+    ],
+    "goals": [
+      [
+        2,
+        1
+      ],
+      [
+        6,
+        5
+      ]
+    ]
+  },
+  "baselineSession": "https://stranger-builds.truefoundry.cloud/trueforge/sessions/01m6wf2sq10xaahj4ck2kjjw4x?try_agent_name=duck-delivery-planner",
+  "improvedSession": "https://stranger-builds.truefoundry.cloud/trueforge/sessions/01m6wjvxchxn1xrhgvx19j5gz0?try_agent_name=duck-delivery-planner-v3",
+  "learningSession": "https://stranger-builds.truefoundry.cloud/trueforge/sessions/01m6wjea7n7e4ktr984x9x60hg",
+  "skillUrl": "https://github.com/MichaelHo02/TrueForge-Thach/blob/8ce41b4/runs/duck-improvement-02/candidate-SKILL.md",
+  "reportUrl": "https://github.com/MichaelHo02/TrueForge-Thach/blob/877c2b9/VERDICT.md",
+  "moves": [
+    "down",
+    "left",
+    "left",
+    "left",
+    "left",
+    "left",
+    "up",
+    "up",
+    "up",
+    "down",
+    "right",
+    "right",
+    "right",
+    "right",
+    "down"
+  ],
+  "trace": [
+    "{\"duck\":[7,4],\"parcels\":[[2,4],[6,4]],\"moves\":0,\"pushes\":0}",
+    "{\"duck\":[7,5],\"parcels\":[[2,4],[6,4]],\"moves\":1,\"pushes\":0}",
+    "{\"duck\":[6,5],\"parcels\":[[2,4],[6,4]],\"moves\":2,\"pushes\":0}",
+    "{\"duck\":[5,5],\"parcels\":[[2,4],[6,4]],\"moves\":3,\"pushes\":0}",
+    "{\"duck\":[4,5],\"parcels\":[[2,4],[6,4]],\"moves\":4,\"pushes\":0}",
+    "{\"duck\":[3,5],\"parcels\":[[2,4],[6,4]],\"moves\":5,\"pushes\":0}",
+    "{\"duck\":[2,5],\"parcels\":[[2,4],[6,4]],\"moves\":6,\"pushes\":0}",
+    "{\"duck\":[2,4],\"parcels\":[[2,3],[6,4]],\"moves\":7,\"pushes\":1}",
+    "{\"duck\":[2,3],\"parcels\":[[2,2],[6,4]],\"moves\":8,\"pushes\":2}",
+    "{\"duck\":[2,2],\"parcels\":[[2,1],[6,4]],\"moves\":9,\"pushes\":3}",
+    "{\"duck\":[2,3],\"parcels\":[[2,1],[6,4]],\"moves\":10,\"pushes\":3}",
+    "{\"duck\":[3,3],\"parcels\":[[2,1],[6,4]],\"moves\":11,\"pushes\":3}",
+    "{\"duck\":[4,3],\"parcels\":[[2,1],[6,4]],\"moves\":12,\"pushes\":3}",
+    "{\"duck\":[5,3],\"parcels\":[[2,1],[6,4]],\"moves\":13,\"pushes\":3}",
+    "{\"duck\":[6,3],\"parcels\":[[2,1],[6,4]],\"moves\":14,\"pushes\":3}",
+    "{\"duck\":[6,4],\"parcels\":[[2,1],[6,5]],\"moves\":15,\"pushes\":4}"
+  ],
+  "skillRule": "5. **Plan completely before testing. Complete exactly one tool call that (a) loads the puzzle, (b) saves your full move sequence to /tmp/plan.json, (c) calls the canonical adapter, and (d) checks if solved==true. If solved==true, immediately print the JSON plan and stop. If solved==false, do not test again—submit your best effort immediately as JSON with no further iteration.**"
+};
 DUCK_LEVELS.forEach(validateLevel);
-  const createGame=(levelIndex=0,generation=0,activeLevel=DUCK_LEVELS[levelIndex],activeSeed=null)=>({levelIndex,activeLevel,activeSeed,state:initialState(activeLevel),history:[],replay:null,generation,variantError:null});
+  const createGame=(levelIndex=0,generation=0,activeLevel=DUCK_LEVELS[levelIndex],activeSeed=null)=>({levelIndex,activeLevel,activeSeed,state:initialState(activeLevel),history:[],replay:null,recordedDemo:null,generation,variantError:null});
  function gameReducer(game,a){
-  const reset=(levelIndex,activeLevel=DUCK_LEVELS[levelIndex],activeSeed=null,variantError=null)=>({levelIndex,activeLevel,activeSeed,state:initialState(activeLevel),history:[],replay:null,generation:game.generation+1,variantError});
+  const reset=(levelIndex,activeLevel=DUCK_LEVELS[levelIndex],activeSeed=null,variantError=null)=>({levelIndex,activeLevel,activeSeed,state:initialState(activeLevel),history:[],replay:null,recordedDemo:null,generation:game.generation+1,variantError});
+  if(a.type==='recorded-demo'||(a.type==='restart'&&game.recordedDemo)){
+   const kind=a.type==='restart'?game.recordedDemo:a.kind;
+   if(!['baseline','improved'].includes(kind))return game;
+   const demo=RECORDED_AGENT_DEMO, fresh=reset(game.levelIndex,demo.level);
+   if(kind==='baseline')return {...fresh,recordedDemo:kind};
+   const result=replay(demo.level,demo.moves);
+   if(!result.won||JSON.stringify(result.trace)!==JSON.stringify(demo.trace))throw new Error('Recorded agent trace does not match the canonical engine');
+   const states=[initialState(demo.level)];for(const direction of demo.moves)states.push(step(demo.level,states.at(-1),direction));
+   return {...fresh,recordedDemo:kind,replay:{trace:result.trace,states,index:0}};
+  }
+  if(game.recordedDemo&&['move','undo','variant','load-replay','unload-replay'].includes(a.type))return game;
   if(a.type==='select'||a.type==='original')return reset(a.type==='select'?a.levelIndex:game.levelIndex);
   if(a.type==='restart')return reset(game.levelIndex,game.activeLevel,game.activeSeed);
   if(a.type==='variant'){
@@ -258,6 +349,7 @@ DUCK_LEVELS.forEach(validateLevel);
   }
  function PreviewPage(){
    const[game,dispatch]=React.useReducer(gameReducer,0,createGame),[planText,setPlanText]=React.useState(''),[message,setMessage]=React.useState(''),[playing,setPlaying]=React.useState(false),[seedDraft,setSeedDraft]=React.useState(''),timer=React.useRef(null);
+   const recordedDemo=game.recordedDemo;
    const level=game.activeLevel||DUCK_LEVELS[game.levelIndex], state=game.state, won=isWon(level,state), dead=cornerDeadlocks(level,state).length>0;
    const move=d=>{setPlaying(false);dispatch({type:'move',direction:d});};
    const loadSeed=seed=>{setPlaying(false);dispatch({type:'variant',seed:String(seed).slice(0,128)});setMessage('');};
@@ -267,15 +359,19 @@ DUCK_LEVELS.forEach(validateLevel);
   React.useEffect(()=>{if(!playing||!game.replay||game.replay.index>=game.replay.states.length-1){setPlaying(false);return;}const generation=game.generation;timer.current=setTimeout(()=>{const i=game.replay.index+1;dispatch({type:'replay-step',generation,index:i,state:game.replay.states[i]});},260);return()=>clearTimeout(timer.current);},[playing,game.replay,game.generation]);
   React.useEffect(()=>{const keys={ArrowUp:'up',w:'up',ArrowDown:'down',s:'down',ArrowLeft:'left',a:'left',ArrowRight:'right',d:'right'},onKey=e=>{const t=e.target instanceof Element?e.target:null;if(t?.closest('select, input, textarea, [contenteditable]:not([contenteditable="false"])'))return;const d=keys[e.key];if(d){e.preventDefault();move(d);}};window.addEventListener('keydown',onKey);return()=>window.removeEventListener('keydown',onKey);});
   const reset=()=>{setPlaying(false);dispatch({type:'restart'});setMessage('');};
+   const showRecorded=kind=>{setPlaying(false);dispatch({type:'recorded-demo',kind});setPlanText(kind==='improved'?JSON.stringify({moves:RECORDED_AGENT_DEMO.moves}):'');setMessage('');};
    const importReplay=()=>{try{const parsed=JSON.parse(planText),moves=Array.isArray(parsed)?parsed:parsed.moves,result=replay(level,moves);const initial=initialState(level),states=[initial];let s=initial;for(const d of moves){s=step(level,s,d);states.push(s);}if(states.some((item,i)=>serialize(item)!==result.trace[i]))throw new Error('trace serialization mismatch');setPlaying(false);dispatch({type:'load-replay',trace:result.trace,states});setMessage(`Verified trace: ${result.attempts} attempts${result.won?' · solved':''}. Press play or step.`);}catch(e){setMessage(`Replay rejected: ${e.message}`);}};
   const replayData=game.replay, stepReplay=()=>{if(replayData&&replayData.index<replayData.states.length-1){const i=replayData.index+1;dispatch({type:'replay-step',generation:game.generation,index:i,state:replayData.states[i]});}};
- return <main className="duck-app"><header className="duck-header"><div><p className="eyebrow">DUCK DELIVERY / SORTING FLOOR</p><h1>Duck Delivery</h1><p className="intro">A classic Sokoban shift. Order every parcel onto its teal pad without trapping the route.</p></div><div className="duck-mark" aria-hidden="true">🦆</div></header>
-  <section className="game-shell" aria-label="Sokoban game"><div className="game-toolbar"><label htmlFor="level">ROUTE <select id="level" value={game.levelIndex} onChange={e=>{setPlaying(false);dispatch({type:'select',levelIndex:Number(e.target.value)});setSeedDraft('');setMessage('');}}>{DUCK_LEVELS.map((x,i)=><option key={x.name} value={i}>{x.name}</option>)}</select></label><div className="variant-controls"><input id="seed" maxLength={128} value={seedDraft} onChange={e=>setSeedDraft(e.target.value)} placeholder="seed" aria-label="Variant seed"/><button className="secondary" onClick={()=>loadSeed(seedDraft)}>Load seed</button><button className="secondary" onClick={shuffleSeed}>Shuffle challenge</button><button className="secondary" onClick={originalRoute}>Original route</button></div><div className="stats"><span><b>{state.moves}</b> moves</span><span><b>{state.pushes}</b> pushes</span><span><b>{level.parcels.length}</b> parcels</span></div></div>
+ return <main className={`duck-app${recordedDemo?' agent-demo-active':''}`}><header className="duck-header"><div><p className="eyebrow">DUCK DELIVERY / SORTING FLOOR</p><h1>Duck Delivery</h1><p className="intro">A classic Sokoban shift. Order every parcel onto its teal pad without trapping the route.</p></div><div className="duck-mark" aria-hidden="true">🦆</div></header>
+  <section className="game-shell" aria-label="Sokoban game">
+ <section className="recorded-demo" aria-label="Recorded agent demo"><div className="demo-heading"><b>Recorded agent demo</b><span>Shelled AI built the game · TrueForge ran the skill-learning experiments</span></div><div className="demo-actions"><button className="secondary" onClick={()=>showRecorded('baseline')}>Watch baseline failure</button><button onClick={()=>showRecorded('improved')}>Watch improved agent</button>{recordedDemo==='improved'&&<><button onClick={()=>setPlaying(true)} disabled={playing||replayData?.index===replayData?.states.length-1}>Play agent plan</button><button className="secondary" onClick={()=>setPlaying(false)}>Pause agent</button></>}{recordedDemo&&<button className="secondary" onClick={originalRoute}>Exit agent demo</button>}</div>
+ {recordedDemo&&<div className="demo-evidence"><p className="demo-outcome">{recordedDemo==='baseline'?'Baseline v1 · round 1 · duck-01: iteration limit 12 reached; no valid final plan was submitted.':'Improved v3 · round 2 · duck-01: exact recorded 15-move plan, validated by the canonical engine.'} {recordedDemo==='improved'&&`Replay ${replayData.index}/${RECORDED_AGENT_DEMO.moves.length}.`}</p><p>Recorded experiment, not a live inference. {recordedDemo==='baseline'?'The board remains at its initial state because the agent submitted no plan.':'Every replay move comes from the saved agent response; manual movement is disabled in this mode.'}</p><div className="demo-sources"><a href={RECORDED_AGENT_DEMO.baselineSession} target="_blank" rel="noreferrer">Baseline run</a><a href={RECORDED_AGENT_DEMO.learningSession} target="_blank" rel="noreferrer">Skill learning session</a><a href={RECORDED_AGENT_DEMO.improvedSession} target="_blank" rel="noreferrer">Improved run</a><a href={RECORDED_AGENT_DEMO.reportUrl} target="_blank" rel="noreferrer">All results</a></div><details className="demo-receipt"><summary>{recordedDemo==='baseline'?'Baseline tool receipt':'Recorded agent answer'}</summary>{recordedDemo==='baseline'?<><p>Archived tool command: <code>cat /opt/tf/skills/duck-planning/SKILL.md</code>. The baseline loaded its registered v1 skill, then exhausted its planning/testing budget.</p><pre>{'You have reached iteration limit of 12, please request again\nFinal submitted reply: empty\nCanonical result: unsolved'}</pre></>:<pre>{JSON.stringify({moves:RECORDED_AGENT_DEMO.moves},null,2)}</pre>}</details><details className="demo-learning"><summary>How the agent learned</summary><p>A separate TrueForge agent reviewed failed development traces and diagnosed repeated planning/testing loops. V2 failed both comparisons. V3 rewrote one planning procedure; model weights stayed unchanged.</p><blockquote>{RECORDED_AGENT_DEMO.skillRule}</blockquote><a href={RECORDED_AGENT_DEMO.skillUrl} target="_blank" rel="noreferrer">Exact agent-authored skill</a><p>Overall baselines: 25%, 0%, 37.5%. V2: 0%, 0%. V3: 75%, 75%; held out: 50%, 50%. Eight fixed puzzles on familiar terrain; four held-out arrangements. No unseen-map claim.</p></details></div>}
+ </section><div className="game-toolbar">{recordedDemo?<strong>Benchmark 01 · recorded {recordedDemo}</strong>:<label htmlFor="level">ROUTE <select id="level" value={game.levelIndex} onChange={e=>{setPlaying(false);dispatch({type:'select',levelIndex:Number(e.target.value)});setSeedDraft('');setMessage('');}}>{DUCK_LEVELS.map((x,i)=><option key={x.name} value={i}>{x.name}</option>)}</select></label>}{!recordedDemo&&<div className="variant-controls"><input id="seed" maxLength={128} value={seedDraft} onChange={e=>setSeedDraft(e.target.value)} placeholder="seed" aria-label="Variant seed"/><button className="secondary" onClick={()=>loadSeed(seedDraft)}>Load seed</button><button className="secondary" onClick={shuffleSeed}>Shuffle challenge</button><button className="secondary" onClick={originalRoute}>Original route</button></div>}<div className="stats"><span><b>{state.moves}</b> moves</span><span><b>{state.pushes}</b> pushes</span><span><b>{level.parcels.length}</b> parcels</span></div></div>
  <div className="board-wrap"><div className="board" style={{'--cols':level.terrain[0].length}} role="grid" aria-label={`${level.name} warehouse`}>{level.terrain.flatMap((row,y)=>[...row].map((tile,x)=>{const p=[x,y],parcel=state.parcels.some(q=>q[0]===x&&q[1]===y),duck=state.duck[0]===x&&state.duck[1]===y,goal=level.goals.some(q=>q[0]===x&&q[1]===y);return <div key={`${x}-${y}`} className={`tile ${tile==='#'?'wall':'floor'} ${goal?'goal':''}`} role="gridcell">{goal&&<span className="pad">✦</span>}{parcel&&<span className="box">▣</span>}{duck&&<span className="duck">●</span>}</div>;}))}</div></div>
-  <div className="variant-meta">{game.activeSeed===null?'Original route':`Seed: ${game.activeSeed} · ${globalThis.__DUCK_VARIANTS__?.VARIANT_VERSION||'variant'}`} <span>Same route + seed reproduces this challenge.</span></div><div className={`status ${won?'complete':''}`} role="status">{game.variantError|| (won?'Route complete! Every parcel is delivered.':dead?'Corner trap: a parcel is off a goal in a static corner. Undo or restart to recover.':'Push every parcel onto a teal star. Plan the order before pushing.')}</div>
- <div className="controls"><button className="secondary" onClick={()=>dispatch({type:'undo'})} disabled={!game.history.length}>↶ Undo</button><div className="dpad"><button onClick={()=>move('up')} aria-label="Move up">↑</button><div><button onClick={()=>move('left')} aria-label="Move left">←</button><button onClick={()=>move('down')} aria-label="Move down">↓</button><button onClick={()=>move('right')} aria-label="Move right">→</button></div></div><button className="secondary" onClick={reset}>Restart</button></div>
- <details className="replay-panel"><summary>Verified replay lab</summary><p>Import a JSON array or {`{"moves":[...]}`} of directions. Only validated traces can be watched.</p><textarea value={planText} onChange={e=>setPlanText(e.target.value)} placeholder='["right", "right"]' aria-label="Replay plan"/><div className="replay-actions"><button onClick={importReplay}>Verify trace</button><button onClick={()=>{setPlaying(true);}} disabled={!replayData}>Play</button><button onClick={()=>{setPlaying(false);}}>Pause</button><button onClick={stepReplay} disabled={!replayData}>Step</button><button onClick={()=>{setPlaying(false);setMessage('');}}>Clear message</button><button onClick={()=>{setPlaying(false);dispatch({type:'unload-replay'});setMessage('');}}>Unload</button></div>{message&&<p className="replay-message">{message}</p>}</details>
- <div className="baseline"><b>Original / Improved</b><span>Awaiting recorded TrueForge runs — watch controls stay disabled until real runs are available.</span><div className="baseline-actions"><button disabled>Watch original</button><button disabled>Watch improved</button></div></div></section><footer className="duck-footer"><span>ARROW KEYS / WASD TO MOVE</span><span>Pure engine · verified replay traces · no canned gains</span></footer></main>;
+  <div className="variant-meta">{recordedDemo?'Recorded TrueForge benchmark · duck-01':game.activeSeed===null?'Original route':`Seed: ${game.activeSeed} · ${globalThis.__DUCK_VARIANTS__?.VARIANT_VERSION||'variant'}`} <span>{recordedDemo?'Same initial puzzle as the source run.':'Same route + seed reproduces this challenge.'}</span></div><div className={`status ${won?'complete':''}`} role="status">{recordedDemo==='baseline'?'Baseline stopped without a final plan; see the failure receipt above.':game.variantError|| (won?'Route complete! Every parcel is delivered.':dead?'Corner trap: a parcel is off a goal in a static corner. Undo or restart to recover.':'Push every parcel onto a teal star. Plan the order before pushing.')}</div>
+ <div className="controls"><button className="secondary" onClick={()=>dispatch({type:'undo'})} disabled={!!recordedDemo||!game.history.length}>↶ Undo</button><div className="dpad"><button onClick={()=>move('up')} disabled={!!recordedDemo} aria-label="Move up">↑</button><div><button onClick={()=>move('left')} disabled={!!recordedDemo} aria-label="Move left">←</button><button onClick={()=>move('down')} disabled={!!recordedDemo} aria-label="Move down">↓</button><button onClick={()=>move('right')} disabled={!!recordedDemo} aria-label="Move right">→</button></div></div><button className="secondary" onClick={reset}>Restart</button></div>
+ {!recordedDemo&&<details className="replay-panel"><summary>Verified replay lab</summary><p>Import a JSON array or {`{"moves":[...]}`} of directions. Only validated traces can be watched.</p><textarea value={planText} onChange={e=>setPlanText(e.target.value)} placeholder='["right", "right"]' aria-label="Replay plan"/><div className="replay-actions"><button onClick={importReplay}>Verify trace</button><button onClick={()=>{setPlaying(true);}} disabled={!replayData}>Play</button><button onClick={()=>{setPlaying(false);}}>Pause</button><button onClick={stepReplay} disabled={!replayData}>Step</button><button onClick={()=>{setPlaying(false);setMessage('');}}>Clear message</button><button onClick={()=>{setPlaying(false);dispatch({type:'unload-replay'});setMessage('');}}>Unload</button></div>{message&&<p className="replay-message">{message}</p>}</details>}
+</section><footer className="duck-footer"><span>ARROW KEYS / WASD TO MOVE</span><span>Pure engine · verified replay traces · no canned gains</span></footer></main>;
 }
 globalThis.__DUCK_GAME_REDUCER__={createGame,gameReducer};
 globalThis.__DUCK_PREVIEW_PAGE__=PreviewPage;
