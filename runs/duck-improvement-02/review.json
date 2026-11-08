@@ -1,0 +1,17 @@
+{
+  "agentSessionId": "01m6wjea7n7e4ktr984x9x60hg",
+  "candidateSha256": "692cad0fcdd50b0694599d0e339776311efacf698ea076c04d941b0ae8ee9c8c",
+  "candidateChars": 1746,
+  "status": "Accepted for one final comparison; not promoted",
+  "review": "Agent-authored single-procedure change. No controller-written skill wording. No hardcoded task answers; cited IDs are failed development sessions only. Raw response also includes an explanation; the candidate is copied exactly from its JSON proposal field. This proposal parsing does not affect the frozen final-plan scorer.",
+  "proposal": "One complete validation call, immediate final plan submission, permitted external second submission starts from original board.",
+  "bounds": "Two fixed-task repetitions then stop; same original baseline comparison gate",
+  "registeredSkill": "agent-skill:stranger-builds/default/duck-planning:3",
+  "comparisonAgentId": "01m6wjqt8nb8wyb52qwex1baes",
+  "comparisonAgentName": "duck-delivery-planner-v3",
+  "keepGate": {
+    "bothOverallAbove": 37.5,
+    "bothHoldoutAbove": 25
+  },
+  "previousCandidateVerdictCommit": "e2188aa"
+}
