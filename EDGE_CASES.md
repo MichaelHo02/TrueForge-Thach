@@ -10,7 +10,7 @@ Codex also played all six corrected routes in the standalone browser build and o
 
 Shelled Version #18 managed receipts: verify `2fc522a7-36e1-480c-bceb-1cef193e262f` (10 tests), typecheck `ee03713d-5082-4ccf-bccb-ebcb372b08b4`, build `8dc256f9-bc41-4695-86da-f102d1c3106d`. The exact generator outputs had first required a disclosed Codex local-generation/editor-save fallback; no movement logic was hand-maintained in a second engine. The public production uplift was browser-verified on Dock 04: 15 moves/4 pushes delivered 3 parcels, Undo restored 14/3 and cleared the win; replay validation reset to 0/0 and Restart canceled playback.
 
-Original/improved watch controls intentionally remain disabled until actual benchmark recordings exist. The hosted skill/sandbox pilot passed, but no official baseline or learned improvement is claimed. Automatic Shelled GitHub export remains a separate failure; a source checkpoint or manually opened PR must not be described as a successful automatic Shelled export.
+Original/improved watch controls intentionally remain disabled until actual benchmark recordings exist. The hosted skill/sandbox pilot passed; the subsequent benchmark comparison is documented in VERDICT.md. Automatic Shelled GitHub export remains a separate failure; a source checkpoint or manually opened PR must not be described as a successful automatic Shelled export.
 
 This file records observed findings and reproducible checks. It does not claim a browser result unless the preview was actually exercised.
 
@@ -124,3 +124,11 @@ These are reported external Shelled Home `/` observations, not browser execution
 - Independent Codex browser QA found an eleven-column board clipped by fixed mobile tile widths and excess desktop vertical spacing. Codex added fluid grid sizing, tighter spacing, 44px touch targets and a clearer duck silhouette, changed the heading to Duck Delivery, and updated browser theme color. These integration corrections are not attributed to Shelled's agent.
 - Browser verification at 1366×900: the full seeded three-parcel board and movement controls fit in the initial viewport. At 375×812, page width remains 375px, the board wrapper has no internal horizontal scroll (325px client/scroll width), all eleven columns fit, and seed/movement/reset controls have 44px touch height. Actual gameplay and replay checks are recorded separately from Shelled generation claims. The original engine, variations, scorer and frozen packs were not changed.
 - Final local checks for this UI revision passed: 25 tests, typecheck, production build and both original/generalization prompt preparation. Browser behavior passed Undo, seed restoration after Shuffle, Restart retaining the active seed, and an 18-step canonical replay win. JSX differs from the pre-uplift source only in the visible heading text; all handlers and generated blocks remain byte-identical.
+
+## Hosted benchmark findings (2026-11-08)
+
+- Three v1 rounds scored 25/0/37.5%; v2 scored 0/0%; final v3 scored 75/75%, including held-out 50/50%. See VERDICT.md and all raw receipts for the frozen gate and caveats.
+- At iteration exhaustion the UI could show no final answer. Subsequent feedback sends were observed to be rejected; retain the rejected request and count the task as failed. The UI describes a per-turn limit; this observation does not establish cumulative implementation semantics.
+- Whole-message Copy combines tool narration with final output. Scoring must use the entire rendered final-answer body, never extract a winning JSON fragment from narration or discard final-answer prose.
+- V3 round 1 duck-03 read only the first 500 skill characters. Saved configuration pins v3 but full skill consumption is not verified for that task.
+- Direct Skills navigation once redirected to the playground; the normal build-agent Add skill → Register Skills workflow worked. No underlying cause is established and no security setting was changed.

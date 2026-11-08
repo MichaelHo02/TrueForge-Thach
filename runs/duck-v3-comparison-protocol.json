@@ -1,0 +1,17 @@
+{
+  "candidateCommit": "8ce41b4",
+  "candidateSkill": "agent-skill:stranger-builds/default/duck-planning:3",
+  "candidateSha256": "692cad0fcdd50b0694599d0e339776311efacf698ea076c04d941b0ae8ee9c8c",
+  "agentName": "duck-delivery-planner-v3",
+  "agentId": "01m6wjqt8nb8wyb52qwex1baes",
+  "rounds": 2,
+  "taskExecutions": 16,
+  "scheduling": "Four concurrent independent clean sessions, non-overlapping queues; same frozen prompts and original scorer",
+  "keepGate": {
+    "bothOverallAbove": 37.5,
+    "bothHoldoutAbove": 25
+  },
+  "stopRule": "Final candidate; stop after these two comparisons regardless of outcome",
+  "status": "Complete",
+  "verdict": "PASS: promote exact v3 candidate"
+}

@@ -22,7 +22,7 @@ The canonical rules live in `sokoban/engine.ts`. `npm run build:preview-engine` 
 
 ## TrueForge setup
 
-The hosted `duck-delivery-planner` has the registered `duck-planning` skill and a sandbox. A real setup pilot read the skill and executed the canonical JavaScript through Python/QuickJS; its seven trace states matched the local scorer. This is not an official benchmark result. See [TRAINING.md](TRAINING.md) and `runs/pilot-setup/` for evidence and limitations.
+Three real baseline rounds scored 25%, 0%, and 37.5%. The agent-authored v3 skill reached **75% overall / 50% held out in both comparison rounds**, passing the precommitted gate. V2 failed and is retained in the report. See [VERDICT.md](VERDICT.md) for raw evidence, the exact skill change and small-sample limitations.
 
 Eight original puzzles are independently solver-verified, with four development tasks and four withheld from skill improvement. The benchmark harness prepares identical prompts, scores saved actual replies, guards frozen inputs, and prepares improvement prompts from development failures only.
 
@@ -41,7 +41,7 @@ The verified setup is already frozen in `evals/duck/frozen.json`; do not overwri
 - **Run 1 → run N:** not run yet. No improvement is claimed.
 - **The change that did it:** no agent-authored improvement exists yet.
 - **What the agent learned:** unmeasured; the initial skill is registered as version 1.
-- **What still fails:** see [EDGE_CASES.md](EDGE_CASES.md); live benchmark results and recorded before/after replays are still pending.
+- **What still fails:** see [EDGE_CASES.md](EDGE_CASES.md); benchmark results are in VERDICT.md; in-game before/after replays and a comparison video remain pending.
 
 ## Shelled evidence
 

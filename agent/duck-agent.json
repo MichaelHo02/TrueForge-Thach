@@ -6,8 +6,8 @@
     "displayName": "claude-haiku-4-5-20251001"
   },
   "skill": "duck-planning",
-  "status": "hosted agent and exact final-engine sandbox pilot verified; benchmark frozen; no official baseline",
-  "registeredSkill": "agent-skill:stranger-builds/default/duck-planning:1",
+  "status": "v3 promoted after three baseline rounds and two repeated comparison rounds; see VERDICT.md",
+  "registeredSkill": "agent-skill:stranger-builds/default/duck-planning:3",
   "runtime": {
     "iterationLimit": 12,
     "sandbox": true,

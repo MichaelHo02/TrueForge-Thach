@@ -1,6 +1,6 @@
 # Duck Delivery training setup
 
-The hosted `duck-delivery-planner` is saved at https://stranger-builds.truefoundry.cloud/trueforge. It uses the managed `claude-haiku-4-5-20251001` model, registered skill `agent-skill:stranger-builds/default/duck-planning:1`, and sandbox execution. Iteration limit is 12; web search, dynamic subagents, generative UI, and user questions are off. The initial skill and instructions are committed before any official baseline.
+The hosted `duck-delivery-planner` is saved at https://stranger-builds.truefoundry.cloud/trueforge. It uses the managed `claude-haiku-4-5-20251001` model, registered skill `agent-skill:stranger-builds/default/duck-planning:3` (promoted after evaluation), and sandbox execution. Iteration limit is 12; web search, dynamic subagents, generative UI, and user questions are off. The initial skill and instructions are committed before any official baseline.
 
 ## Actual setup pilot
 
@@ -30,7 +30,7 @@ For improvement, create a separate agent session with no sandbox, MCP, web, suba
 
 ## Current gate
 
-The task set is frozen; no baseline or improvement score exists yet. The Shelled uplift passed route/replay checks and is publicly deployed. The final canonical engine (`b1c7a7a9593b7ed1aa3c027f6daf99221571115f3d51632899e30ea1f3e4a8ae`) was copied exactly into the hosted sandbox and executed through the exact packaged adapter, exit 0; all seven setup trace states again match local scoring. See `final-engine-evidence.txt` and `final-engine-result.json` in the pilot directory. The starter code-review `run-evals` and `improve` commands remain code-review commands; do not use them as Sokoban benchmarks. The next action is collecting Run 1 on the eight prepared prompts, with the frozen configuration and skill version 1.
+Three v1 baseline rounds scored 25%, 0%, 37.5%. V2 scored 0% twice and was rejected. V3 scored 75% overall / 50% held out twice and passed the precommitted gate; its exact agent-authored skill is promoted. See [VERDICT.md](VERDICT.md), including all negative trials, real sessions and limitations. The setup pilot remains a setup check, separate from these benchmark runs.
 
 ## Evaluation gate from TrueFoundry's talk
 
@@ -42,4 +42,4 @@ Source reviewed: https://nerdconf.github.io/trueforge-talk/ (Anant Agarwal, 4 No
 4. Evaluate the candidate in two fresh rounds on the same eight puzzles and configuration. Retain all scores, including regressions. Compare both overall and holdout results with the baseline ranges; a higher overall score alone is insufficient.
 5. Keep the candidate only if its gain exceeds baseline variation, includes held-out improvement and survives repetition. Otherwise retain/revert to the original and report **gain not shown**. A strict, easy-to-audit gate is for both post-edit rounds to exceed the baseline maximum overall and on holdout. With eight binary tasks, one task changes the overall score by 12.5 points; four held-out tasks move in 25-point steps, so acknowledge the small sample.
 
-Maintain a verdict report containing five rows: baseline variation measured; scorer/tasks unchanged and isolated; held-out gain; small general agent-authored diff; repeatable gain beyond variation. Mark evidence PASS, FAIL or NOT YET, link real sessions/commits, and use "gain not shown" if any required evidence is missing. This paragraph is the planned gate, not a report of completed runs. The separate 24-task seeded pack can strengthen later generalization evidence but must remain a distinct, fixed evaluation; never regenerate it to obtain a favorable result.
+Maintain a verdict report containing five rows: baseline variation measured; scorer/tasks unchanged and isolated; held-out gain; small general agent-authored diff; repeatable gain beyond variation. Mark evidence PASS, FAIL or NOT YET, link real sessions/commits, and use "gain not shown" if any required evidence is missing. The completed assessment is in VERDICT.md. The separate 24-task seeded pack can strengthen later generalization evidence but must remain a distinct, fixed evaluation; never regenerate it to obtain a favorable result.
