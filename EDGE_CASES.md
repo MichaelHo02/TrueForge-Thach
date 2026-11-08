@@ -147,6 +147,12 @@ These are reported external Shelled Home `/` observations, not browser execution
 The demo selector now loads duck-01 (two parcels, 15 moves), duck-02 (two parcels, 21 moves) and duck-06 (three parcels, 15 moves; held out). Each source response used one final submission. Baseline receipts are round 1 for duck-01/06 and round 2 for duck-02; these are labelled example failures, while the linked report preserves all baseline successes and failures. Tests verify every selected source task, round, exact response and trace, plus switching between recordings, restart and stale callback rejection. Normal/Slow playback changes only viewing pace (260/650ms), not recorded moves, scoring or model settings. All eight tasks share wall terrain; the video examples do not establish unseen-map generalization.
 
 
+## Semantic warehouse gridcell labels
+
+- Changed only canonical `PreviewPage.jsx`: every warehouse `gridcell` now has a one-based row/column label describing wall or floor and any goal, parcel, and duck occupants. Goal overlays, parcel glyphs, and duck glyphs are `aria-hidden` so decorative text is not announced twice; combined occupants such as a parcel or duck on a goal remain represented in the cell label.
+- Added a targeted regression in `sokoban/webmcp.test.ts` covering wall/floor and combined occupant label content, plus stable coordinates/terrain and updated occupant labels after a native movement.
+- Verification: managed `npm run typecheck` passed (job `f4ec2144-d995-4b54-a223-f8eb47049c61`); managed `npm run test` passed with 28 tests, including the targeted gridcell-label regression (job `64896154-e2cc-452a-8380-db87940aeeff`). ESLint parsing also passed for `PreviewPage.jsx` and `sokoban/webmcp.test.ts`.
+
 ## Benchmark fixture availability fix
 
 - Changed `PreviewPage.jsx` so missing or empty `globalThis.__DUCK_BENCHMARK_TASKS__` disables both the benchmark selector and “Load live benchmark” button, and shows an explicit unavailable message. The live benchmark reducer remains a no-op when fixtures are absent.
