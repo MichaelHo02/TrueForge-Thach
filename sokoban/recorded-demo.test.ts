@@ -5,9 +5,10 @@ import test from 'node:test';
 import {initialState,step,replay,isWon} from './engine.js';
 const read=(path:string)=>JSON.parse(readFileSync(path,'utf8'));
 const source=readFileSync('PreviewPage.jsx','utf8');
-const fixture=JSON.parse(source.match(/const RECORDED_AGENT_DEMO = ([\s\S]*?);\nDUCK_LEVELS/)![1]);
+const fixtures=JSON.parse(source.match(/const RECORDED_AGENT_DEMOS = ([\s\S]*?);\nDUCK_LEVELS/)![1]);
+const fixture=fixtures[0];
 const levels=vm.runInNewContext(source.match(/const DUCK_LEVELS=(\[[\s\S]*?\]);/)![1]);
-function reducer(data=fixture){return vm.runInNewContext(source.match(/const createGame[\s\S]*?(?=\n function PreviewPage)/)![0]+'\n({createGame,gameReducer})',{DUCK_LEVELS:levels,RECORDED_AGENT_DEMO:data,initialState,step,replay});}
+function reducer(data=fixtures){return vm.runInNewContext(source.match(/const createGame[\s\S]*?(?=\n function PreviewPage)/)![0]+'\n({createGame,gameReducer})',{DUCK_LEVELS:levels,RECORDED_AGENT_DEMOS:data,initialState,step,replay});}
 test('website demo is the exact recorded task and model answer, including all canonical trace states',()=>{
  const task=read('evals/duck/tasks.json').find((x:any)=>x.id===fixture.taskId);
  const before=read('runs/duck-baseline-01/actual-replies.json').find((x:any)=>x.taskId===fixture.taskId);
@@ -27,6 +28,23 @@ test('recorded mode blocks manual interference, restarts faithfully and rejects 
  const failed=gameReducer(exit,{type:'recorded-demo',kind:'baseline'});assert.equal(failed.replay,null);assert.equal(failed.state.moves,0);
 });
 test('website refuses a recorded plan whose trace was changed',()=>{
- const corrupted={...fixture,trace:[...fixture.trace]};corrupted.trace[1]='tampered';const {createGame,gameReducer}=reducer(corrupted);
+ const corrupted={...fixture,trace:[...fixture.trace]};corrupted.trace[1]='tampered';const {createGame,gameReducer}=reducer([corrupted,...fixtures.slice(1)]);
  assert.throws(()=>gameReducer(createGame(),{type:'recorded-demo',kind:'improved'}),/does not match/);
+});
+
+test('all three website recordings match their exact source tasks, rounds, outputs and winning traces',()=>{
+ const tasks=read('evals/duck/tasks.json');const {createGame,gameReducer}=reducer();let previous:any;
+ assert.deepEqual(fixtures.map((x:any)=>x.taskId),['duck-01','duck-02','duck-06']);
+ fixtures.forEach((data:any,demoIndex:number)=>{
+  const task=tasks.find((t:any)=>t.id===data.taskId);
+  const before=read(`runs/duck-baseline-${String(data.baselineRound).padStart(2,'0')}/actual-replies.json`).find((r:any)=>r.taskId===data.taskId);
+  const after=read(`runs/duck-v3-comparison-${String(data.improvedRound).padStart(2,'0')}/actual-replies.json`).find((r:any)=>r.taskId===data.taskId);
+  assert.deepEqual(data.level,task.level);assert.equal(data.holdout,task.holdout);assert.deepEqual(before.replies,['']);assert.equal(data.baselineSession,before.sessionUrl);assert.equal(data.improvedSession,after.sessionUrl);
+  assert.deepEqual(data.moves,JSON.parse(after.replies[0]).moves);assert.deepEqual(data.trace,after.localResult.attempts[0].trace);
+  let game=gameReducer(previous||createGame(),{type:'recorded-demo',kind:'improved',demoIndex});assert.equal(game.recordedDemoIndex,demoIndex);
+  if(previous)assert.equal(gameReducer(game,{type:'replay-step',generation:previous.generation,index:1,state:previous.replay.states[1]}),game);
+  for(let i=1;i<game.replay.states.length;i++)game=gameReducer(game,{type:'replay-step',generation:game.generation,index:i,state:game.replay.states[i]});
+  assert.equal(isWon(game.activeLevel,game.state),true);
+  const reset=gameReducer(game,{type:'restart'});assert.equal(reset.recordedDemoIndex,demoIndex);assert.equal(reset.replay.index,0);previous=game;
+ });
 });

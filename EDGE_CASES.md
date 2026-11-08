@@ -141,3 +141,7 @@ These are reported external Shelled Home `/` observations, not browser execution
 - Local browser verification observed replay 15/15, 15 moves / 4 pushes, both goals filled and the route-complete status. Pause and Exit restored usable controls. At 375px document and viewport widths both measured 375px; no browser errors/warnings were reported.
 
 - Published website verification: deployment `dpl_7im6bBnA8y2MgXWCYAScYV5WKvnU` is READY and serves https://duck-delivery.vercel.app from source commit `9677f8c`. The actual published UI reached Replay 15/15, 15 moves / 4 pushes and “Route complete! Every parcel is delivered.” Direct browser frames of this playback, plus on-site receipts and source links, replace the earlier separately drawn board animation in the voiced demo.
+
+## Three recorded benchmark puzzles
+
+The demo selector now loads duck-01 (two parcels, 15 moves), duck-02 (two parcels, 21 moves) and duck-06 (three parcels, 15 moves; held out). Each source response used one final submission. Baseline receipts are round 1 for duck-01/06 and round 2 for duck-02; these are labelled example failures, while the linked report preserves all baseline successes and failures. Tests verify every selected source task, round, exact response and trace, plus switching between recordings, restart and stale callback rejection. Normal/Slow playback changes only viewing pace (260/650ms), not recorded moves, scoring or model settings. All eight tasks share wall terrain; the video examples do not establish unseen-map generalization.

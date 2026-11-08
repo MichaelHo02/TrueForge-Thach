@@ -823,3 +823,5 @@ button.secondary:hover:not(:disabled) {
 @media(max-width:600px){.demo-heading{align-items:flex-start}.demo-actions button{flex:1 1 140px}.demo-sources{gap:8px 16px}.demo-evidence p{overflow-wrap:anywhere}}
 
 .agent-demo-active .duck-header{margin-bottom:12px;padding-bottom:12px}.agent-demo-active .duck-header h1{font-size:clamp(2rem,5vw,3.8rem)}.agent-demo-active .intro{font-size:.78rem;margin:8px 0 0}.agent-demo-active .duck-mark{width:70px;height:70px;font-size:2rem}.agent-demo-active .board-wrap{padding:12px}.demo-receipt{margin-top:8px;font-size:.85rem;line-height:1.6}.demo-receipt summary{cursor:pointer;color:#8be9ed}.demo-receipt pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:12px;background:#080b0d;color:#eee5d3}.demo-receipt p{overflow-wrap:anywhere}
+
+.demo-picker{display:flex;align-items:center;gap:8px;font:12px/1.5 monospace;flex-wrap:wrap}.demo-picker select{min-height:44px;max-width:100%}@media(max-width:600px){.demo-picker{flex:1 1 100%}.demo-picker select{flex:1;min-width:0}}
