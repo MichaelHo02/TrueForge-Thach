@@ -2,7 +2,7 @@
   "agentSessionId": "01m6wgw9qnt5p8jesc2tqr3dye",
   "candidateSha256": "0ff1037c053454964f25fdc05b196ed1789415af531785cd3405573925b6c345",
   "candidateChars": 1502,
-  "status": "Accepted for comparison only; not promoted",
+  "status": "Rejected after comparison; active v1 retained",
   "humanReview": "Two technical clarification turns distinguished sandbox calls from final answers. No heldout/comparison outcomes were supplied. Candidate text is exact agent-authored JSON field, unedited.",
   "checks": {
     "frontmatterPreserved": true,
@@ -19,5 +19,14 @@
   "registeredSkill": "agent-skill:stranger-builds/default/duck-planning:2",
   "comparisonAgentId": "01m6wh4z8dempvs2c8n82whkmh",
   "comparisonAgentName": "duck-delivery-planner-v2",
-  "configurationCheck": "Cloned v1 saved configuration; same model defaults/instructions/sandbox/iteration limit/capabilities; only skill version changed."
+  "configurationCheck": "Cloned v1 saved configuration; same model defaults/instructions/sandbox/iteration limit/capabilities; only skill version changed.",
+  "comparisonScores": [
+    0,
+    0
+  ],
+  "comparisonHoldoutScores": [
+    0,
+    0
+  ],
+  "verdict": "gain not shown"
 }

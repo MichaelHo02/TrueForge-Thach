@@ -1,0 +1,17 @@
+{
+  "baselineEvidenceCommit": "794d82d2fcfe980950847d94262929d42f23aab4",
+  "candidateCommit": "e4852b4",
+  "candidateSkill": "agent-skill:stranger-builds/default/duck-planning:2",
+  "candidateSha256": "0ff1037c053454964f25fdc05b196ed1789415af531785cd3405573925b6c345",
+  "agentName": "duck-delivery-planner-v2",
+  "agentId": "01m6wh4z8dempvs2c8n82whkmh",
+  "tasksAndPrompts": "Same frozen eight-task prompts used for all three baseline rounds; no modifications",
+  "solverConfiguration": "Cloned original saved agent; same model defaults, instructions, sandbox and runtime/capabilities; skill version only changed",
+  "rounds": 2,
+  "keepGate": {
+    "bothOverallAbove": 37.5,
+    "bothHoldoutAbove": 25
+  },
+  "status": "Complete: two rounds, 0 overall and 0 held-out in each; candidate rejected",
+  "executionScheduling": "Initially one independent task per round; increased to four concurrent independent sessions for remaining tasks. Task order is partitioned into disjoint queues. Every task retains the same model, prompt, clean session and budget; no candidate edits between tasks."
+}

@@ -1,0 +1,1809 @@
+Browser tab: 13, Title: "TrueForge", URL: "https://stranger-builds.truefoundry.cloud/trueforge/sessions/01m6wj3mqp45pzb2cy080fbcwt?try_agent_name=duck-delivery-planner-v2".
+1 AXWebArea TrueForge, URL: stranger-builds.truefoundry.cloud/trueforge/sessions/01m6wj3mqp45pzb2cy080fbcwt?try_agent_name=duck-delivery-planner-v2
+	2 container
+		3 container
+			4 container Sidebar
+				5 button Description: Start new chat, Help: New chat
+				6 button Description: Start new agent, Help: New Agent
+				7 button Agents
+				8 button Sessions
+				9 button Schedules
+				10 button Environments
+			11 link Description: Documentation, Value: trueforge.dev/
+			12 button Description: Switch to dark theme, Help: Dark theme
+			13 container Thạch Hồ Lê Minh
+				14 text T
+				15 text Thạch Hồ Lê Minh
+		16 container
+			17 heading Back to all agents duck-delivery-planner-v2, Value: 1
+				18 button Back to all agents
+				19 text duck-delivery-planner-v2
+			20 pop up button (collapsed) Share, Secondary Actions: Expand
+			21 button New Chat
+		22 container Recent chats
+			23 heading Chats for duck-delivery-planner-v2, Value: 2
+				24 text Chats for duck-delivery-planner-v2
+			25 container
+				26 button Solve this independent fixed Sokoban puzzle. Use d
+				27 pop up button (collapsed) Description: Session actions, ID: radix-_r_1v_, Secondary Actions: Expand
+				28 button Solve this independent fixed Sokoban puzzle. Use d duck-delivery-planner-v2
+					29 text Solve this independent fixed Sokoban puzzle. Use d
+					30 text duck-delivery-planner-v2
+				31 text 4m
+				32 pop up button (collapsed) Description: Session actions, ID: radix-_r_6_, Secondary Actions: Expand
+				33 button Solve this independent fixed Sokoban puzzle. Use d duck-delivery-planner-v2
+					34 text Solve this independent fixed Sokoban puzzle. Use d
+					35 text duck-delivery-planner-v2
+				36 text 4m
+				37 pop up button (collapsed) Description: Session actions, ID: radix-_r_a_, Secondary Actions: Expand
+				38 button Solve this independent fixed Sokoban puzzle. Use d duck-delivery-planner-v2
+					39 text Solve this independent fixed Sokoban puzzle. Use d
+					40 text duck-delivery-planner-v2
+				41 text 4m
+				42 pop up button (collapsed) Description: Session actions, ID: radix-_r_e_, Secondary Actions: Expand
+				43 button Solve this independent fixed Sokoban puzzle. Use d duck-delivery-planner-v2
+					44 text Solve this independent fixed Sokoban puzzle. Use d
+					45 text duck-delivery-planner-v2
+				46 text 6m
+				47 pop up button (collapsed) Description: Session actions, ID: radix-_r_i_, Secondary Actions: Expand
+				48 button Solve this independent fixed Sokoban puzzle. Use d duck-delivery-planner-v2
+					49 text Solve this independent fixed Sokoban puzzle. Use d
+					50 text duck-delivery-planner-v2
+				51 text 7m
+				52 pop up button (collapsed) Description: Session actions, ID: radix-_r_m_, Secondary Actions: Expand
+				53 button Solve this independent fixed Sokoban puzzle. Use d duck-delivery-planner-v2
+					54 text Solve this independent fixed Sokoban puzzle. Use d
+					55 text duck-delivery-planner-v2
+				56 text 7m
+				57 pop up button (collapsed) Description: Session actions, ID: radix-_r_q_, Secondary Actions: Expand
+				58 button Solve this independent fixed Sokoban puzzle. Use d duck-delivery-planner-v2
+					59 text Solve this independent fixed Sokoban puzzle. Use d
+					60 text duck-delivery-planner-v2
+				61 text 7m
+				62 pop up button (collapsed) Description: Session actions, ID: radix-_r_u_, Secondary Actions: Expand
+				63 button Solve this independent fixed Sokoban puzzle. Use d duck-delivery-planner-v2
+					64 text Solve this independent fixed Sokoban puzzle. Use d
+					65 text duck-delivery-planner-v2
+				66 text 8m
+				67 pop up button (collapsed) Description: Session actions, ID: radix-_r_12_, Secondary Actions: Expand
+				68 button Solve this independent fixed Sokoban puzzle. Use d duck-delivery-planner-v2
+					69 text Solve this independent fixed Sokoban puzzle. Use d
+					70 text duck-delivery-planner-v2
+				71 text 10m
+				72 pop up button (collapsed) Description: Session actions, ID: radix-_r_16_, Secondary Actions: Expand
+				73 button Solve this independent fixed Sokoban puzzle. Use d duck-delivery-planner-v2
+					74 text Solve this independent fixed Sokoban puzzle. Use d
+					75 text duck-delivery-planner-v2
+				76 text 10m
+				77 pop up button (collapsed) Description: Session actions, ID: radix-_r_1a_, Secondary Actions: Expand
+				78 button Solve this independent fixed Sokoban puzzle. Use d duck-delivery-planner-v2
+					79 text Solve this independent fixed Sokoban puzzle. Use d
+					80 text duck-delivery-planner-v2
+				81 text 12m
+				82 pop up button (collapsed) Description: Session actions, ID: radix-_r_1e_, Secondary Actions: Expand
+				83 button Solve this independent fixed Sokoban puzzle. Use d duck-delivery-planner-v2
+					84 text Solve this independent fixed Sokoban puzzle. Use d
+					85 text duck-delivery-planner-v2
+				86 text 12m
+				87 pop up button (collapsed) Description: Session actions, ID: radix-_r_1i_, Secondary Actions: Expand
+				88 button Solve this independent fixed Sokoban puzzle. Use d duck-delivery-planner-v2
+					89 text Solve this independent fixed Sokoban puzzle. Use d
+					90 text duck-delivery-planner-v2
+				91 text 15m
+				92 pop up button (collapsed) Description: Session actions, ID: radix-_r_1m_, Secondary Actions: Expand
+				93 button Solve this independent fixed Sokoban puzzle. Use d duck-delivery-planner-v2
+					94 text Solve this independent fixed Sokoban puzzle. Use d
+					95 text duck-delivery-planner-v2
+				96 text 15m
+				97 pop up button (collapsed) Description: Session actions, ID: radix-_r_1q_, Secondary Actions: Expand
+		98 container
+			99 text Solve this independent fixed Sokoban puzzle. Use duck-planning and the sandbox. No access to other tasks, solutions, repository, or previous runs. At most 2 final submissions, each <=100 attempted moves from the INITIAL board. Invalid plans consume submissions; blocked moves consume attempts. Return ONLY JSON {"moves":[...]} (one whole JSON fence allowed), no prose. If given second-submission feedback, restart from the original puzzle.
+Puzzle: {"name":"Benchmark 08","terrain":["#########","#       #","#  #    #","#       #","#    #  #","#       #","#########"],"duck":[2,1],"parcels":[[4,1],[2,2]],"goals":[[2,1],[6,5]]}
+
+The sandbox has Python. Install quickjs from PyPI if absent. Save the following exact canonical JS and adapter into temporary files and use them to check plans. Do not implement replacement movement rules.
+Canonical engine:
+```js
+/* Generated from sokoban/engine.ts; sha256=b1c7a7a9593b7ed1aa3c027f6daf99221571115f3d51632899e30ea1f3e4a8ae; do not edit. */
+globalThis.__DUCK_DELIVERY_ENGINE__ = (() => {
+const directionDelta = { up: [0, -1], down: [0, 1], left: [-1, 0], right: [1, 0] };
+const DIRECTIONS = new Set(Object.keys(directionDelta));
+const key = ([x, y]) => `${x},${y}`;
+const same = (a, b) => a[0] === b[0] && a[1] === b[1];
+const occupied = (parcels, p) => parcels.findIndex((parcel) => same(parcel, p));
+function validateLevel(level) {
+    const width = level.terrain[0]?.length ?? 0;
+    if (!level.terrain.length || !width || level.terrain.some((row) => row.length !== width))
+        throw new Error("terrain must be a nonempty rectangle");
+    if (!level.parcels.length || level.parcels.length !== level.goals.length)
+        throw new Error("parcel and goal counts must be nonempty and equal");
+    const inBounds = (p) => Number.isInteger(p[0]) && Number.isInteger(p[1]) && p[1] >= 0 && p[1] < level.terrain.length && p[0] >= 0 && p[0] < width;
+    const floor = (p) => inBounds(p) && level.terrain[p[1]][p[0]] !== "#";
+    if (![level.duck, ...level.parcels, ...level.goals].every(floor))
+        throw new Error("actors and goals must be on floor");
+    const actors = [level.duck, ...level.parcels];
+    if (actors.some((p, index) => actors.some((other, otherIndex) => index !== otherIndex && same(p, other))))
+        throw new Error("actors cannot overlap");
+}
+function initialState(level) { validateLevel(level); return { duck: [...level.duck], parcels: level.parcels.map((p) => [...p]), moves: 0, pushes: 0 }; }
+function step(level, state, direction) {
+    const [dx, dy] = directionDelta[direction];
+    const next = [state.duck[0] + dx, state.duck[1] + dy];
+    const inBounds = (p) => p[1] >= 0 && p[1] < level.terrain.length && p[0] >= 0 && p[0] < level.terrain[0].length;
+    const isOpen = (p) => inBounds(p) && level.terrain[p[1]][p[0]] !== "#";
+    if (!isOpen(next))
+        return state;
+    const parcelIndex = occupied(state.parcels, next);
+    if (parcelIndex < 0)
+        return { duck: [...next], parcels: state.parcels.map((p) => [...p]), moves: state.moves + 1, pushes: state.pushes };
+    const beyond = [next[0] + dx, next[1] + dy];
+    if (!inBounds(beyond) || !isOpen(beyond) || occupied(state.parcels, beyond) >= 0)
+        return state;
+    return { duck: [...next], parcels: state.parcels.map((p, i) => i === parcelIndex ? [...beyond] : [...p]), moves: state.moves + 1, pushes: state.pushes + 1 };
+}
+function isWon(level, state) { return state.parcels.every((parcel) => level.goals.some((goal) => same(parcel, goal))); }
+function serialize(state) { return JSON.stringify({ duck: state.duck, parcels: [...state.parcels].sort((a, b) => key(a).localeCompare(key(b))), moves: state.moves, pushes: state.pushes }); }
+function hash(state) { return serialize(state); }
+function plan(moves) { validatePlan(moves); return { moves: [...moves] }; }
+function validatePlan(moves) {
+    if (!Array.isArray(moves) || moves.length > 100 || moves.some((move) => typeof move !== "string" || !DIRECTIONS.has(move)))
+        throw new Error("plan must contain at most 100 valid directions");
+}
+function replay(level, moves) {
+    validatePlan(moves);
+    let state = initialState(level);
+    const trace = [serialize(state)];
+    for (const direction of moves) {
+        state = step(level, state, direction);
+        trace.push(serialize(state));
+    }
+    return { trace: Object.freeze([...trace]), finalState: state, attempts: moves.length, won: isWon(level, state) };
+}
+function cornerDeadlocks(level, state) {
+    const goalKeys = new Set(level.goals.map(key));
+    const width = level.terrain[0].length;
+    const isWall = (x, y) => y < 0 || y >= level.terrain.length || x < 0 || x >= width || level.terrain[y][x] === "#";
+    return state.parcels.filter(([x, y]) => !goalKeys.has(key([x, y])) && ((isWall(x - 1, y) || isWall(x + 1, y)) && (isWall(x, y - 1) || isWall(x, y + 1))));
+}
+  return { directionDelta, validateLevel, initialState, step, isWon, serialize, hash, plan, validatePlan, replay, cornerDeadlocks };
+})();
+
+```
+Adapter:
+```python
+"""Execute the canonical generated JS in a Python-only TrueForge sandbox.
+
+Install quickjs in the sandbox, then pass engine.browser.js, level.json, plan.json.
+This adapter contains no movement rules. Official scoring remains external.
+"""
+import json
+import sys
+from pathlib import Path
+from quickjs import Context
+
+engine_file, level_file, plan_file = sys.argv[1:]
+level = json.loads(Path(level_file).read_text())
+plan = json.loads(Path(plan_file).read_text())
+if (not isinstance(plan, dict) or set(plan) != {"moves"}
+        or not isinstance(plan["moves"], list) or len(plan["moves"]) > 100
+        or any(move not in ("up", "down", "left", "right") for move in plan["moves"])):
+    raise ValueError("Expected a moves-only plan with at most 100 directions")
+context = Context()
+context.set_memory_limit(32 * 1024 * 1024)
+context.set_time_limit(2)
+context.eval(Path(engine_file).read_text())
+payload = json.dumps({"level": level, "moves": plan["moves"]})
+result = context.eval("""((payload) => {
+  const engine = globalThis.__DUCK_DELIVERY_ENGINE__;
+  let state = engine.initialState(payload.level);
+  const trace = [engine.serialize(state)];
+  for (const move of payload.moves) {
+    state = engine.step(payload.level, state, move);
+    trace.push(engine.serialize(state));
+  }
+  return JSON.stringify({state, trace, attemptedMoves: payload.moves.length,
+    solved: engine.isWon(payload.level, state)});
+})(""" + payload + ")")
+print(result)
+
+```
+			100 text 02:09:24 PM
+			101 button Try again
+			102 button Edit
+			103 button Copy
+			104 container
+				105 button (expanded) Agent steps · 12 tool calls, Secondary Actions: Collapse
+					106 text Agent steps
+					107 text ·
+					108 text 12 tool calls
+				109 text I'll solve this Sokoban puzzle step by step using the duck-planning skill and the sandbox.
+				110 button (expanded) Description: Collapse step, Secondary Actions: Collapse
+				111 text Read the duck-planning skill documentation
+				155 text sandbox
+				156 container
+					157 text exit:  0
+					158 container Sandbox view
+						159 checkbox Description: Terminal View, Value: 1
+						160 checkbox Description: Code View, Value: 0
+				161 container
+					162 text COMMAND $ cat /opt/tf/skills/duck-planning/SKILL.md OUTPUT ---
+name: duck-planning
+description: Plan legal Sokoban deliveries for Duck Delivery and check parcel pushes before committing a move sequence.
+---
+
+# Duck Delivery planning
+
+Read the complete puzzle before planning. Coordinates are zero-based `[x,y]`, with x increasing right and y increasing down. Terrain and goal positions are fixed. The duck can walk and push exactly one parcel into an empty floor square; it cannot pull parcels or push a chain.
+
+1. Identify each parcel, its candidate goal, and the square the duck must occupy behind it for each push.
+2. Plan a route, tracking the duck and every parcel after each push. Do not treat a goal as a wall or remove a delivered parcel from the board.
+3. Check walls, other parcels, and the duck's ability to reach the next pushing position. Prefer a short route that leaves room to maneuver.
+4. Use the sandbox to check the proposed sequence with the supplied canonical simulator when it is available. Respect the task's simulation and submission limits.
+5. Complete one tool call to validate your final plan in the sandbox, then immediately return the JSON result without further iteration.
+6. Return one JSON object with exactly a `moves` array containing only `up`, `down`, `left`, or `right`. Do not return source code, commentary, or a new level.
+
+If given failure feedback for a second submission, start planning again from the original puzzle. Do not continue from the failed final state. Never claim delivery unless every parcel is on a goal.
+				112 text Now let me analyze the puzzle and create a plan.
+				113 button (expanded) Description: Collapse step, Secondary Actions: Collapse
+				114 text Visualize the puzzle to understand the layout
+				164 text sandbox
+				165 container
+					166 text exit:  0
+					167 container Sandbox view
+						168 checkbox Description: Terminal View, Value: 1
+						169 checkbox Description: Code View, Value: 0
+				170 container
+					171 text COMMAND $ python3 << 'EOF'
+import json
+
+puzzle = {
+    "name": "Benchmark 08",
+    "terrain": [
+        "#########",
+        "#       #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "#       #",
+        "#########"
+    ],
+    "duck": [2, 1],
+    "parcels": [[4, 1], [2, 2]],
+    "goals": [[2, 1], [6, 5]]
+}
+
+print("Puzzle visualization:")
+print("terrain (# = wall, . = floor, D = duck, P = parcel, G = goal)")
+print()
+
+# Create a visual map
+height = len(puzzle["terrain"])
+width = len(puzzle["terrain"][0])
+grid = [[puzzle["terrain"][y][x] for x in range(width)] for y in range(height)]
+
+# Mark duck
+dx, dy = puzzle["duck"]
+grid[dy][dx] = 'D'
+
+# Mark parcels
+for px, py in puzzle["parcels"]:
+    grid[py][px] = 'P'
+
+# Mark goals
+for gx, gy in puzzle["goals"]:
+    if grid[gy][gx] == ' ':
+        grid[gy][gx] = 'G'
+    else:
+        grid[gy][gx] = '*'  # goal occupied
+
+for row in grid:
+    print(''.join(row))
+
+print()
+print(f"Duck position: {puzzle['duck']}")
+print(f"Parcels: {puzzle['parcels']}")
+print(f"Goals: {puzzle['goals']}")
+print()
+print("Task: Move parcel at [4,1] to goal [2,1] and parcel at [2,2] to goal [6,5]")
+EOF
+ OUTPUT Puzzle visualization:
+terrain (# = wall, . = floor, D = duck, P = parcel, G = goal)
+
+#########
+# * P   #
+# P#    #
+#       #
+#    #  #
+#     G #
+#########
+
+Duck position: [2, 1]
+Parcels: [[4, 1], [2, 2]]
+Goals: [[2, 1], [6, 5]]
+
+Task: Move parcel at [4,1] to goal [2,1] and parcel at [2,2] to goal [6,5]
+
+				115 text Now let me plan the solution:
+				116 button (expanded) Description: Collapse step, Secondary Actions: Collapse
+				117 text Plan the solution for the Sokoban puzzle
+				172 text sandbox
+				173 container
+					174 text exit:  0
+					175 container Sandbox view
+						176 checkbox Description: Terminal View, Value: 1
+						177 checkbox Description: Code View, Value: 0
+				178 container
+					179 text COMMAND $ python3 << 'EOF'
+# Puzzle analysis:
+# - Duck at [2,1], Parcel1 at [4,1], Parcel2 at [2,2]
+# - Goal1 at [2,1] (for Parcel1), Goal2 at [6,5] (for Parcel2)
+#
+# Strategy:
+# 1. Push Parcel1 from [4,1] left to [2,1] (goal) - duck must be at [5,1]
+# 2. Push Parcel2 from [2,2] to [6,5] - need to navigate and push
+
+# Step 1: Move duck from [2,1] to [5,1]
+# Duck at [2,1], needs to get to [5,1] (to the right of Parcel1 at [4,1])
+# Path: right to [3,1], right to [4,1]? No, parcel is there.
+# Actually, duck needs to go around. Let's go up then right then down
+# Duck [2,1] -> up to [2,0]? No wall at [2,0] in row 0 is '#'
+# Let's check: row 0 is "#########" so [2,0] is wall
+# Can't go up. Let's go down then right then back up
+# Duck [2,1] -> down to [2,2]? Parcel2 is there, can't move
+# Let's go right: [2,1] -> [3,1] (floor, no parcel)
+# [3,1] -> [4,1]? Parcel1 is there. If we push it, it goes to [5,1]
+# Wait, that's helpful! We can push Parcel1 right first to get it out of the way
+
+# Revised approach:
+# Step 1: Push Parcel1 from [4,1] to [5,1] (duck [2,1] -> right to [3,1] -> right to [4,1], pushing to [5,1])
+# Wait, that's 2 moves: right (blocked by parcel, so no move), then we need to push.
+# Actually moving right from [2,1]: parcel at [4,1], so we can reach [3,1], [5,1], etc.
+
+# Let me reconsider the map and trace carefully:
+# Row 1: "#       #" (positions 0-8: # at 0,8)
+# Parcel1 at [4,1] means x=4, y=1
+# Duck at [2,1] means x=2, y=1
+
+# To push Parcel1 left from [4,1] to [2,1]:
+# Duck must be at [5,1], then move left
+# Path for duck: [2,1] -> [3,1] -> [4,1] (parcel blocks) -> need to go around
+# Go down to [2,2] (parcel there), can't
+# Go right past the parcel: [2,1] -> [3,1] -> but [4,1] has parcel
+# Actually from [3,1], if we move right and there's parcel at [4,1], the duck can't move
+# Let's go down: [2,1] -> [2,2] blocked by parcel
+# Go up: [2,1] -> [2,0] blocked by wall
+
+# Hmm, duck is stuck! Let me re-examine...
+# Actually, let's push Parcel2 first:
+# Parcel2 at [2,2], Goal at [6,5]
+# Duck at [2,1]
+# Duck can move down to [2,2]? Parcel is there, so duck would push it down to [2,3]
+# Duck [2,1] -> down (push parcel at [2,2] to [2,3]) -> duck now at [2,2], parcel at [2,3]
+
+# Let's trace a solution:
+# 1. down: duck [2,1]->[2,2], parcel2 [2,2]->[2,3]
+# 2. down: duck [2,2]->[2,3] blocked by parcel
+# Need to go around the parcel at [2,3]
+# 3. right: duck [2,2]->[3,2]
+# 4. right: duck [3,2]->[4,2]
+# 5. right: duck [4,2]->[5,2]
+# 6. right: duck [5,2]->[6,2]
+# 7. down: duck [6,2]->[6,3]
+# 8. down: duck [6,3]->[6,4]
+# 9. down: duck [6,4]->[6,5]? But goal is at [6,5]
+# 10. left: duck [6,5]->[5,5] to get behind parcel at [6,4]?
+# Wait, where is parcel now?
+
+# Let me use the simulator to test
+
+moves_plan = [
+    "down",      # Push parcel2 down: duck [2,1]->[2,2], parcel2 [2,2]->[2,3]
+    "right",     # Duck [2,2]->[3,2]
+    "right",     # Duck [3,2]->[4,2]
+    "right",     # Duck [4,2]->[5,2]
+    "right",     # Duck [5,2]->[6,2]
+    "down",      # Duck [6,2]->[6,3]
+    "down",      # Duck [6,3]->[6,4]
+    "down",      # Duck [6,4]->[6,5]
+    "left",      # Duck [6,5]->[5,5]
+    "up",        # Duck [5,5]->[5,4]
+    "left",      # Duck [5,4]->[4,4]
+    "left",      # Duck [4,4]->[3,4]
+    "left",      # Duck [3,4]->[2,4]
+    "left",      # Duck [2,4]->[1,4] (need to get to parcel at [2,4] or wherever it is)
+]
+
+print("Initial plan to test:")
+print(moves_plan[:10])
+EOF
+ OUTPUT Initial plan to test:
+['down', 'right', 'right', 'right', 'right', 'down', 'down', 'down', 'left', 'up']
+
+				118 text Let me set up the simulator and test my plan:
+				119 button (expanded) Description: Collapse step, Secondary Actions: Collapse
+				120 text Install quickjs and set up the canonical simulator
+				180 text sandbox
+				181 container
+					182 text exit:  0
+					183 container Sandbox view
+						184 checkbox Description: Terminal View, Value: 1
+						185 checkbox Description: Code View, Value: 0
+				186 text COMMAND
+				187 container
+					188 text $ pip install quickjs -q 2>&1 | grep -v "already satisfied"
+				189 text OUTPUT
+				190 text WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+
+[notice] A new release of pip is available: 26.1.2 -> 26.3
+[notice] To update, run: pip install --upgrade pip
+
+				121 button (expanded) Description: Collapse step, Secondary Actions: Collapse
+				122 text Save the canonical engine and adapter
+				191 text sandbox
+				192 container
+					193 text exit:  0
+					194 container Sandbox view
+						195 checkbox Description: Terminal View, Value: 1
+						196 checkbox Description: Code View, Value: 0
+				197 container
+					198 text COMMAND $ cat > /tmp/engine.js << 'EOF'
+/* Generated from sokoban/engine.ts; sha256=b1c7a7a9593b7ed1aa3c027f6daf99221571115f3d51632899e30ea1f3e4a8ae; do not edit. */
+globalThis.__DUCK_DELIVERY_ENGINE__ = (() => {
+const directionDelta = { up: [0, -1], down: [0, 1], left: [-1, 0], right: [1, 0] };
+const DIRECTIONS = new Set(Object.keys(directionDelta));
+const key = ([x, y]) => `${x},${y}`;
+const same = (a, b) => a[0] === b[0] && a[1] === b[1];
+const occupied = (parcels, p) => parcels.findIndex((parcel) => same(parcel, p));
+function validateLevel(level) {
+    const width = level.terrain[0]?.length ?? 0;
+    if (!level.terrain.length || !width || level.terrain.some((row) => row.length !== width))
+        throw new Error("terrain must be a nonempty rectangle");
+    if (!level.parcels.length || level.parcels.length !== level.goals.length)
+        throw new Error("parcel and goal counts must be nonempty and equal");
+    const inBounds = (p) => Number.isInteger(p[0]) && Number.isInteger(p[1]) && p[1] >= 0 && p[1] < level.terrain.length && p[0] >= 0 && p[0] < width;
+    const floor = (p) => inBounds(p) && level.terrain[p[1]][p[0]] !== "#";
+    if (![level.duck, ...level.parcels, ...level.goals].every(floor))
+        throw new Error("actors and goals must be on floor");
+    const actors = [level.duck, ...level.parcels];
+    if (actors.some((p, index) => actors.some((other, otherIndex) => index !== otherIndex && same(p, other))))
+        throw new Error("actors cannot overlap");
+}
+function initialState(level) { validateLevel(level); return { duck: [...level.duck], parcels: level.parcels.map((p) => [...p]), moves: 0, pushes: 0 }; }
+function step(level, state, direction) {
+    const [dx, dy] = directionDelta[direction];
+    const next = [state.duck[0] + dx, state.duck[1] + dy];
+    const inBounds = (p) => p[1] >= 0 && p[1] < level.terrain.length && p[0] >= 0 && p[0] < level.terrain[0].length;
+    const isOpen = (p) => inBounds(p) && level.terrain[p[1]][p[0]] !== "#";
+    if (!isOpen(next))
+        return state;
+    const parcelIndex = occupied(state.parcels, next);
+    if (parcelIndex < 0)
+        return { duck: [...next], parcels: state.parcels.map((p) => [...p]), moves: state.moves + 1, pushes: state.pushes };
+    const beyond = [next[0] + dx, next[1] + dy];
+    if (!inBounds(beyond) || !isOpen(beyond) || occupied(state.parcels, beyond) >= 0)
+        return state;
+    return { duck: [...next], parcels: state.parcels.map((p, i) => i === parcelIndex ? [...beyond] : [...p]), moves: state.moves + 1, pushes: state.pushes + 1 };
+}
+function isWon(level, state) { return state.parcels.every((parcel) => level.goals.some((goal) => same(parcel, goal))); }
+function serialize(state) { return JSON.stringify({ duck: state.duck, parcels: [...state.parcels].sort((a, b) => key(a).localeCompare(key(b))), moves: state.moves, pushes: state.pushes }); }
+function hash(state) { return serialize(state); }
+function plan(moves) { validatePlan(moves); return { moves: [...moves] }; }
+function validatePlan(moves) {
+    if (!Array.isArray(moves) || moves.length > 100 || moves.some((move) => typeof move !== "string" || !DIRECTIONS.has(move)))
+        throw new Error("plan must contain at most 100 valid directions");
+}
+function replay(level, moves) {
+    validatePlan(moves);
+    let state = initialState(level);
+    const trace = [serialize(state)];
+    for (const direction of moves) {
+        state = step(level, state, direction);
+        trace.push(serialize(state));
+    }
+    return { trace: Object.freeze([...trace]), finalState: state, attempts: moves.length, won: isWon(level, state) };
+}
+function cornerDeadlocks(level, state) {
+    const goalKeys = new Set(level.goals.map(key));
+    const width = level.terrain[0].length;
+    const isWall = (x, y) => y < 0 || y >= level.terrain.length || x < 0 || x >= width || level.terrain[y][x] === "#";
+    return state.parcels.filter(([x, y]) => !goalKeys.has(key([x, y])) && ((isWall(x - 1, y) || isWall(x + 1, y)) && (isWall(x, y - 1) || isWall(x, y + 1))));
+}
+  return { directionDelta, validateLevel, initialState, step, isWon, serialize, hash, plan, validatePlan, replay, cornerDeadlocks };
+})();
+EOF
+cat > /tmp/adapter.py << 'EOF'
+"""Execute the canonical generated JS in a Python-only TrueForge sandbox.
+
+Install quickjs in the sandbox, then pass engine.browser.js, level.json, plan.json.
+This adapter contains no movement rules. Official scoring remains external.
+"""
+import json
+import sys
+from pathlib import Path
+from quickjs import Context
+
+engine_file, level_file, plan_file = sys.argv[1:]
+level = json.loads(Path(level_file).read_text())
+plan = json.loads(Path(plan_file).read_text())
+if (not isinstance(plan, dict) or set(plan) != {"moves"}
+        or not isinstance(plan["moves"], list) or len(plan["moves"]) > 100
+        or any(move not in ("up", "down", "left", "right") for move in plan["moves"])):
+    raise ValueError("Expected a moves-only plan with at most 100 directions")
+context = Context()
+context.set_memory_limit(32 * 1024 * 1024)
+context.set_time_limit(2)
+context.eval(Path(engine_file).read_text())
+payload = json.dumps({"level": level, "moves": plan["moves"]})
+result = context.eval("""((payload) => {
+  const engine = globalThis.__DUCK_DELIVERY_ENGINE__;
+  let state = engine.initialState(payload.level);
+  const trace = [engine.serialize(state)];
+  for (const move of payload.moves) {
+    state = engine.step(payload.level, state, move);
+    trace.push(engine.serialize(state));
+  }
+  return JSON.stringify({state, trace, attemptedMoves: payload.moves.length,
+    solved: engine.isWon(payload.level, state)});
+})(""" + payload + ")")
+print(result)
+EOF
+echo "Simulator files created"
+ OUTPUT Simulator files created
+
+				123 text Now let me develop and test a solution:
+				124 button (expanded) Description: Collapse step, Secondary Actions: Collapse
+				125 text Test different move sequences to solve the puzzle
+				199 text sandbox
+				200 container
+					201 text exit:  0
+					202 container Sandbox view
+						203 checkbox Description: Terminal View, Value: 1
+						204 checkbox Description: Code View, Value: 0
+				205 container
+					206 text COMMAND $ python3 << 'EOF'
+import json
+from pathlib import Path
+
+puzzle = {
+    "name": "Benchmark 08",
+    "terrain": [
+        "#########",
+        "#       #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "#       #",
+        "#########"
+    ],
+    "duck": [2, 1],
+    "parcels": [[4, 1], [2, 2]],
+    "goals": [[2, 1], [6, 5]]
+}
+
+# Test plan 1: Move parcels to goals
+# Goal 1: [2,1] for parcel at [4,1]
+# Goal 2: [6,5] for parcel at [2,2]
+
+# Strategy: First deliver parcel at [4,1] left to [2,1]
+# Then deliver parcel at [2,2] down and right to [6,5]
+
+# Step 1: Push parcel1 [4,1] left to [2,1]
+# Duck [2,1] needs to move to [5,1] to push left
+# But parcel2 at [2,2] blocks downward movement
+# So: right, but parcel1 at [4,1] blocks
+# Duck needs to go down first, but parcel2 is at [2,2]
+# Actually, duck at [2,1] can push parcel2 down!
+
+moves = [
+    "down",      # Push parcel2: duck [2,1]->[2,2], parcel2 [2,2]->[2,3]
+    "right",     # duck [2,2]->[3,2]
+    "right",     # duck [3,2]->[4,2]
+    "right",     # duck [4,2]->[5,2]
+    "down",      # duck [5,2]->[5,3]
+    "down",      # duck [5,3]->[5,4]
+    "left",      # duck [5,4]->[4,4]
+    "up",        # duck [4,4]->[4,3]
+    "up",        # duck [4,3]->[4,2]
+    "up",        # duck [4,2]->[4,1] - PARCEL1 at [4,1]! Can't move here
+]
+
+# Revised: Parcel1 must still be at [4,1], so duck needs to approach from different angle
+# Let's think: we need to get duck to [5,1] to push parcel1 left
+
+# Alternative: push parcel1 down first?
+# Parcel1 at [4,1], if duck at [4,0] and moves down... but [4,0] is wall '#'
+# If duck at [4,2] and moves up to [4,1], can push down to [4,2]? No, duck would move to [4,1]
+# Only a push happens if there's something blocking beyond
+
+# Let me try: get duck to [3,1], then push parcel1 left
+# Duck [2,1] -> right to [3,1]: checking terrain[1][3] = ' ' (floor), and parcel1 is at [4,1], so OK
+
+# New attempt:
+moves2 = [
+    "right",     # duck [2,1]->[3,1]
+    "down",      # duck [3,1]->[3,2]
+    "down",      # duck [3,2]->[3,3]
+    "down",      # duck [3,3]->[3,4]
+    "down",      # duck [3,4]->[3,5]
+    "down",      # duck [3,5]->[3,6] - wall at row 6
+]
+
+# Row 6 is "#########" - all walls. So can't go down to [3,6]
+
+# Let me check terrain again
+print("Terrain:")
+for i, row in enumerate(puzzle["terrain"]):
+    print(f"Row {i}: {row}")
+
+print("\nFloor cells in row 1: ", end="")
+for x in range(len(puzzle["terrain"][1])):
+    if puzzle["terrain"][1][x] != '#':
+        print(f"[{x},1]", end=" ")
+print()
+
+print("\nFloor cells in row 5: ", end="")
+for x in range(len(puzzle["terrain"][5])):
+    if puzzle["terrain"][5][x] != '#':
+        print(f"[{x},5]", end=" ")
+print()
+
+# Row 5 is "#       #" so x=1-7 are floor
+# Parcel must reach [6,5]
+
+# New strategy:
+# 1. Push parcel1 to create space
+# 2. Then maneuver parcel2 to [6,5]
+
+# Actually simpler: just trace what happens
+moves3 = [
+    "down",      # Push parcel2 down: parcel2 [2,2]->[2,3], duck [2,1]->[2,2]
+    "down",      # duck [2,2]->[2,3]? Parcel2 is there! Can't move
+]
+
+# OK so duck gets stuck. We need to go around
+moves4 = [
+    "down",      # Push parcel2 down: parcel2 [2,2]->[2,3], duck [2,1]->[2,2]
+    "right",     # duck [2,2]->[3,2]
+    "down",      # duck [3,2]->[3,3]
+    "down",      # duck [3,3]->[3,4]
+    "down",      # duck [3,4]->[3,5]
+    "down",      # duck [3,5]->[3,6] WALL
+]
+
+# Can't reach row 6. Maximum y is 5 (row 5 is last floor, row 6 is walls)
+
+# Parcel2 needs to go to [6,5]
+# From [2,3], we need to push it right and down
+
+moves5 = [
+    "down",      # Push parcel2 down: parcel2 [2,2]->[2,3], duck [2,1]->[2,2]
+    "right",     # duck [2,2]->[3,2]
+    "right",     # duck [3,2]->[4,2]
+    "left",      # duck [4,2]->[3,2] (going back)
+    "down",      # duck [3,2]->[3,3]
+    "down",      # duck [3,3]->[3,4]
+    "down",      # duck [3,4]->[3,5]
+    "left",      # duck [3,5]->[2,5]
+    "down",      # duck [2,5]->[2,6] WALL
+]
+
+# Hmm, goal is [6,5], not [2,5]
+
+# Let me reconsider. Parcel2 at [2,3] after first push.
+# To move it to [6,5], we need to push it right 4 times and up 2 times (going from [2,3] to [6,5])
+# Wait, that's wrong. [6,5] is x=6, y=5. [2,3] is x=2, y=3.
+# Right 4: [6,3], Down 2: [6,5] ✓
+
+# To push parcel right from [2,3], duck needs to be at [1,3]
+# To push parcel down, duck needs to be at [6,4]
+
+moves6 = [
+    "down",           # Push parcel2: parcel2 [2,2]->[2,3], duck [2,1]->[2,2]
+    "left",           # duck [2,2]->[1,2]
+    "down",           # duck [1,2]->[1,3]
+    "right",          # Push parcel2: parcel2 [2,3]->[3,3], duck [1,3]->[2,3]
+    "right",          # duck [2,3]->[3,3]? Parcel is there! blocked
+]
+
+# Hmm, after pushing, duck is at [2,3] and parcel is at [3,3]
+# Duck can't move right into parcel position
+# Duck needs to go around the parcel again
+
+moves7 = [
+    "down",           # Push parcel2: parcel2 [2,2]->[2,3], duck [2,1]->[2,2]
+    "left",           # duck [2,2]->[1,2]
+    "down",           # duck [1,2]->[1,3]
+    "right",          # Push parcel2: parcel2 [2,3]->[3,3], duck [1,3]->[2,3]
+    "down",           # duck [2,3]->[2,4]
+    "right",          # duck [2,4]->[3,4]
+    "right",          # duck [3,4]->[4,4]
+    "up",             # duck [4,4]->[4,3]
+    "right",          # Push parcel2: parcel2 [3,3]->[4,3], duck [4,4]? wait, duck is at [4,4]
+]
+
+# Getting confused. Let me use the simulator
+print("\nTesting with simulator:")
+
+test_moves = [
+    "down",           # Push parcel2: parcel2 [2,2]->[2,3], duck [2,1]->[2,2]
+    "left",           # duck [2,2]->[1,2]
+    "down",           # duck [1,2]->[1,3]
+    "right",          # Push parcel2: parcel2 [2,3]->[3,3], duck [1,3]->[2,3]
+]
+
+plan_file = Path("/tmp/plan.json")
+level_file = Path("/tmp/level.json")
+
+plan_file.write_text(json.dumps({"moves": test_moves}))
+level_file.write_text(json.dumps(puzzle))
+
+import subprocess
+result = subprocess.run([
+    "python3", "/tmp/adapter.py",
+    "/tmp/engine.js",
+    str(level_file),
+    str(plan_file)
+], capture_output=True, text=True)
+
+if result.returncode == 0:
+    output = json.loads(result.stdout)
+    print("Initial state:", output["state"])
+    print("\nFinal state:", output["state"])
+    print("Solved:", output["solved"])
+    print("Trace:")
+    for i, state_str in enumerate(output["trace"]):
+        state = json.loads(state_str)
+        print(f"  Step {i}: duck={state['duck']}, parcels={state['parcels']}")
+else:
+    print("Error:", result.stderr)
+
+EOF
+ OUTPUT Terrain:
+Row 0: #########
+Row 1: #       #
+Row 2: #  #    #
+Row 3: #       #
+Row 4: #    #  #
+Row 5: #       #
+Row 6: #########
+
+Floor cells in row 1: [1,1] [2,1] [3,1] [4,1] [5,1] [6,1] [7,1]
+
+Floor cells in row 5: [1,5] [2,5] [3,5] [4,5] [5,5] [6,5] [7,5]
+
+Testing with simulator:
+Initial state: {'duck': [2, 3], 'parcels': [[4, 1], [3, 3]], 'moves': 4, 'pushes': 2}
+
+Final state: {'duck': [2, 3], 'parcels': [[4, 1], [3, 3]], 'moves': 4, 'pushes': 2}
+Solved: False
+Trace:
+  Step 0: duck=[2, 1], parcels=[[2, 2], [4, 1]]
+  Step 1: duck=[2, 2], parcels=[[2, 3], [4, 1]]
+  Step 2: duck=[1, 2], parcels=[[2, 3], [4, 1]]
+  Step 3: duck=[1, 3], parcels=[[2, 3], [4, 1]]
+  Step 4: duck=[2, 3], parcels=[[3, 3], [4, 1]]
+
+				126 text Good! Now I can see the parcel movement. Let me continue planning:
+				127 button (expanded) Description: Collapse step, Secondary Actions: Collapse
+				128 text Build a complete solution to move both parcels to their goals
+				207 text sandbox
+				208 container
+					209 text exit:  0
+					210 container Sandbox view
+						211 checkbox Description: Terminal View, Value: 1
+						212 checkbox Description: Code View, Value: 0
+				213 container
+					214 text COMMAND $ python3 << 'EOF'
+import json
+from pathlib import Path
+import subprocess
+
+puzzle = {
+    "name": "Benchmark 08",
+    "terrain": [
+        "#########",
+        "#       #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "#       #",
+        "#########"
+    ],
+    "duck": [2, 1],
+    "parcels": [[4, 1], [2, 2]],
+    "goals": [[2, 1], [6, 5]]
+}
+
+# Build solution step by step:
+# Goal 1: [4,1] -> [2,1]  (parcel1, push LEFT)
+# Goal 2: [2,2] -> [6,5]  (parcel2, push RIGHT and DOWN)
+
+# Plan:
+# 1. Push parcel1 (at [4,1]) left to [2,1]
+#    - Duck at [2,1] needs to move to [5,1]
+#    - From [2,1], can't go down (parcel2 at [2,2])
+#    - Go right to [3,1], but [4,1] has parcel1
+#    - Need to push parcel1 first or go around
+#
+# 2. Since parcel2 blocks, handle parcel2 first
+#    - Push parcel2 away from the way
+#    - Then handle parcel1
+
+# Attempt: Push parcel1 first right, then maneuver
+# Parcel1 [4,1] -> right to [5,1], then right to [6,1], then later push left
+
+# Let's try:
+moves = [
+    # Move duck to [3,1] to push parcel1 right
+    "right",           # duck [2,1]->[3,1]
+    "right",           # duck [3,1]->[4,1]? BLOCKED by parcel1, can't move
+]
+
+# Parcel1 is blocking. Let's push it first (right):
+moves = [
+    "right",           # duck [2,1]->[3,1]
+    "down",            # duck [3,1]->[3,2]? Let's check - parcel2 is at [2,2]
+]
+
+# Actually [3,2] should be free. Let me trace more carefully.
+
+# Try a different approach: create a path that works
+moves = [
+    # Step 1: Move down and around parcel2
+    "down",            # Push parcel2: [2,2]->[2,3], duck [2,1]->[2,2]
+
+    # Step 2: Move to [5,1] to push parcel1 left
+    "up",              # duck [2,2]->[2,1]
+    "right",           # duck [2,1]->[3,1]
+    "right",           # duck [3,1]->[4,1]? Parcel1 at [4,1], can't move
+]
+
+# The issue is parcel1 is still at [4,1]. We need to handle it differently.
+# OR push it right first:
+
+moves = [
+    # First, move parcel1 out of the way by pushing it down or right
+    "right",           # duck [2,1]->[3,1]
+    "right",           # duck [3,1]->[4,1]? Blocked, no move
+]
+
+# Duck can't move right past parcel at [4,1] without pushing
+# If duck at [3,1] moves right: next is [4,1] with parcel, beyond is [5,1]
+# Beyond [5,1] is floor, so this should be a PUSH
+# Push means parcel moves to [5,1] and duck moves to [4,1]
+
+# But wait, let me check: is parcel1 at [4,1] or [2,2]?
+# Initial: parcel1=[4,1], parcel2=[2,2]
+
+# If duck at [3,1] moves right:
+#   next=[4,1], has parcel1
+#   beyond=[5,1], is floor
+#   This is a valid push! parcel1 -> [5,1], duck -> [4,1]
+
+moves = [
+    "right",           # duck [2,1]->[3,1]
+    "right",           # Push parcel1: parcel1 [4,1]->[5,1], duck [3,1]->[4,1]
+    "down",            # duck [4,1]->[4,2]
+    "down",            # duck [4,2]->[4,3]
+    "down",            # duck [4,3]->[4,4]
+    "down",            # duck [4,4]->[4,5]? Check terrain row 5
+]
+
+# Row 5 is "#       #", so [4,5] is floor (y=5, x=4)
+# But row 4 is "#    #  #", position x=4 is '#' (wall)
+# So duck can move from [4,3] down to [4,4]? Let's check [4,4]
+# Row 4: "#    #  #" => x=0 is #, x=1-4 are walls/floors...
+# Let me recount: row 4 is "#    #  #"
+# Positions: 0:#, 1: , 2: , 3: , 4: , 5:#, 6: , 7: , 8:#
+# So position [4,4] has a space (floor)
+
+# Let me verify position [4,3]
+# Row 3: "#       #" => all floor except positions 0 and 8
+# So [4,3] is floor ✓
+
+# Test this plan:
+test_moves = [
+    "right",           # duck [2,1]->[3,1]
+    "right",           # Push parcel1: parcel1 [4,1]->[5,1], duck [3,1]->[4,1]
+    "down",            # duck [4,1]->[4,2]
+    "down",            # duck [4,2]->[4,3]
+    "down",            # duck [4,3]->[4,4]
+    "down",            # duck [4,4]->[4,5]
+    "right",           # duck [4,5]->[5,5]
+    "right",           # duck [5,5]->[6,5]
+    "up",              # duck [6,5]->[6,4]
+    "left",            # duck [6,4]->[5,4]? Actually need to be behind parcel2 at [2,3]
+]
+
+print("Testing plan:")
+plan_file = Path("/tmp/plan.json")
+level_file = Path("/tmp/level.json")
+
+plan_file.write_text(json.dumps({"moves": test_moves}))
+level_file.write_text(json.dumps(puzzle))
+
+result = subprocess.run([
+    "python3", "/tmp/adapter.py",
+    "/tmp/engine.js",
+    str(level_file),
+    str(plan_file)
+], capture_output=True, text=True)
+
+if result.returncode == 0:
+    output = json.loads(result.stdout)
+    print(f"Moves: {len(test_moves)}")
+    print(f"Solved: {output['solved']}")
+    state = json.loads(output["trace"][-1])
+    print(f"Final duck: {state['duck']}")
+    print(f"Final parcels: {state['parcels']}")
+    print(f"Goals: {puzzle['goals']}")
+    print("\nTrace:")
+    for i, state_str in enumerate(output["trace"]):
+        s = json.loads(state_str)
+        print(f"  Step {i}: duck={s['duck']}, parcels={sorted(s['parcels'])}")
+else:
+    print("Error:", result.stderr)
+
+EOF
+ OUTPUT Testing plan:
+Moves: 10
+Solved: False
+Final duck: [6, 4]
+Final parcels: [[2, 2], [5, 1]]
+Goals: [[2, 1], [6, 5]]
+
+Trace:
+  Step 0: duck=[2, 1], parcels=[[2, 2], [4, 1]]
+  Step 1: duck=[3, 1], parcels=[[2, 2], [4, 1]]
+  Step 2: duck=[4, 1], parcels=[[2, 2], [5, 1]]
+  Step 3: duck=[4, 2], parcels=[[2, 2], [5, 1]]
+  Step 4: duck=[4, 3], parcels=[[2, 2], [5, 1]]
+  Step 5: duck=[4, 4], parcels=[[2, 2], [5, 1]]
+  Step 6: duck=[4, 5], parcels=[[2, 2], [5, 1]]
+  Step 7: duck=[5, 5], parcels=[[2, 2], [5, 1]]
+  Step 8: duck=[6, 5], parcels=[[2, 2], [5, 1]]
+  Step 9: duck=[6, 4], parcels=[[2, 2], [5, 1]]
+  Step 10: duck=[6, 4], parcels=[[2, 2], [5, 1]]
+
+				129 text I see parcel1 moved to [5,1] but still not at goal [2,1]. Let me adjust:
+				130 button (expanded) Description: Collapse step, Secondary Actions: Collapse
+				131 text Develop a better plan that gets both parcels to their goals
+				215 text sandbox
+				216 container
+					217 text exit:  0
+					218 container Sandbox view
+						219 checkbox Description: Terminal View, Value: 1
+						220 checkbox Description: Code View, Value: 0
+				221 container
+					222 text COMMAND $ python3 << 'EOF'
+import json
+from pathlib import Path
+import subprocess
+
+puzzle = {
+    "name": "Benchmark 08",
+    "terrain": [
+        "#########",
+        "#       #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "#       #",
+        "#########"
+    ],
+    "duck": [2, 1],
+    "parcels": [[4, 1], [2, 2]],
+    "goals": [[2, 1], [6, 5]]
+}
+
+# Current status: parcel1 was pushed to [5,1], but needs to be at [2,1]
+# That means we need to push it LEFT from [5,1] to [2,1]
+# But we also need to handle parcel2 from [2,2] to [6,5]
+
+# Key insight: We need to clear [2,1] for parcel1, then push parcel1 there from the right
+# So first move parcel2 away from [2,2] and [2,3]
+
+# New plan:
+# 1. Handle parcel2: move it to [6,5]
+# 2. Handle parcel1: move it to [2,1]
+
+# Parcel2 [2,2] -> [6,5] requires pushing right and down
+# Path: [2,2] -> [3,2] -> [4,2] -> [5,2] -> [6,2] -> [6,3] -> [6,4] -> [6,5]
+# That's 4 right pushes and 3 down pushes
+
+# Parcel1 [4,1] -> [2,1] requires pushing left
+# Path: [4,1] -> [3,1] -> [2,1]
+# That's 2 left pushes
+
+# Strategy:
+# 1. First move parcel2 out of the way (to goal [6,5])
+# 2. Then move parcel1 to goal [2,1]
+
+moves = [
+    # Move parcel2 from [2,2] to [6,5]
+    # First, push right: duck needs to be at [1,2]
+
+    "down",            # Push parcel2: [2,2]->[2,3], duck [2,1]->[2,2]
+    "left",            # duck [2,2]->[1,2]
+    "up",              # duck [1,2]->[1,1]
+    "right",           # duck [1,1]->[2,1]
+    "right",           # duck [2,1]->[3,1]
+    "right",           # duck [3,1]->[4,1]? Parcel1 at [4,1], can't move
+]
+
+# Parcel1 is still blocking at [4,1]. We need a different approach.
+
+# Alternative: Push parcel1 out of the way FIRST
+# Duck [2,1] -> [3,1] (move right)
+# Duck [3,1] -> [4,1]? Push parcel1 right to [5,1], duck moves to [4,1]
+
+moves = [
+    "right",           # duck [2,1]->[3,1]
+    "right",           # Push parcel1: [4,1]->[5,1], duck [3,1]->[4,1]
+
+    # Now parcel1 is at [5,1], duck is at [4,1]
+    # Handle parcel2: push from [2,2]
+
+    "left",            # duck [4,1]->[3,1]
+    "left",            # duck [3,1]->[2,1]
+    "down",            # Push parcel2: [2,2]->[2,3], duck [2,1]->[2,2]
+    "left",            # duck [2,2]->[1,2]
+    "down",            # duck [1,2]->[1,3]
+    "right",           # Push parcel2: [2,3]->[3,3], duck [1,3]->[2,3]
+
+    # Now parcel2 is at [3,3], duck is at [2,3]
+    # Need to push parcel2 right 3 more times to reach [6,3]
+
+    "down",            # duck [2,3]->[2,4]
+    "right",           # duck [2,4]->[3,4]
+    "up",              # duck [3,4]->[3,3]? Parcel2 at [3,3], can't move
+]
+
+# Still complicated. Let me try a cleaner approach:
+# Push parcel2 right 4 times, then down 2 times
+
+moves = [
+    "right",           # Push parcel1: [4,1]->[5,1], duck [2,1]->[3,1]
+    "right",           # duck [3,1]->[4,1]
+    "down",            # duck [4,1]->[4,2]
+    "left",            # duck [4,2]->[3,2]
+    "left",            # duck [3,2]->[2,2]
+    "up",              # duck [2,2]->[2,1]
+    "down",            # Push parcel2: [2,2]->[2,3], duck [2,1]->[2,2]
+    "right",           # duck [2,2]->[3,2]
+    "right",           # duck [3,2]->[4,2]
+    "right",           # duck [4,2]->[5,2]
+    "right",           # duck [5,2]->[6,2]
+    "down",            # duck [6,2]->[6,3]
+    "down",            # duck [6,3]->[6,4]
+    "left",            # duck [6,4]->[5,4]
+    "up",              # duck [5,4]->[5,3]
+    "left",            # duck [5,3]->[4,3]
+    "left",            # duck [4,3]->[3,3]
+    "left",            # duck [3,3]->[2,3]
+    "up",              # duck [2,3]->[2,2]
+    "down",            # Push parcel2: [2,3]->[2,4], duck [2,2]->[2,3]
+]
+
+print("Testing revised plan (first 20 moves)...")
+test_moves = moves[:20]
+plan_file = Path("/tmp/plan.json")
+level_file = Path("/tmp/level.json")
+
+plan_file.write_text(json.dumps({"moves": test_moves}))
+level_file.write_text(json.dumps(puzzle))
+
+result = subprocess.run([
+    "python3", "/tmp/adapter.py",
+    "/tmp/engine.js",
+    str(level_file),
+    str(plan_file)
+], capture_output=True, text=True)
+
+if result.returncode == 0:
+    output = json.loads(result.stdout)
+    print(f"Moves: {len(test_moves)}")
+    print(f"Solved: {output['solved']}")
+    state = json.loads(output["trace"][-1])
+    print(f"Final duck: {state['duck']}")
+    print(f"Final parcels: {sorted(state['parcels'])}")
+    print(f"Goals: {puzzle['goals']}")
+else:
+    print("Error:", result.stderr)
+
+EOF
+ OUTPUT Testing revised plan (first 20 moves)...
+Moves: 20
+Solved: False
+Final duck: [3, 4]
+Final parcels: [[2, 2], [5, 1]]
+Goals: [[2, 1], [6, 5]]
+
+				132 text Let me think more systematically:
+				133 button (expanded) Description: Collapse step, Secondary Actions: Collapse
+				134 text Use a systematic approach to solve the puzzle with proper parcel routing
+				223 text sandbox
+				224 container
+					225 text exit:  0
+					226 container Sandbox view
+						227 checkbox Description: Terminal View, Value: 1
+						228 checkbox Description: Code View, Value: 0
+				229 container
+					230 text COMMAND $ python3 << 'EOF'
+import json
+from pathlib import Path
+import subprocess
+
+puzzle = {
+    "name": "Benchmark 08",
+    "terrain": [
+        "#########",
+        "#       #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "#       #",
+        "#########"
+    ],
+    "duck": [2, 1],
+    "parcels": [[4, 1], [2, 2]],
+    "goals": [[2, 1], [6, 5]]
+}
+
+# Analysis:
+# Parcel A: [4,1] -> [2,1]  (goal 1)
+# Parcel B: [2,2] -> [6,5]  (goal 2)
+#
+# Key: [2,1] is blocked by duck initially
+# Key: [2,2] is below duck initially
+#
+# Parcel A needs to be pushed LEFT from [4,1] to [2,1]
+# This requires duck at [5,1], [4,1], [3,1], etc moving left
+#
+# Parcel B needs to be pushed RIGHT and DOWN from [2,2]
+
+# Plan attempt 1: Simple direct route
+# Move parcel A to goal first, then parcel B
+
+# Parcel A [4,1] <- needs duck at [5,1]
+# Duck is at [2,1], parcel B blocks at [2,2]
+# Duck needs to go around: [2,1] -> [3,1] -> but parcel A at [4,1]
+# So: [2,1] -right-> [3,1], then from [3,1] push parcel A right
+#     or navigate around parcel A to reach [5,1]
+
+# Since parcel B is at [2,2], duck can't go down easily
+# Duck could: [2,1] -right-> [3,1] -down-> [3,2] -right-> [4,2] -right-> [5,2] -up-> [5,1]
+
+# Then from [5,1], push A left: [5,1]-left-push->[4,1]->[3,1]->[2,1]
+
+# After A is at [2,1], handle B
+# B at [2,2] needs to go to [6,5]
+
+# Complete solution:
+moves = [
+    # Route duck to [5,1] to push parcel A left
+    "right",           # [2,1] -> [3,1]
+    "down",            # [3,1] -> [3,2]
+    "right",           # [3,2] -> [4,2]
+    "right",           # [4,2] -> [5,2]
+    "up",              # [5,2] -> [5,1]
+
+    # Now duck at [5,1], parcel A at [4,1]
+    # Push A left twice to goal
+    "left",            # Push A: [4,1]->[3,1], duck [5,1]->[4,1]
+    "left",            # Push A: [3,1]->[2,1], duck [4,1]->[3,1]
+
+    # Now parcel A at [2,1] (goal 1!) ✓
+    # Handle parcel B: currently at [2,2]
+
+    # Duck at [3,1], need to get behind parcel B
+    # For parcel B to move right, need duck at [1,2]
+    # For parcel B to move down, need duck at [2,1] but that's goal
+
+    "down",            # [3,1] -> [3,2]
+    "left",            # [3,2] -> [2,2]? Parcel B at [2,2], can't move
+
+    # Need to go around parcel B
+    "left",            # [3,2] -> [2,2]? Blocked
+    "down",            # [3,2] -> [3,3]
+    "left",            # [3,3] -> [2,3]
+    "up",              # [2,3] -> [2,2]? Parcel B at [2,2], can't move
+]
+
+# Hmm, parcel B is hard to access. Let's push it down first
+moves = [
+    # Route duck to [5,1]
+    "right",           # [2,1] -> [3,1]
+    "down",            # [3,1] -> [3,2]
+    "right",           # [3,2] -> [4,2]
+    "right",           # [4,2] -> [5,2]
+    "up",              # [5,2] -> [5,1]
+
+    # Push parcel A left to goal [2,1]
+    "left",            # Push A: [4,1]->[3,1], duck [5,1]->[4,1]
+    "left",            # Push A: [3,1]->[2,1], duck [4,1]->[3,1]
+
+    # Now: duck [3,1], parcel A [2,1], parcel B [2,2]
+    # Push parcel B down first to clear the way
+    "down",            # [3,1] -> [3,2]
+    "left",            # [3,2] -> [2,2]? Blocked by B, can't move
+    "left",            # [3,2] -> [2,2]? Still blocked
+    "down",            # [3,2] -> [3,3]
+    "left",            # [3,3] -> [2,3]
+    "left",            # [2,3] -> [1,3]
+    "up",              # [1,3] -> [1,2]
+    "right",           # Push B: [2,2]->[3,2], duck [1,2]->[2,2]
+
+    # Now B at [3,2], duck at [2,2]
+    # Need to push B right and down to [6,5]
+    # From [3,2]: need 3 more right, 3 down
+
+    "down",            # [2,2] -> [2,3]
+    "right",           # [2,3] -> [3,3]
+    "right",           # [3,3] -> [4,3]
+    "up",              # [4,3] -> [4,2]
+    "right",           # Push B: [3,2]->[4,2]? Occupied, can't push
+]
+
+# Blocked. B moved but now in the way. Let me use simulator to trace
+
+print("Testing plan...")
+test_moves = [
+    "right",           # [2,1] -> [3,1]
+    "down",            # [3,1] -> [3,2]
+    "right",           # [3,2] -> [4,2]
+    "right",           # [4,2] -> [5,2]
+    "up",              # [5,2] -> [5,1]
+    "left",            # Push A: [4,1]->[3,1], duck [5,1]->[4,1]
+    "left",            # Push A: [3,1]->[2,1], duck [4,1]->[3,1]
+    "down",            # [3,1] -> [3,2]
+    "down",            # [3,2] -> [3,3]
+    "left",            # [3,3] -> [2,3]
+    "left",            # [2,3] -> [1,3]
+    "up",              # [1,3] -> [1,2]
+    "right",           # Push B: [2,2]->[3,2], duck [1,2]->[2,2]
+]
+
+plan_file = Path("/tmp/plan.json")
+level_file = Path("/tmp/level.json")
+
+plan_file.write_text(json.dumps({"moves": test_moves}))
+level_file.write_text(json.dumps(puzzle))
+
+result = subprocess.run([
+    "python3", "/tmp/adapter.py",
+    "/tmp/engine.js",
+    str(level_file),
+    str(plan_file)
+], capture_output=True, text=True)
+
+if result.returncode == 0:
+    output = json.loads(result.stdout)
+    state = json.loads(output["trace"][-1])
+    print(f"Final state: duck={state['duck']}, parcels={sorted(state['parcels'])}")
+    print(f"Goals: {puzzle['goals']}")
+
+    # Check if goals met
+    parcel_set = set(tuple(p) for p in state['parcels'])
+    goal_set = set(tuple(g) for g in puzzle['goals'])
+    if parcel_set == goal_set:
+        print("SOLVED!")
+    else:
+        print("Not solved. Trace:")
+        for i, s in enumerate(output["trace"]):
+            st = json.loads(s)
+            print(f"  {i}: duck={st['duck']}, parcels={sorted(st['parcels'])}")
+else:
+    print("Error:", result.stderr)
+
+EOF
+ OUTPUT Testing plan...
+Final state: duck=[2, 1], parcels=[[2, 2], [6, 1]]
+Goals: [[2, 1], [6, 5]]
+Not solved. Trace:
+  0: duck=[2, 1], parcels=[[2, 2], [4, 1]]
+  1: duck=[3, 1], parcels=[[2, 2], [4, 1]]
+  2: duck=[3, 1], parcels=[[2, 2], [4, 1]]
+  3: duck=[4, 1], parcels=[[2, 2], [5, 1]]
+  4: duck=[5, 1], parcels=[[2, 2], [6, 1]]
+  5: duck=[5, 1], parcels=[[2, 2], [6, 1]]
+  6: duck=[4, 1], parcels=[[2, 2], [6, 1]]
+  7: duck=[3, 1], parcels=[[2, 2], [6, 1]]
+  8: duck=[3, 1], parcels=[[2, 2], [6, 1]]
+  9: duck=[3, 1], parcels=[[2, 2], [6, 1]]
+  10: duck=[2, 1], parcels=[[2, 2], [6, 1]]
+  11: duck=[1, 1], parcels=[[2, 2], [6, 1]]
+  12: duck=[1, 1], parcels=[[2, 2], [6, 1]]
+  13: duck=[2, 1], parcels=[[2, 2], [6, 1]]
+
+				135 text I see the issue - at steps 2 and 5, the pushes didn't work. Let me check the terrain more carefully:
+				136 button (expanded) Description: Collapse step, Secondary Actions: Collapse
+				137 text Debug the terrain and plan a correct solution
+				231 text sandbox
+				232 container
+					233 text exit:  0
+					234 container Sandbox view
+						235 checkbox Description: Terminal View, Value: 1
+						236 checkbox Description: Code View, Value: 0
+				237 container
+					238 text COMMAND $ python3 << 'EOF'
+import json
+from pathlib import Path
+import subprocess
+
+puzzle = {
+    "name": "Benchmark 08",
+    "terrain": [
+        "#########",
+        "#       #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "#       #",
+        "#########"
+    ],
+    "duck": [2, 1],
+    "parcels": [[4, 1], [2, 2]],
+    "goals": [[2, 1], [6, 5]]
+}
+
+# Check terrain carefully
+print("Terrain with coordinates:")
+for y in range(len(puzzle["terrain"])):
+    row = puzzle["terrain"][y]
+    print(f"Row {y}: ", end="")
+    for x in range(len(row)):
+        print(f"{row[x]}", end="")
+    print()
+    print(f"       ", end="")
+    for x in range(len(row)):
+        print(f"{x%10}", end="")
+    print()
+
+print("\nChecking specific positions:")
+print(f"[3,1] = {puzzle['terrain'][1][3]} (expected space)")
+print(f"[3,2] = {puzzle['terrain'][2][3]} (expected space or wall)")
+
+# Row 2 is "#  #    #"
+# Positions: 0:#, 1: , 2: , 3:#, 4: , 5: , 6: , 7: , 8:#
+print(f"Row 2 detailed: {puzzle['terrain'][2]}")
+print("Position [3,2] should be the 4th character (index 3), which is: '#' (WALL)")
+
+# Aha! [3,2] is a wall! That's why some moves fail
+# The terrain has a wall at [3,2]
+
+print("\nRe-analyzing valid paths:")
+print("Can't go through [3,2]")
+print("Need to find alternative routes")
+
+# New plan: Avoid [3,2]
+# To reach [5,1] from [2,1]:
+# Option 1: [2,1] -> [2,0]? Row 0 is all walls
+# Option 2: [2,1] -> [3,1] -> [4,1]? Parcel there
+# Option 3: [2,1] -> [2,2]? Parcel there (but can push)
+# Option 4: [2,1] -> [1,1] -> [1,2] -> ... -> [5,1]?
+
+# Let's check walls in row 2
+# [1,2] is space, [2,2] is parcel B, [3,2] is wall, [4,2] is space
+
+# Route: [2,1] -down+push-> [2,2]->[2,3], then navigate
+
+moves = [
+    "down",            # Push B: [2,2]->[2,3], duck [2,1]->[2,2]
+    "right",           # [2,2] -> [3,2]? WALL! Can't move
+]
+
+# Can't go right through wall. Try:
+moves = [
+    "down",            # Push B down: [2,2]->[2,3], duck [2,1]->[2,2]
+    "left",            # [2,2] -> [1,2]
+    "right",           # [1,2] -> [2,2]
+    "up",              # [2,2] -> [2,1]
+    "right",           # [2,1] -> [3,1]
+    "down",            # [3,1] -> [3,2]? WALL
+]
+
+# The wall at [3,2] blocks the southern route to [5,1]
+# Try eastern route: go around the wall via row 3
+
+moves = [
+    "down",            # Push B down: [2,2]->[2,3], duck [2,1]->[2,2]
+    "left",            # [2,2] -> [1,2]
+    "up",              # [1,2] -> [1,1]
+    "right",           # [1,1] -> [2,1]
+    "right",           # [2,1] -> [3,1]
+    "down",            # [3,1] -> [3,2]? WALL - nope
+    "right",           # [3,1] -> [4,1]? Parcel A blocks
+]
+
+# Parcel A blocks. Let me push it first
+moves = [
+    "right",           # [2,1] -> [3,1]
+    "right",           # [3,1] -> [4,1]? Push A right to [5,1]
+]
+
+# But wait, can the duck push from [3,1] to [4,1]?
+# Duck at [3,1], next=[4,1] (has parcel A), beyond=[5,1]
+# Yes, this should push A to [5,1]
+
+# So: [2,1] -right-> [3,1] (move), [3,1] -right-> push A to [5,1], duck at [4,1]
+
+# Then from [4,1], we need to get to [5,1] and push A left
+# But A is already at [5,1] from the push...wait, no
+# After push, A is at [5,1] and duck is at [4,1]
+# Duck can't be at [5,1] to push left, duck is at [4,1]
+# Duck at [4,1] can push left? No, would be pushing to [3,1]
+
+# After pushing A right from [4,1] to [5,1], duck lands at [4,1]
+# A is now at [5,1], can't push it left until duck is at [6,1] or [5,0] or similar
+
+# Wait, to push A LEFT, duck must be on the RIGHT (east) of A
+# So duck needs to be at [5,1] to push A left
+# If duck is at [4,1], duck can move right to [5,1]? That would push A to [6,1]
+
+# OK so: push A right to [5,1], then right again to [6,1]?
+# We want A at [2,1], not [6,1]
+
+# Different approach: push A left from the start
+# Duck at [2,1], A at [4,1]
+# To push A left, duck must reach [5,1] first
+# From [2,1], navigate to [5,1] without using [3,2]
+
+# Option: [2,1] -down+push B-> [2,2]->[2,3], then around: [2,2]-left->[1,2]-down->[1,3]-right->[2,3] (where B went)
+# Actually: [2,2]-left->[1,2]-down->[1,3]-right->[2,3]-right->[3,3] (check: row 3 is "#       #", so [3,3] is space)
+# Continue: [3,3]-right->[4,3]-right->[5,3]-up->[5,2] (check: row 2 is "#  #    #", [5,2] is space)
+# Continue: [5,2]-up->[5,1]
+
+moves = [
+    "down",            # Push B: [2,2]->[2,3], duck [2,1]->[2,2]
+    "left",            # [2,2] -> [1,2]
+    "down",            # [1,2] -> [1,3]
+    "right",           # [1,3] -> [2,3]? (B is here)
+]
+
+# B is in the way. Push B again?
+moves = [
+    "down",            # Push B: [2,2]->[2,3], duck [2,1]->[2,2]
+    "left",            # [2,2] -> [1,2]
+    "down",            # [1,2] -> [1,3]
+    "right",           # Push B: [2,3]->[3,3], duck [1,3]->[2,3]
+    "down",            # [2,3] -> [2,4]
+    "right",           # [2,4] -> [3,4]
+    "right",           # [3,4] -> [4,4]
+    "right",           # [4,4] -> [5,4]
+    "up",              # [5,4] -> [5,3]
+    "up",              # [5,3] -> [5,2]
+    "up",              # [5,2] -> [5,1]
+
+    # Now duck at [5,1], ready to push A left
+    "left",            # Push A: [4,1]->[3,1], duck [5,1]->[4,1]
+    "left",            # Push A: [3,1]->[2,1], duck [4,1]->[3,1]
+
+    # Now A at [2,1] (goal 1!) ✓
+    # B at [3,3], need to push it to [6,5]
+]
+
+print("Testing refined plan...")
+test_moves = moves[:13]
+plan_file = Path("/tmp/plan.json")
+level_file = Path("/tmp/level.json")
+
+plan_file.write_text(json.dumps({"moves": test_moves}))
+level_file.write_text(json.dumps(puzzle))
+
+result = subprocess.run([
+    "python3", "/tmp/adapter.py",
+    "/tmp/engine.js",
+    str(level_file),
+    str(plan_file)
+], capture_output=True, text=True)
+
+if result.returncode == 0:
+    output = json.loads(result.stdout)
+    state = json.loads(output["trace"][-1])
+    print(f"After {len(test_moves)} moves:")
+    print(f"  Duck: {state['duck']}")
+    print(f"  Parcels: {sorted(state['parcels'])}")
+else:
+    print("Error:", result.stderr)
+
+EOF
+ OUTPUT Terrain with coordinates:
+Row 0: #########
+       012345678
+Row 1: #       #
+       012345678
+Row 2: #  #    #
+       012345678
+Row 3: #       #
+       012345678
+Row 4: #    #  #
+       012345678
+Row 5: #       #
+       012345678
+Row 6: #########
+       012345678
+
+Checking specific positions:
+[3,1] =   (expected space)
+[3,2] = # (expected space or wall)
+Row 2 detailed: #  #    #
+Position [3,2] should be the 4th character (index 3), which is: '#' (WALL)
+
+Re-analyzing valid paths:
+Can't go through [3,2]
+Need to find alternative routes
+Testing refined plan...
+After 13 moves:
+  Duck: [4, 2]
+  Parcels: [[3, 3], [4, 1]]
+
+				138 text Good progress! The issue is moves 11-13 didn't execute. Let me continue from there:
+				139 button (expanded) Description: Collapse step, Secondary Actions: Collapse
+				140 text Complete the solution by finishing the parcel movements
+				239 text sandbox
+				240 container
+					241 text exit:  0
+					242 container Sandbox view
+						243 checkbox Description: Terminal View, Value: 1
+						244 checkbox Description: Code View, Value: 0
+				245 container
+					246 text COMMAND $ python3 << 'EOF'
+import json
+from pathlib import Path
+import subprocess
+
+puzzle = {
+    "name": "Benchmark 08",
+    "terrain": [
+        "#########",
+        "#       #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "#       #",
+        "#########"
+    ],
+    "duck": [2, 1],
+    "parcels": [[4, 1], [2, 2]],
+    "goals": [[2, 1], [6, 5]]
+}
+
+# From previous: After 10 moves
+# Duck: [5,2], Parcels: [[3,3], [4,1]]
+#
+# Wait, after "up" from [5,3] to [5,2], let me check if [5,2] is accessible
+# Row 2: "#  #    #" => x=5 is space ✓
+
+# Let me retrace more carefully
+moves = [
+    "down",            # 0: Push B: [2,2]->[2,3], duck [2,1]->[2,2]
+    "left",            # 1: [2,2] -> [1,2]
+    "down",            # 2: [1,2] -> [1,3]
+    "right",           # 3: Push B: [2,3]->[3,3], duck [1,3]->[2,3]
+    "down",            # 4: [2,3] -> [2,4]
+    "right",           # 5: [2,4] -> [3,4]
+    "right",           # 6: [3,4] -> [4,4]
+    "right",           # 7: [4,4] -> [5,4]
+    "up",              # 8: [5,4] -> [5,3]
+    "up",              # 9: [5,3] -> [5,2]
+    "up",              # 10: [5,2] -> [5,1]
+]
+
+test_moves = moves[:11]
+plan_file = Path("/tmp/plan.json")
+level_file = Path("/tmp/level.json")
+
+plan_file.write_text(json.dumps({"moves": test_moves}))
+level_file.write_text(json.dumps(puzzle))
+
+result = subprocess.run([
+    "python3", "/tmp/adapter.py",
+    "/tmp/engine.js",
+    str(level_file),
+    str(plan_file)
+], capture_output=True, text=True)
+
+if result.returncode == 0:
+    output = json.loads(result.stdout)
+    state = json.loads(output["trace"][-1])
+    print(f"After {len(test_moves)} moves:")
+    print(f"  Duck: {state['duck']}")
+    print(f"  Parcels: {sorted(state['parcels'])}")
+
+    # Now try to push A
+    # A at [4,1], duck at [5,1]
+    # "left" should push A [4,1]->[3,1], duck [5,1]->[4,1]
+
+    full_moves = test_moves + [
+        "left",            # 11: Push A: [4,1]->[3,1], duck [5,1]->[4,1]
+        "left",            # 12: Push A: [3,1]->[2,1], duck [4,1]->[3,1]
+    ]
+
+    plan_file.write_text(json.dumps({"moves": full_moves}))
+    result2 = subprocess.run([
+        "python3", "/tmp/adapter.py",
+        "/tmp/engine.js",
+        str(level_file),
+        str(plan_file)
+    ], capture_output=True, text=True)
+
+    if result2.returncode == 0:
+        output2 = json.loads(result2.stdout)
+        state2 = json.loads(output2["trace"][-1])
+        print(f"\nAfter {len(full_moves)} moves:")
+        print(f"  Duck: {state2['duck']}")
+        print(f"  Parcels: {sorted(state2['parcels'])}")
+        print(f"  A at [2,1]? {(2,1) in [(p[0],p[1]) for p in state2['parcels']]}")
+
+        # Now handle B: [3,3] -> [6,5]
+        # Need to push B right 3 times ([3,3]->[4,3]->[5,3]->[6,3])
+        # Then down 2 times ([6,3]->[6,4]->[6,5])
+
+        # For first right push, duck needs to be at [2,3]
+        # Duck is at [3,1]
+
+        extended_moves = full_moves + [
+            "down",            # 13: [3,1] -> [3,2] WALL!
+        ]
+
+        print("\nWall at [3,2] blocks! Need alternate route")
+
+        # From [3,1], can't go down (wall at [3,2])
+        # Can go left to [2,1], but that's where A is now
+        # Can go right to [4,1] (if A is not there - A is at [2,1], OK)
+
+        extended_moves2 = full_moves + [
+            "right",           # 13: [3,1] -> [4,1]
+            "down",            # 14: [4,1] -> [4,2]
+            "left",            # 15: [4,2] -> [3,2]? WALL
+        ]
+
+        print("Can't navigate around the [3,2] wall easily from [4,1]")
+
+        # Alternative from [3,1]: go back and around
+        extended_moves3 = full_moves + [
+            "left",            # 13: [3,1] -> [2,1] A is here, can't move
+        ]
+
+        print("Can't go left, A is at [2,1]")
+
+        # Hmm, duck at [3,1] after pushing A
+        # A is now at [2,1]
+        # B is at [3,3]
+        # Duck is blocked by wall at [3,2]
+
+        # Need to go around: [3,1] -right- [4,1] -down- [4,2] -right- [5,2] -down- [5,3] -down- [5,4] -left- [4,4] -left- [3,4] -left- [2,4] -down- [2,5] -right- ... but this is long
+
+        # Or: [3,1] -up- [3,0] WALL
+        # Only option: go right around the wall
+
+        extended_moves4 = full_moves + [
+            "right",           # 13: [3,1] -> [4,1]
+            "down",            # 14: [4,1] -> [4,2]
+            "right",           # 15: [4,2] -> [5,2]
+            "down",            # 16: [5,2] -> [5,3]
+            "left",            # 17: [5,3] -> [4,3]
+            "left",            # 18: [4,3] -> [3,3] B is here
+        ]
+
+        print(f"After extended moves: checking if we can reach [2,3] to start pushing B")
+
+        # Need to rethink: maybe push B in a different order?
+        # Or push B early to a different location
+
+else:
+    print("Error:", result.stderr)
+
+EOF
+ OUTPUT After 11 moves:
+  Duck: [4, 2]
+  Parcels: [[3, 3], [4, 1]]
+
+After 13 moves:
+  Duck: [4, 2]
+  Parcels: [[3, 3], [4, 1]]
+  A at [2,1]? False
+
+Wall at [3,2] blocks! Need alternate route
+Can't navigate around the [3,2] wall easily from [4,1]
+Can't go left, A is at [2,1]
+After extended moves: checking if we can reach [2,3] to start pushing B
+
+				141 text I see the problem - the push moves didn't work at step 5. Let me debug this:
+				142 button (expanded) Description: Collapse step, Secondary Actions: Collapse
+				143 text Debug why the push at step 3 didn't move parcel A
+				247 text sandbox
+				248 container
+					249 text exit:  0
+					250 container Sandbox view
+						251 checkbox Description: Terminal View, Value: 1
+						252 checkbox Description: Code View, Value: 0
+				253 container
+					254 text COMMAND $ python3 << 'EOF'
+import json
+from pathlib import Path
+import subprocess
+
+puzzle = {
+    "name": "Benchmark 08",
+    "terrain": [
+        "#########",
+        "#       #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "#       #",
+        "#########"
+    ],
+    "duck": [2, 1],
+    "parcels": [[4, 1], [2, 2]],
+    "goals": [[2, 1], [6, 5]]
+}
+
+# Trace just the first 5 moves carefully
+test_moves = [
+    "down",            # 0: Push B down: [2,2]->[2,3], duck [2,1]->[2,2]
+    "left",            # 1: duck [2,2] -> [1,2]
+    "down",            # 2: duck [1,2] -> [1,3]
+    "right",           # 3: Push B: [2,3]->[3,3], duck [1,3]->[2,3]
+    "down",            # 4: duck [2,3] -> [2,4]
+]
+
+plan_file = Path("/tmp/plan.json")
+level_file = Path("/tmp/level.json")
+
+plan_file.write_text(json.dumps({"moves": test_moves}))
+level_file.write_text(json.dumps(puzzle))
+
+result = subprocess.run([
+    "python3", "/tmp/adapter.py",
+    "/tmp/engine.js",
+    str(level_file),
+    str(plan_file)
+], capture_output=True, text=True)
+
+if result.returncode == 0:
+    output = json.loads(result.stdout)
+    print("Trace:")
+    for i, state_str in enumerate(output["trace"]):
+        st = json.loads(state_str)
+        print(f"  Step {i}: duck={st['duck']}, parcels={sorted(st['parcels'])}")
+
+    state_final = json.loads(output["trace"][-1])
+    print(f"\nFinal: duck={state_final['duck']}, parcels={sorted(state_final['parcels'])}")
+    print(f"A at goal [2,1]? No, A still at [4,1]")
+    print(f"B at [3,3] after 2 pushes")
+    print("\nOh! I see: A is still at [4,1], not at [2,1]")
+    print("The problem is duck can't reach [5,1] to push A left")
+    print("because of the wall at [3,2] blocking the path")
+
+EOF
+ OUTPUT Trace:
+  Step 0: duck=[2, 1], parcels=[[2, 2], [4, 1]]
+  Step 1: duck=[2, 2], parcels=[[2, 3], [4, 1]]
+  Step 2: duck=[1, 2], parcels=[[2, 3], [4, 1]]
+  Step 3: duck=[1, 3], parcels=[[2, 3], [4, 1]]
+  Step 4: duck=[2, 3], parcels=[[3, 3], [4, 1]]
+  Step 5: duck=[2, 4], parcels=[[3, 3], [4, 1]]
+
+Final: duck=[2, 4], parcels=[[3, 3], [4, 1]]
+A at goal [2,1]? No, A still at [4,1]
+B at [3,3] after 2 pushes
+
+Oh! I see: A is still at [4,1], not at [2,1]
+The problem is duck can't reach [5,1] to push A left
+because of the wall at [3,2] blocking the path
+
+				144 text 02:12:43 PM
+				145 button Copy
+			146 container
+				147 text entry area (settable) Message input
+				148 button Attach
+				149 button (disabled) Send message
+		150 container
+			151 text Something went wrong
+			152 button Copy
+			153 button Close
+			154 text You have reached iteration limit of 12, please request again
+
+The focused UI element is 142 button (expanded) Description: Collapse step, Secondary Actions: Collapse

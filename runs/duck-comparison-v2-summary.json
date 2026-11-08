@@ -1,0 +1,28 @@
+{
+  "skillVersion": 2,
+  "rounds": [
+    {
+      "round": 1,
+      "score": 0,
+      "development": 0,
+      "holdout": 0
+    },
+    {
+      "round": 2,
+      "score": 0,
+      "development": 0,
+      "holdout": 0
+    }
+  ],
+  "baselineScores": [
+    25,
+    0,
+    37.5
+  ],
+  "baselineMax": 37.5,
+  "baselineHoldoutMax": 25,
+  "candidateExactTextObservedInAll16Sessions": true,
+  "verdict": "gain not shown",
+  "decision": "Reject v2 for promotion; original saved solver and local active skill remain v1",
+  "nextAttempt": "One final development-only revision, bounded to two comparison rounds; no heldout feedback supplied"
+}
