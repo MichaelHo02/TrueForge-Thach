@@ -8,5 +8,16 @@
       1
     ],
     "evidence": "infra-auth-duck-01.txt"
+  },
+  {
+    "session": "https://stranger-builds.truefoundry.cloud/trueforge/sessions/01m6x4kcmxqgfqwq3bqepexg8p",
+    "task": "duck-02",
+    "phase": "dev-v4",
+    "reason": "Supervised worker servicing gap led to a timed-out board read and busy-operation retries; second turn cancelled by operator. Rerun fresh after continuous worker servicing. Excluded from skill score and improvement feedback.",
+    "evidence": [
+      "infra-v4-duck-02.txt",
+      "infra-v4-duck-02-mcp-error.json",
+      "infra-v4-duck-02-records.json"
+    ]
   }
 ]

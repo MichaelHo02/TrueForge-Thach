@@ -1,0 +1,82 @@
+[
+  {
+    "phase": "dev-v4",
+    "task": "duck-02",
+    "attempt": 1,
+    "nativeStart": 96,
+    "sessionUrl": "https://stranger-builds.truefoundry.cloud/trueforge/sessions/01m6x4kcmxqgfqwq3bqepexg8p",
+    "status": "iteration-limit",
+    "reply": "",
+    "nativeCalls": 1,
+    "nativeRange": [
+      96,
+      97
+    ],
+    "won": false,
+    "board": {
+      "mode": "interactive",
+      "benchmarkTask": "duck-02",
+      "route": "Benchmark 02",
+      "seed": null,
+      "revision": 92,
+      "coordinates": "Zero-based [x,y]; x increases right, y increases down.",
+      "terrain": [
+        "#########",
+        "#       #",
+        "#  #    #",
+        "#       #",
+        "#    #  #",
+        "#       #",
+        "#########"
+      ],
+      "goals": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          5
+        ]
+      ],
+      "duck": [
+        2,
+        1
+      ],
+      "parcels": [
+        [
+          2,
+          2
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "moves": 0,
+      "pushes": 0,
+      "won": false,
+      "cornerDeadlocks": [],
+      "rows": [
+        "#########",
+        "# +     #",
+        "# $# $  #",
+        "#       #",
+        "#    #  #",
+        "#     . #",
+        "#########"
+      ],
+      "legend": {
+        "#": "wall",
+        " ": "floor",
+        ".": "goal",
+        "$": "parcel",
+        "*": "parcel on goal",
+        "@": "duck",
+        "+": "duck on goal"
+      },
+      "outcome": "observed"
+    },
+    "recordedAt": "2026-11-08T08:35:52.456Z"
+  }
+]
