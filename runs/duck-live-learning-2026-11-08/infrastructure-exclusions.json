@@ -1,0 +1,12 @@
+[
+  {
+    "session": "https://stranger-builds.truefoundry.cloud/trueforge/sessions/01m6x1x29ds5kxqwhde9j5fye0",
+    "task": "duck-01",
+    "reason": "TrueFoundry session expired; model returned 401 Invalid token. Login refreshed and task restarted in a fresh session. Not counted as a model failure.",
+    "nativeEventRange": [
+      0,
+      1
+    ],
+    "evidence": "infra-auth-duck-01.txt"
+  }
+]

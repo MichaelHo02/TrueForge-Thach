@@ -1,0 +1,3 @@
+Browser tab: 15, Title: "TrueForge", URL: "https://stranger-builds.truefoundry.cloud/trueforge/build-agent".
+There has been no change in the accessibility tree.
+The focused UI element is 0 AXWebArea TrueForge, URL: stranger-builds.truefoundry.cloud/trueforge/build-agent
