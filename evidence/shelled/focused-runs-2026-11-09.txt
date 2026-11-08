@@ -1,0 +1,431 @@
+Browser tab: 481070419, Title: "Shelled", URL: "https://app.shelled.ai/?github_connected=true".
+0 AXWebArea Shelled, URL: app.shelled.ai/?github_connected=true
+	1 container
+		2 container
+			3 image Shelled Logo
+			4 text Shelled
+			5 button AI Autopilot Voice — click to speak
+				6 image
+			7 button Generate Music
+			8 button AI DJ: OFF — click to enable
+			9 button Mute Code Wizard TTS
+			10 button Open assistant — click to type, hold Space to speak
+		395 container
+			396 button (collapsed) MODELS, Secondary Actions: Expand
+			397 button ADJUSTMENTS
+			398 container
+				399 text entry area (settable)
+				400 button Generate random website idea
+			401 button (disabled) Brief In, Help: Convert the current prompt into importable project brief JSON
+			402 button Debrief, Help: Upload MP4 or audio to transcribe into project brief JSON
+			403 text Try:
+			404 button Generate new suggestions
+			405 container
+				406 button A cozy blog post reader with serif typography
+				407 button A SaaS pricing page with three tiers
+				408 button A mobile-first onboarding screen
+				409 button A compact analytics dashboard with 4 KPI cards
+			410 text REGEN:
+			411 container
+				412 checkbox (settable, integer) Description: JSX, Value: 1
+				413 text JSX
+			414 container
+				415 checkbox (settable, integer) Description: CSS, Value: 1
+				416 text CSS
+			417 button (disabled) Generate
+			418 container
+				419 text Drop files here or click to add Images, JSX/CSS, HTML, ZIP, MP4, or audio
+			420 button Generate Images, Help: Select images to generate from all pages
+				421 image
+				422 text Generate Images
+			423 button Create Subpages, Help: Detect and create linked subpages (contact, about, etc.)
+				424 image
+				425 text Create Subpages
+			426 button DREAM AGENT
+			427 text Louie
+			428 button 🔧 Tools, Help: Tools mode: Always use agent tools
+			440 button Clear chat
+			441 container
+				442 text Implement one focused fix in the imported TrueForge-Thach repo. Base branch is codex/shelled-import-base (32 source/test files; do not use main). Canonical UI is PreviewPage.jsx, not stale DuckDeliverypreviewimport.jsx. Bug: without globalThis.__DUCK_BENCHMARK_TASKS__, the benchmark selector is empty but Load live benchmark stays enabled and silently no-ops. Disable these controls and show a clear unavailable explanation if fixtures are missing/empty; preserve all eight frozen fixtures loading through web/entry.jsx. Add a targeted regression check and record actual changes/tests in EDGE_CASES.md. Do not touch generated engine/variants blocks, frozen files, scoring, skills or scores. Create branch codex/shelled-benchmark-availability and open a GitHub PR against codex/shelled-import-base using your GitHub tools. If any capability is unavailable, report it exactly, without claiming edits/tests/PRs happened. Implement only this fix; accessibility will be a separate PR. Implemented the focused benchmark availability fix. Changes:
+				448 content list
+					449 container
+						450 AXListMarker •
+						451 text PreviewPage.jsx
+						452 content list
+							453 container
+								454 AXListMarker •
+								455 text Detects missing or empty
+								456 text globalThis.__DUCK_BENCHMARK_TASKS__
+								457 text .
+							458 container
+								459 AXListMarker •
+								460 text Disables the benchmark selector and “Load live benchmark” button.
+							461 container
+								462 AXListMarker •
+								463 text Displays: “Live benchmark is unavailable because its frozen fixtures were not loaded.”
+							464 container
+								465 AXListMarker •
+								466 text Preserves the existing eight-fixture loading path through
+								467 text web/entry.jsx
+								468 text .
+					469 container
+						470 AXListMarker •
+						471 text sokoban/webmcp.test.ts
+						472 content list
+							473 container
+								474 AXListMarker •
+								475 text Added regression coverage for both missing and empty benchmark fixtures.
+							476 container
+								477 AXListMarker •
+								478 text Existing eight frozen-fixture regression remains unchanged.
+					479 container
+						480 AXListMarker •
+						481 text EDGE_CASES.md
+						482 content list
+							483 container
+								484 AXListMarker •
+								485 text Recorded the actual implementation and verification results.
+				486 text Verification:
+				487 content list
+					488 container
+						489 AXListMarker •
+						490 text npm run test
+						491 text  passed: 27 tests.
+					492 container
+						493 AXListMarker •
+						494 text npm run typecheck
+						495 text  passed.
+					496 container
+						497 AXListMarker •
+						498 text ESLint/syntax validation passed.
+					499 container
+						500 AXListMarker •
+						501 text No generated engine/variants blocks, frozen files, scoring, skills, or scores were modified.
+				502 text GitHub limitation:
+				503 content list
+					504 container
+						505 AXListMarker •
+						506 text GitHub/branch/PR tools are unavailable in this workspace. I could not create
+						507 text codex/shelled-benchmark-availability
+						508 text  or open a PR against
+						509 text codex/shelled-import-base
+						510 text .
+				511 text Files Modified:
+				512 content list
+					513 container
+						514 AXListMarker •
+						515 text EDGE_CASES.md (modified)
+					516 container
+						517 AXListMarker •
+						518 text PreviewPage.jsx (modified)
+					519 container
+						520 AXListMarker •
+						521 text sokoban/webmcp.test.ts (modified)
+				523 button Copy full response
+				524 container
+					525 text AGENT CHANGE SET 3 ready LOW  RISK
+					526 button Undo run
+				542 container
+					543 button (expanded) Review · +42 -25 · 0 risk signals, Secondary Actions: Collapse
+						544 text Review ·
+						545 text +
+						546 text 42
+						547 text -
+						548 text 25
+						549 text  ·
+						550 text 0
+						551 text  risk signal
+						552 text s
+					553 text ✓ Verified
+					554 text revision  1
+					555 text 1 verifier passed against the latest file revision. 1 earlier check was invalidated by later edits.
+					556 container
+						557 text ✓ npm run test  · exit  0
+					558 button (collapsed) EDGE_CASES.md · +8 -0 · low, Secondary Actions: Expand
+						559 text EDGE_CASES.md
+						560 text  · +
+						561 text 8
+						562 text  -
+						563 text 0
+						564 text  ·
+						565 text low
+					566 button (collapsed) PreviewPage.jsx · +26 -25 · low, Secondary Actions: Expand
+						567 text PreviewPage.jsx
+						568 text  · +
+						569 text 26
+						570 text  -
+						571 text 25
+						572 text  ·
+						573 text low
+					574 button (collapsed) sokoban/webmcp.test.ts · +8 -0 · low, Secondary Actions: Expand
+						575 text sokoban/webmcp.test.ts
+						576 text  · +
+						577 text 8
+						578 text  -
+						579 text 0
+						580 text  ·
+						581 text low
+				537 button (collapsed) 3 files · selective recovery, Secondary Actions: Expand
+					538 text 3
+					539 text  file
+					540 text s
+					541 text  · selective recovery
+				582 text Before export, remove only the two stale upload copies DuckDeliverypreviewimport.jsx and DuckDeliverypreviewimport.css from this imported project. They are duplicates from the failed earlier upload and are not part of codex/shelled-import-base. Preserve canonical PreviewPage.jsx/CSS and your completed benchmark fix. Do not make another feature change. Confirm whether removal persisted; do not claim GitHub operations. This run remains incomplete: The requested project change was not applied. Inspection or switching views does not complete implementation. Agent report:
+				583 text Implementation is incomplete: no functional project change was applied. The requested deletion is incomplete. Evidence:
+				584 content list
+					585 container
+						586 AXListMarker •
+						587 text DuckDeliverypreviewimport.jsx
+						588 text  and
+						589 text DuckDeliverypreviewimport.css
+						590 text  were located and confirmed as the stale upload copies.
+					591 container
+						592 AXListMarker •
+						593 text No deletion was applied because the workspace requires separate confirmation for destructive file removal.
+					594 container
+						595 AXListMarker •
+						596 text Canonical
+						597 text PreviewPage.jsx
+						598 text /
+						599 text PreviewPage.css
+						600 text  and the completed benchmark fix remain preserved.
+					601 container
+						602 AXListMarker •
+						603 text No GitHub operations were performed or claimed.
+				604 text Remaining action: approve permanent deletion of only those two stale files.
+				606 button Copy full response
+				607 text Now implement the second separate fix: semantic screen-reader labels for every warehouse board gridcell in canonical PreviewPage.jsx. Each cell label must include one-based row and column and describe wall or floor, plus goal, parcel and duck whenever present (including duck/parcel on goals). Hide decorative glyphs from assistive technology so names are not duplicated. Keep visual layout, engine, reducer, frozen fixtures, benchmark scores and recorded demos unchanged. Add meaningful regression coverage of label content and preservation after movement; update EDGE_CASES.md with actual verification. The first benchmark fix is already independently verified and merged in PR #2 into codex/shelled-import-base. GitHub tools are unavailable to you, so do not claim PR creation; I will use Shelled export separately. Do not edit or delete stale DuckDeliverypreviewimport files. Implemented the separate accessibility fix in the canonical
+				639 text PreviewPage.jsx
+				640 text .
+				641 heading Changed, Value: 3
+					642 text Changed
+				643 content list
+					644 container
+						645 AXListMarker •
+						646 text Added semantic
+						647 text aria-label
+						648 text  text to every warehouse
+						649 text gridcell
+						650 text , including:
+						651 content list
+							652 container
+								653 AXListMarker •
+								654 text One-based row and column
+							655 container
+								656 AXListMarker •
+								657 text Wall or floor
+							658 container
+								659 AXListMarker •
+								660 text Goal, parcel, and duck when present
+							661 container
+								662 AXListMarker •
+								663 text Combined occupants, including parcel/duck on goals
+					664 container
+						665 AXListMarker •
+						666 text Added
+						667 text aria-hidden="true"
+						668 text  to decorative goal, parcel, and duck glyphs.
+					669 container
+						670 AXListMarker •
+						671 text Added regression coverage in
+						672 text sokoban/webmcp.test.ts
+						673 text  for label content and label updates after movement.
+					674 container
+						675 AXListMarker •
+						676 text Updated
+						677 text EDGE_CASES.md
+						678 text  with the actual verification results.
+				679 heading Verified, Value: 3
+					680 text Verified
+				681 content list
+					682 container
+						683 AXListMarker •
+						684 text npm run test
+						685 text : passed, 28 tests.
+					686 container
+						687 AXListMarker •
+						688 text npm run typecheck
+						689 text : passed.
+					690 container
+						691 AXListMarker •
+						692 text ESLint parsing passed for the changed JSX and test files.
+					693 container
+						694 AXListMarker •
+						695 text Eight frozen benchmark fixtures and existing benchmark availability behavior remain covered and unchanged.
+					696 container
+						697 AXListMarker •
+						698 text Engine, reducer, frozen fixtures, scoring, variants, demos, and stale upload files were not changed.
+					699 container
+						700 AXListMarker •
+						701 text No GitHub operations were performed or claimed.
+				702 text Files Modified:
+				703 content list
+					704 container
+						705 AXListMarker •
+						706 text PreviewPage.jsx (modified)
+					707 container
+						708 AXListMarker •
+						709 text sokoban/webmcp.test.ts (modified)
+					710 container
+						711 AXListMarker •
+						712 text EDGE_CASES.md (modified)
+				637 button Description: Retry latest response, Help: Run the last prompt again against the current project state
+				638 button Copy full response
+				713 container
+					714 text AGENT CHANGE SET 3 ready LOW  RISK
+					715 button Undo run
+				731 container
+					732 button (expanded) Review · +94 -67 · 0 risk signals, Secondary Actions: Collapse
+						733 text Review ·
+						734 text +
+						735 text 94
+						736 text -
+						737 text 67
+						738 text  ·
+						739 text 0
+						740 text  risk signal
+						741 text s
+					742 text ✓ Verified
+					743 text revision  1
+					744 text 2 verifiers passed against the latest file revision.
+					745 container
+						746 text ✓ npm run typecheck  · exit  0
+					747 container
+						748 text ✓ npm run test  · exit  0
+					749 button (collapsed) PreviewPage.jsx · +74 -67 · low, Secondary Actions: Expand
+						750 text PreviewPage.jsx
+						751 text  · +
+						752 text 74
+						753 text  -
+						754 text 67
+						755 text  ·
+						756 text low
+					757 button (collapsed) sokoban/webmcp.test.ts · +14 -0 · low, Secondary Actions: Expand
+						758 text sokoban/webmcp.test.ts
+						759 text  · +
+						760 text 14
+						761 text  -
+						762 text 0
+						763 text  ·
+						764 text low
+					765 button (collapsed) EDGE_CASES.md · +6 -0 · low, Secondary Actions: Expand
+						766 text EDGE_CASES.md
+						767 text  · +
+						768 text 6
+						769 text  -
+						770 text 0
+						771 text  ·
+						772 text low
+				726 button (collapsed) 3 files · selective recovery, Secondary Actions: Expand
+					727 text 3
+					728 text  file
+					729 text s
+					730 text  · selective recovery
+				443 button (expanded) RUN JOURNAL COMPLETE attempt 1 · 31 steps, Secondary Actions: Collapse
+					444 text RUN JOURNAL
+					445 text COMPLETE
+					446 container
+						447 text attempt  1  ·  31  steps
+				773 container
+					774 content list
+						775 container
+							776 text ✓ Applying a checkpointed project edit applyPatch
+							777 button Retry step
+						778 container
+							779 text ! Applying a checkpointed project edit · result received applyPatch
+							780 button Retry step
+						781 container
+							782 text ✓ Model finished a reasoning pass · selecting the next grounded action
+							783 button Retry step
+						784 container
+							785 text ✓ Running lint · policy event lint
+							786 button Retry step
+						787 container
+							788 text ✓ Running lint · policy event lint
+							789 button Retry step
+						790 container
+							791 text ✓ Running lint · policy event lint
+							792 button Retry step
+						793 container
+							794 text ✓ Running lint · policy event lint
+							795 button Retry step
+						796 container
+							797 text ✓ Running project verification run_project_check
+							798 button Retry step
+						799 container
+							800 text ✓ Running project verification · result received run_project_check
+							801 button Retry step
+						802 container
+							803 text ✓ Running project verification run_project_check
+							804 button Retry step
+						805 container
+							806 text ✓ Running project verification · result received run_project_check
+							807 button Retry step
+						808 container
+							809 text ✓ Running lint lint
+							810 button Retry step
+						811 container
+							812 text ✓ Running lint · result received lint
+							813 button Retry step
+						814 container
+							815 text ✓ Running lint lint
+							816 button Retry step
+						817 container
+							818 text ✓ Running lint · result received lint
+							819 button Retry step
+						820 container
+							821 text ✓ Model finished a reasoning pass · selecting the next grounded action
+							822 button Retry step
+						823 container
+							824 text ✓ Applying a checkpointed project edit applyPatch
+							825 button Retry step
+						826 container
+							827 text ! Applying a checkpointed project edit · result received applyPatch
+							828 button Retry step
+						829 container
+							830 text ✓ Model finished a reasoning pass · selecting the next grounded action
+							831 button Retry step
+						832 container
+							833 text ✓ Reviewing the changed boundary review_changes
+							834 button Retry step
+						835 container
+							836 text ✓ Reviewing the changed boundary · result received review_changes
+							837 button Retry step
+						838 container
+							839 text ✓ Model finished a reasoning pass · selecting the next grounded action
+							840 button Retry step
+						841 container
+							842 text ✓ Reading project file · policy event readFile
+							843 button Retry step
+						844 container
+							845 text ✓ Reading project file · policy event readFile
+							846 button Retry step
+						847 container
+							848 text ✓ Running project verification run_project_check
+							849 button Retry step
+						850 container
+							851 text ✓ Running project verification · result received run_project_check
+							852 button Retry step
+						853 container
+							854 text ✓ Running project verification run_project_check
+							855 button Retry step
+						856 container
+							857 text ✓ Running project verification · result received run_project_check
+							858 button Retry step
+						859 container
+							860 text ✓ Reading project file
+							861 button PreviewPage.jsx, Help: Open PreviewPage.jsx in the code editor
+								862 text PreviewPage.jsx
+							863 button Retry step
+						864 container
+							865 text ✓ Reading project file · result received
+							866 button PreviewPage.jsx, Help: Open PreviewPage.jsx in the code editor
+								867 text PreviewPage.jsx
+							868 button Retry step
+						869 container
+							870 text ✓ Assistant reasoning / response
+							871 button Retry step
+					872 text Retries re-inspect current files.
+			437 text entry area (settable)
+			438 button (disabled) Send message (Enter)
+			439 button (collapsed) MOTION LAB, Secondary Actions: Expand

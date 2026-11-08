@@ -147,8 +147,27 @@ These are reported external Shelled Home `/` observations, not browser execution
 The demo selector now loads duck-01 (two parcels, 15 moves), duck-02 (two parcels, 21 moves) and duck-06 (three parcels, 15 moves; held out). Each source response used one final submission. Baseline receipts are round 1 for duck-01/06 and round 2 for duck-02; these are labelled example failures, while the linked report preserves all baseline successes and failures. Tests verify every selected source task, round, exact response and trace, plus switching between recordings, restart and stale callback rejection. Normal/Slow playback changes only viewing pace (260/650ms), not recorded moves, scoring or model settings. All eight tasks share wall terrain; the video examples do not establish unseen-map generalization.
 
 
+## Semantic warehouse gridcell labels
+
+- Changed only canonical `PreviewPage.jsx`: every warehouse `gridcell` now has a one-based row/column label describing wall or floor and any goal, parcel, and duck occupants. Goal overlays, parcel glyphs, and duck glyphs are `aria-hidden` so decorative text is not announced twice; combined occupants such as a parcel or duck on a goal remain represented in the cell label.
+- Added a targeted regression in `sokoban/webmcp.test.ts` covering wall/floor and combined occupant label content, plus stable coordinates/terrain and updated occupant labels after a native movement.
+- Verification: managed `npm run typecheck` passed (job `f4ec2144-d995-4b54-a223-f8eb47049c61`); managed `npm run test` passed with 28 tests, including the targeted gridcell-label regression (job `64896154-e2cc-452a-8380-db87940aeeff`). ESLint parsing also passed for `PreviewPage.jsx` and `sokoban/webmcp.test.ts`.
+
 ## Benchmark fixture availability fix
 
 - Changed `PreviewPage.jsx` so missing or empty `globalThis.__DUCK_BENCHMARK_TASKS__` disables both the benchmark selector and “Load live benchmark” button, and shows an explicit unavailable message. The live benchmark reducer remains a no-op when fixtures are absent.
 - Added a targeted regression in `sokoban/webmcp.test.ts` covering both an absent fixture global and an empty fixture array. The existing eight-frozen-board test remains in place to verify loaded fixtures still initialize, move, restart, and exit correctly.
 - Verification: `npm run test` passed with 27 tests, including the targeted missing/empty-fixture regression and all eight frozen fixture cases; `npm run typecheck` and ESLint parsing also passed.
+
+## Small-branch recovery and two Shelled exports (9 November, Melbourne)
+
+The earlier export limitation above is historical. The full GitHub import repeatedly hit a secondary rate limit. A 32-file runnable integration slice at `codex/shelled-import-base` was pulled successfully in signed-in Chrome; it retains the canonical game, browser adapters, eight frozen tasks and relevant tests. All historical benchmark receipts remain on `main`.
+
+- [PR #2](https://github.com/MichaelHo02/TrueForge-Thach/pull/2): Shelled Dream Agent version 1 implemented missing/empty benchmark fixture availability, tests and this report. Its journal completed 30 steps. Shelled's built-in GitHub sync exported commit `bda8783` and opened the PR. Codex retargeted it from the mandatory default target to the integration branch, removed two stale upload copies in `82dcf04`, independently verified it, and merged it as `7e80b40`.
+- [PR #3](https://github.com/MichaelHo02/TrueForge-Thach/pull/3): Shelled Dream Agent version 2 implemented semantic gridcell labels, decorative glyph hiding and movement regression coverage. The first Auto-mode attempt failed to apply an edit; the explicit Tools-mode retry completed 31 steps. Managed typecheck job `f4ec2144-d995-4b54-a223-f8eb47049c61` and test job `64896154-e2cc-452a-8380-db87940aeeff` passed. Shelled sync exported `28f915f` and opened this separate PR; Codex retargeted it before merging. It remains open for review.
+
+The agent did not have GitHub tools: these are agent-authored changes with PRs opened by Shelled's export UI, operated by Codex. They are not autonomous agent GitHub-tool runs. [Visible run journals and prompts](evidence/shelled/focused-runs-2026-11-09.txt) and a [run screenshot](evidence/shelled/focused-runs-2026-11-09.png) preserve this distinction. Shelled project ID: `8e1bc18d-26a9-48ce-94e3-9218e06f002a`; the UI did not expose a public per-run URL. Manual historical PR #1 is excluded from the two PRs above.
+
+To reproduce: `npm ci`, `npm run verify`, `npm run typecheck`, `npm run build`, and `python3 scripts/webmcp-bridge-test.py`. Independent checks passed: 42 Node tests, three Python bridge tests, typecheck, build and generated-engine freshness. Render checks also verified missing/empty fixture controls are disabled, loaded fixtures are enabled, and actual gridcells carry semantic labels. No model reruns were performed for these UI fixes: the live baseline/final scores remain 5/8 and 7/8.
+
+Only the three agent-modified source/test/report files were carried from each PR into a fresh full-repository branch. The slim base deletion commit and export manifest were not merged into `main`.
