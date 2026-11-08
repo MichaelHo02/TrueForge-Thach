@@ -4,7 +4,7 @@ A duck pushes parcels onto delivery pads in a small Sokoban warehouse. Built thr
 
 **Play:** https://duck-delivery.vercel.app
 
-Six routes progress from one parcel to three. The game includes keyboard/touch controls, undo/restart, conservative corner-trap warnings, and a replay lab that validates moves with the canonical engine. Original/improved watch controls stay empty until actual benchmark runs exist.
+Six routes progress from one parcel to three. The game includes keyboard/touch controls, undo/restart, conservative corner-trap warnings, a verified replay lab, three recorded agent examples, and live browser-agent control through WebMCP.
 
 ## Run locally
 
@@ -38,10 +38,10 @@ The verified setup is already frozen in `evals/duck/frozen.json`; do not overwri
 ## Run 1 vs run N
 
 - **Task and score:** eight fixed Sokoban puzzles; score = 100 × puzzles solved / 8, with development/holdout breakdowns.
-- **Run 1 → run N:** not run yet. No improvement is claimed.
-- **The change that did it:** no agent-authored improvement exists yet.
-- **What the agent learned:** unmeasured; the initial skill is registered as version 1.
-- **What still fails:** see [EDGE_CASES.md](EDGE_CASES.md); benchmark results are in VERDICT.md; the website now has a recorded-agent demo for benchmark duck-01, with source links and canonical playback.
+- **Run 1 → run N:** 25% in baseline round 1; v3 reached 75% in both comparisons. The other baselines scored 0% and 37.5%.
+- **The change that did it:** the agent rewrote its skill using failed development traces; plan completely, validate once, then submit. V2 failed before v3 passed the gate.
+- **What the agent learned:** a reusable planning/submission procedure; model weights stayed unchanged.
+- **What still fails:** see [EDGE_CASES.md](EDGE_CASES.md) and [VERDICT.md](VERDICT.md). Eight puzzles share warehouse walls; no unseen-map generalization claim.
 
 ## Shelled evidence
 
@@ -72,3 +72,11 @@ The pack records original base boards, generator identity, source hashes and con
 On the website, choose **Watch baseline failure** or **Watch improved agent**. The mode loads the exact `duck-01` benchmark arrangement, not one of the six practice routes. The baseline has no final plan and stays at its initial state. **Play agent plan** replays the exact v3 round-2 response (15 moves) through the canonical engine; the complete serialized trace must match the saved scored receipt before playback is enabled. Manual moves are disabled while reviewing a recording. Restart reloads it; Exit agent demo restores the selected practice route. Links expose the baseline, learning session, improved session, exact skill and all results. This is historical playback, not fresh model inference.
 
 The recorded puzzle selector now includes **duck-01** (v3 round 2, 15 moves), **duck-02** (v3 round 1, 21 moves), and **duck-06** (v3 round 2, 15 moves, held-out arrangement). Each has its own exact source task, response, trace and session links. Select Slow playback to follow individual moves. These are three examples from the eight-task benchmark, not three new model runs or different warehouse wall layouts.
+
+## Live WebMCP play
+
+A browser agent can discover `duck_get_board`, `duck_move` and `duck_restart` and control the displayed practice puzzle through WebMCP. Each move uses the same React reducer and canonical engine as the buttons. The live status panel shows availability, tool-call count and last action. Unsupported browsers keep normal gameplay; there is no fake WebMCP fallback.
+
+Ask a WebMCP-capable browser agent: **“Read the current Duck Delivery board and solve it using its WebMCP tools. Read each move receipt and pass its revision into your next move.”** See [docs/WEBMCP.md](docs/WEBMCP.md) for schemas, support and verification.
+
+This interface is separate from the historical TrueForge experiment: its 75% scores and existing narrated video came from sandbox planning and saved replays, not WebMCP. Codex verified live WebMCP solves on two practice routes; the hosted TrueForge agent has not yet been connected to a browser tool bridge.
